@@ -1482,3 +1482,99 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     }
   }
 }
+.slon__main__single-product__rev-top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  .rating-result {
+    margin-right: 15px;
+  }
+  .slon__main__single-product__col-all-rev {
+    a {
+      font-size: 12px;
+      color: #fff;
+      line-height: 18px;
+      font-weight: 500;
+      display: inline-block;
+      vertical-align: top;
+      border-bottom: 1px dotted #fff;
+      text-decoration: none;
+    }
+  }
+}
+.rating-result {
+  display: flex;
+  align-items: center;
+  span {
+    padding-right: 5px;
+    color: #a9a9a9;
+    svg {
+      width: 16px;
+      display: block;
+      height: 16px;
+    }
+    &.active {
+      color: #eee417;
+    }
+  }
+}
+.slon__main__single-product__top-right {
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .slon__main__single-product__top-right__item {
+    padding: 20px 0 25px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #5f5f63;
+    .slon__list-catalog__product__politra {
+      padding: 5px 0 0;
+      margin-bottom: -10px;
+      min-height: 20px;
+    }
+    .slon__main__single-product__top-right__item__label {
+      color: #fff;
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 500;
+      padding-right: 15px;
+    }
+  }
+  .slon__main__single-product__compare {
+    margin-right: 30px;
+  }
+  .slon__main__link-ico {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #a9a9a9;
+    transition: all 0.3s ease-in-out;
+    .slon__main__icon-left {
+      margin-right: 20px;
+      svg {
+        width: 25px;
+        height: 25px;
+        display: block;
+        path {
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    &:hover {
+      color: #fff;
+      svg {
+        path {
+          fill: #00e2da;
+        }
+      }
+    }
+  }
+}
