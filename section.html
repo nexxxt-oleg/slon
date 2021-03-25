@@ -19,10 +19,19 @@
                         <li><a href="">Доставка и оплата</a></li>
                         <li><a href="">Гарантия и возврат</a></li>
                         <li><a href="">Бренды</a></li>
+                        <li><a href="">Подобрать кресло</a></li>
                         <li><a href="">Задайте вопрос</a></li>
                     </ul>
                     <div class="slon__nav-top__phone">
-                        <a href="tel:88007005829">8-800-700-58-29</a>
+                        <div class="slon__work-time" id="work_time">
+                            OPEN
+                            <div class="slon__work-time__inner">
+                                <span class="slon__work-time__close"></span>
+                                Ежедневно:
+                                с 09:00 до 21:00
+                            </div>
+                        </div>
+                        <a class="tel" href="tel:88007005829">8-800-700-58-29</a>
                     </div>
                     <div class="slon__nav-top__auth">
                         <a href="" class="slon__link-ico-left">
@@ -41,33 +50,36 @@
         <aside class="slon__main__header__middle">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
-                        <a href="/">
-                            <img class="slon__main__header__logo" alt="" src="./img/svg/logo.svg"/>
-                        </a>
-                    </div>
-                    <div class="col-lg-2">
-                        <div class="slon__main__sity">
-                            <div class="slon__main__sity__label">Ваш город</div>
-                            <select name="city" class="slon__main__sity__select">
-                                <option>Севастополь</option>
-                                <option>Москва</option>
-                                <option>Санкт-Петербург</option>
-                            </select>
+                    <div class="col-lg-9 d-flex slon__main__header__col-left">
+                        <div class="slon__main__header__col-logo">
+                            <a href="/">
+                                <img class="slon__main__header__logo" alt="" src="./img/svg/logo.svg"/>
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <form action="" class="slon__main__header__search-form">
-                            <div class="slon__main__header__search">
-                                <input type="text" required class="slon__main__header__search__inp" placeholder="Поиск">
-                                <button type="submit" class="slon__main__header__search__submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="#a9a9a9"
-                                              d="M508.88,493.79,353.09,338a201.62,201.62,0,0,0,52.24-135.34C405.33,90.92,314.42,0,202.67,0S0,90.92,0,202.67,90.92,405.33,202.67,405.33A201.62,201.62,0,0,0,338,353.09L493.79,508.88a10.67,10.67,0,1,0,15.09-15.09ZM202.67,384c-100,0-181.34-81.34-181.34-181.33S102.69,21.33,202.67,21.33,384,102.68,384,202.67,302.65,384,202.67,384Z"/>
-                                    </svg>
-                                </button>
+                        <div class="slon__main__header__col-city">
+                            <div class="slon__main__city">
+                                <div class="slon__main__city__label">Ваш город</div>
+                                <select name="city" class="slon__main__city__select">
+                                    <option>Севастополь</option>
+                                    <option>Москва</option>
+                                    <option>Санкт-Петербург</option>
+                                </select>
                             </div>
-                        </form>
+                        </div>
+                        <div class="slon__main__header__col-search">
+                            <form action="" class="slon__main__header__search-form">
+                                <div class="slon__main__header__search">
+                                    <input type="text" required class="slon__main__header__search__inp"
+                                           placeholder="Поиск">
+                                    <button type="submit" class="slon__main__header__search__submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="#a9a9a9"
+                                                  d="M508.88,493.79,353.09,338a201.62,201.62,0,0,0,52.24-135.34C405.33,90.92,314.42,0,202.67,0S0,90.92,0,202.67,90.92,405.33,202.67,405.33A201.62,201.62,0,0,0,338,353.09L493.79,508.88a10.67,10.67,0,1,0,15.09-15.09ZM202.67,384c-100,0-181.34-81.34-181.34-181.33S102.69,21.33,202.67,21.33,384,102.68,384,202.67,302.65,384,202.67,384Z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-lg-1">
                         <div class="slon__main__header__links">
@@ -126,61 +138,14 @@
                     <ul class="navbar-nav navbar-nav--main">
                         <li class="nav-item">
                             <a class="nav-link slon__link-ico-left" href="#">
-                                <svg class="icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 37.56 37.02">
-                                    <polygon style="stroke-linejoin: round; stroke-linecap: round; stroke-width: 2px;"
-                                             class="cls-1"
-                                             points="18.78 1 24.02 4.66 30.38 5.22 32.05 11.39 36.56 15.92 33.86 21.71 34.41 28.08 28.63 30.79 24.95 36.02 18.78 34.37 12.6 36.02 8.93 30.79 3.14 28.08 3.69 21.71 1 15.92 5.51 11.39 7.17 5.22 13.54 4.66 18.78 1"/>
-                                    <g>
-                                        <circle style="stroke-linecap: square;" class="cls-2" cx="24.53" cy="22.09"
-                                                r="3.26"/>
-                                        <line style="stroke-linecap: square;" class="cls-2" x1="13.21" y1="26.2"
-                                              x2="23.71" y2="10.82"/>
-                                        <circle style="stroke-linecap: square;" class="cls-2" cx="13.02" cy="14.79"
-                                                r="3.26"/>
-                                    </g>
-
-                                </svg>
+                                <img class="icon" src="./img/svg/nav1.svg" width="30" height="30" alt="">
                                 АКЦИИ
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle slon__link-ico-left" href="#" id="navbarDropdown"
                                role="button" data-toggle="dropdown" aria-expanded="false">
-                                <svg class="icon" width="26" height="30" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 39.73 45.72">
-                                    <g>
-                                        <path class="cls-1"
-                                              d="M13.08,43.22a1.51,1.51,0,1,1-1.51-1.51A1.5,1.5,0,0,1,13.08,43.22Z"/>
-                                        <circle class="cls-1" cx="28.16" cy="43.22" r="1.51"
-                                                transform="translate(-16.71 68.66) rotate(-86.47)"/>
-                                    </g>
-                                    <path class="cls-1"
-                                          d="M21.38,43.22a1.51,1.51,0,1,1-1.51-1.51A1.51,1.51,0,0,1,21.38,43.22Z"/>
-                                    <g>
-                                        <polyline class="cls-1" points="11.57 41.71 11.57 39.29 19.87 35.7"/>
-                                        <polyline class="cls-1" points="28.16 41.71 28.16 39.29 19.87 35.7"/>
-                                    </g>
-                                    <line class="cls-1" x1="19.87" y1="41.71" x2="19.87" y2="35.7"/>
-                                    <polyline class="cls-1" points="18.51 36.02 18.51 32.3 21.23 32.3 21.23 36.02"/>
-                                    <polyline class="cls-1" points="33.93 21.48 33.93 23.42 28.92 26.55"/>
-                                    <polyline class="cls-1" points="5.8 21.48 5.8 23.42 10.54 26.36"/>
-                                    <g>
-                                        <line class="cls-1" x1="28.16" y1="41.71" x2="28.16" y2="39.31"/>
-                                        <line class="cls-1" x1="11.57" y1="41.71" x2="11.57" y2="39.31"/>
-                                    </g>
-                                    <line class="cls-1" x1="17.47" y1="1" x2="22.09" y2="1"/>
-                                    <line class="cls-1" x1="8.43" y1="5.86" x2="17.47" y2="1"/>
-                                    <line class="cls-1" x1="11.55" y1="26.55" x2="8.44" y2="5.88"/>
-                                    <line class="cls-1" x1="28.11" y1="26.55" x2="31.21" y2="5.88"/>
-                                    <line class="cls-1" x1="31.21" y1="5.88" x2="22.09" y2="1"/>
-                                    <polygon class="cls-1"
-                                             points="30.82 32.3 8.85 32.3 6.01 27.1 33.73 27.1 30.82 32.3"/>
-                                    <line class="cls-1" x1="1" y1="21.48" x2="5.8" y2="21.48"/>
-                                    <line class="cls-1" x1="33.93" y1="21.48" x2="38.73" y2="21.48"/>
-                                    <polygon class="cls-2"
-                                             points="22.97 23.02 16.76 23.02 14.76 8.35 17.46 5.96 22.09 5.96 24.97 8.35 22.97 23.02"/>
-                                </svg>
+                                <img class="icon" src="./img/svg/nav2.svg" width="21" height="30" alt="">
                                 КОМПЬЮТЕРНЫЕ кресла и столы
                             </a>
                             <div class="dropdown-menu slon__submenu" aria-labelledby="navbarDropdown">
@@ -199,19 +164,26 @@
                                             <li>
                                                 <a class="slon__submenu__nav__item" href="#"
                                                    onmouseover="hoverSubMenu('js_drop_info1', './img/t1@2.png', '#', 'Компьютерные столы')"
-                                                >Компьютерные столы</a></li>
+                                                >Компьютерные столы</a>
+                                            </li>
                                             <li>
                                                 <a class="slon__submenu__nav__item" href="#"
                                                    onmouseover="hoverSubMenu('js_drop_info1', './img/stol.png', '#', 'Симуляторы')"
-                                                >Симуляторы</a></li>
-                                            <li class="mt-auto">
+                                                >Симуляторы</a>
+                                            </li>
+                                            <li class="mt-2">
                                                 <a href="" class="slon__all-link"><span>Посмотреть все</span></a>
+                                            </li>
+                                            <li class="mt-auto">
+                                                <a href="" class="slon__btn-link"><span>Подобрать кресло</span></a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-6">
                                         <div id="js_drop_info1" class="slon__submenu__hover-link">
-
+                                            <a href="#">
+                                                <div><img alt="Компьютерные кресла" src="./img/t1@2.png"></div>
+                                                Компьютерные кресла</a>
                                         </div>
                                     </div>
                                 </div>
@@ -220,25 +192,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle slon__link-ico-left" href="#" id="navbarDropdown2"
                                role="button" data-toggle="dropdown" aria-expanded="false">
-                                <svg class="icon" width="26" height="30" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 37.56 45.19">
-                                    <line class="cls-3" x1="5.54" y1="9.26" x2="15.2" y2="1"/>
-                                    <line class="cls-3" x1="7.85" y1="38.96" x2="5.54" y2="9.26"/>
-                                    <line class="cls-3" x1="32.19" y1="9.26" x2="22.53" y2="1"/>
-                                    <line class="cls-3" x1="29.88" y1="38.96" x2="32.19" y2="9.26"/>
-                                    <path class="cls-3" d="M7.85,39c0,7.08,22,6.87,22,0"/>
-                                    <line class="cls-3" x1="1" y1="24.42" x2="5.2" y2="16.37"/>
-                                    <line class="cls-3" x1="2" y1="32.77" x2="1" y2="24.42"/>
-                                    <line class="cls-3" x1="2" y1="32.77" x2="7.67" y2="38.08"/>
-                                    <line class="cls-3" x1="15.2" y1="1" x2="22.53" y2="1"/>
-                                    <path class="cls-4"
-                                          d="M18.87,29.38h0a4.67,4.67,0,0,1-4.66-4.66L15.21,6h7.32l1,18.76A4.66,4.66,0,0,1,18.87,29.38Z"/>
-                                    <circle class="cls-4" cx="18.87" cy="24.58" r="1.82"/>
-                                    <rect class="cls-4" x="17.08" y="10.09" width="3.58" height="8.29" rx="1.79"/>
-                                    <line class="cls-3" x1="36.56" y1="24.42" x2="32.36" y2="16.37"/>
-                                    <line class="cls-3" x1="35.56" y1="32.77" x2="36.56" y2="24.42"/>
-                                    <line class="cls-3" x1="35.56" y1="32.77" x2="29.89" y2="38.08"/>
-                                </svg>
+                                <img class="icon" src="./img/svg/nav3.svg" width="22" height="30" alt="">
                                 Игровая периферия
                             </a>
                             <div class="dropdown-menu slon__submenu" aria-labelledby="navbarDropdown2">
@@ -257,12 +211,14 @@
                                             <li>
                                                 <a class="slon__submenu__nav__item" href="#"
                                                    onmouseover="hoverSubMenu('js_drop_info2', './img/t1@2.png', '#', 'Компьютерные столы')"
-                                                >Компьютерные столы</a></li>
+                                                >Компьютерные столы</a>
+                                            </li>
                                             <li>
                                                 <a class="slon__submenu__nav__item" href="#"
                                                    onmouseover="hoverSubMenu('js_drop_info2', './img/stol.png', '#', 'Симуляторы')"
-                                                >Симуляторы</a></li>
-                                            <li class="mt-auto">
+                                                >Симуляторы</a>
+                                            </li>
+                                            <li class="mt-2">
                                                 <a href="" class="slon__all-link"><span>Посмотреть все</span></a>
                                             </li>
                                         </ul>
@@ -278,16 +234,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle slon__link-ico-left" href="#" id="navbarDropdown3"
                                role="button" data-toggle="dropdown" aria-expanded="false">
-                                <svg class="icon" width="18" height="30" xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 28.2 46">
-                                    <line class="cls-3" x1="18" y1="26.94" x2="22.34" y2="39.25"/>
-                                    <line class="cls-3" x1="10.2" y1="26.94" x2="5.86" y2="39.25"/>
-                                    <line class="cls-3" x1="10.2" y1="19.1" x2="5.86" y2="6.8"/>
-                                    <line class="cls-3" x1="18" y1="19.1" x2="22.34" y2="6.8"/>
-                                    <rect class="cls-4" x="1" y="1" width="26.2" height="44"/>
-                                    <rect class="cls-4" x="10.2" y="19.1" width="7.8" height="7.8"/>
-                                    <circle class="cls-3" cx="14.1" cy="8.5" r="1.82"/>
-                                </svg>
+                                <img class="icon" src="./img/svg/nav4.svg" width="18" height="30" alt="">
                                 Комплектующие для ПК
                             </a>
                             <div class="dropdown-menu dropdown-menu-end slon__submenu"
@@ -312,7 +259,7 @@
                                                 <a class="slon__submenu__nav__item" href="#"
                                                    onmouseover="hoverSubMenu('js_drop_info3', './img/stol.png', '#', 'Симуляторы')"
                                                 >Симуляторы</a></li>
-                                            <li class="mt-auto">
+                                            <li class="mt-2">
                                                 <a href="" class="slon__all-link"><span>Посмотреть все</span></a>
                                             </li>
                                         </ul>
@@ -525,7 +472,9 @@
                             </div>
                         </div>
                         <div class="smart-filter__footer">
-                            <button type="submit" class="slon__btn-azure slon__btn-w100">ПРИМЕНИТЬ</button>
+                            <div class="fpad20">
+                                <button type="submit" class="slon__btn-azure slon__btn-w100">ПРИМЕНИТЬ</button>
+                            </div>
                             <a href="" class="smart-filter__clear">
                                 <svg class="icon-silver" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path fill="#959597"
@@ -539,7 +488,7 @@
             </div>
             <div class="col-lg-9 col-sm-8">
                 <div class="row fpad60">
-                    <div class="col-lg-4 col-sm-6 fpad30">
+                    <div class="col-lg-4 col-sm-6 slon__col-product fpad30">
                         <div class="slon__product">
                             <div class="slon__list-catalog__slider__item__wrap">
                                 <ul class="nav slon__product__fav-compare">
@@ -614,10 +563,15 @@
                                     <span class="slon__product__old-price-value">28 990 <span
                                             class="b-rub">Р</span></span>
                                 </div>
+                                <div class="slon__list-catalog__product__bay">
+                                    <button class="slon__btn-bay">
+                                        <i></i> В КОРЗИНУ
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 fpad30">
+                    <div class="col-lg-4 col-sm-6 slon__col-product fpad30">
                         <div class="slon__product">
                             <div class="slon__list-catalog__slider__item__wrap">
                                 <ul class="nav slon__product__fav-compare">
@@ -692,10 +646,16 @@
                                     <span class="slon__product__old-price-value">28 990 <span
                                             class="b-rub">Р</span></span>
                                 </div>
+
+                                <div class="slon__list-catalog__product__bay">
+                                    <button class="slon__btn-bay">
+                                        <i></i> В КОРЗИНУ
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 fpad30">
+                    <div class="col-lg-4 col-sm-6 slon__col-product fpad30">
                         <div class="slon__product">
                             <div class="slon__list-catalog__slider__item__wrap">
                                 <ul class="nav slon__product__fav-compare">
@@ -770,10 +730,15 @@
                                     <span class="slon__product__old-price-value">28 990 <span
                                             class="b-rub">Р</span></span>
                                 </div>
+                                <div class="slon__list-catalog__product__bay">
+                                    <button class="slon__btn-bay">
+                                        <i></i> В КОРЗИНУ
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 fpad30">
+                    <div class="col-lg-4 col-sm-6 slon__col-product fpad30">
                         <div class="slon__product">
                             <div class="slon__list-catalog__slider__item__wrap">
                                 <ul class="nav slon__product__fav-compare">
@@ -848,10 +813,15 @@
                                     <span class="slon__product__old-price-value">28 990 <span
                                             class="b-rub">Р</span></span>
                                 </div>
+                                <div class="slon__list-catalog__product__bay">
+                                    <button class="slon__btn-bay">
+                                        <i></i> В КОРЗИНУ
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 fpad30">
+                    <div class="col-lg-4 col-sm-6 slon__col-product fpad30">
                         <div class="slon__product">
                             <div class="slon__list-catalog__slider__item__wrap">
                                 <ul class="nav slon__product__fav-compare">
@@ -907,6 +877,11 @@
                                     <span class="slon__product__old-price-value">28 990 <span
                                             class="b-rub">Р</span></span>
                                 </div>
+                                <div class="slon__list-catalog__product__bay">
+                                    <button class="slon__btn-bay">
+                                        <i></i> В КОРЗИНУ
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -922,16 +897,16 @@
                     </div>
                     <div class="col-12">
                         <div class="slon__page__pagination">
-                            <ul class="nav justify-content-center">
-                                <li><a href=""><i class="slon__page__pagination__prev"></i></a></li>
-                                <li><a href="">1</a></li>
-                                <li><a href="">2</a></li>
-                                <li><a href="">3</a></li>
-                                <li><a href="">4</a></li>
+                            <ul class="nav justify-content-center align-items-center">
+                                <li><a class="slon__page__nav slon__page__nav--prev" href=""><i class="slon__page__pagination__prev"></i></a></li>
+                                <li><a class="slon__page__item" href="">1</a></li>
+                                <li><a class="slon__page__item" href="">2</a></li>
+                                <li><a class="slon__page__item" href="">3</a></li>
+                                <li><a class="slon__page__item" href="">4</a></li>
                                 <li><span class="current">5</span></li>
                                 <li><span class="sep">...</span></li>
-                                <li><a href="">10</a></li>
-                                <li><a href=""><i class="slon__page__pagination__next"></i></a></li>
+                                <li><a class="slon__page__item" href="">10</a></li>
+                                <li><a class="slon__page__nav slon__page__nav--next" href=""><i class="slon__page__pagination__next"></i></a></li>
                             </ul>
                         </div>
                     </div>

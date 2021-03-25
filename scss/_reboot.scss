@@ -416,8 +416,7 @@ button {
 // Credit https://github.com/suitcss/base/
 
 button:focus {
-  outline: dotted 1px;
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: none;
 }
 
 // 1. Remove the margin in Firefox and Safari

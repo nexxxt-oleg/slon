@@ -134,9 +134,7 @@
   -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
   transition: border-radius 0.12s linear 0s 0.35s linear 0s;
 }
-.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
-  border-radius: 5px;
-}
+
 .lSSlideOuter .lSPager.lSGallery img {
   display: block;
   height: auto;
@@ -157,7 +155,7 @@
   display: block;
   top: 50%;
   height: 32px;
-  background-image: url('../img/controls.png');
+
   cursor: pointer;
   position: absolute;
   z-index: 99;
@@ -207,19 +205,19 @@
 
 /* vertical controlls */
 .lSSlideOuter.vertical .lSAction > a {
-  left: 50%;
-  margin-left: -14px;
+  left: 0;
   margin-top: 0;
+  width: 70px;
+  height: 35px;
+  display: block;
 }
 .lSSlideOuter.vertical .lSAction > .lSNext {
-  background-position: 31px -31px;
-  bottom: 10px;
+  bottom: 0;
   top: auto;
 }
 .lSSlideOuter.vertical .lSAction > .lSPrev {
-  background-position: 0 -31px;
   bottom: auto;
-  top: 10px;
+  top: 0;
 }
 /* vertical */
 
@@ -1447,6 +1445,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .slon__main__single-product__images {
   position: relative;
+  margin-bottom: 50px;
   .lSSlideOuter.vertical {
     padding: 0 0 0 100px !important;
   }
@@ -1460,19 +1459,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       display: block;
     }
   }
-  .lSSlideOuter .lSPager.lSGallery li a {
-    border: 1px solid #5f5f63;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0;
-    height: 70px;
-    img {
-      display: block;
-      max-width: 50px;
-      max-height: 50px;
-      width: auto;
-      height: auto;
+  .lSSlideOuter .lSPager.lSGallery li {
+    a {
+      border: 1px solid #5f5f63;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      height: 70px;
+      img {
+        display: block;
+        max-width: 50px;
+        max-height: 50px;
+        width: auto;
+        height: auto;
+      }
+    }
+    &.active {
+      a {
+        border-color: #a9a9a9;
+      }
     }
   }
 }
