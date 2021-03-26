@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>SLON</title>
 </head>
-<body class="slon">
+<body id="scrollMain" class="slon" data-spy="scroll" data-target="#productDescNav" data-offset="25">
 <div class="slon__main">
     <header class="slon__main__header">
         <nav class="navbar slon__nav-top">
@@ -278,19 +278,18 @@
         </nav>
     </header>
 
-    <div class="container">
-        <ul class="breadcrumbs nav">
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Компьютерные кресла и столы</a>
-            </li>
-        </ul>
-
-    </div>
-
     <div class="slon__main__single-product">
+        <div class="container">
+            <ul class="breadcrumbs nav">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="#">Компьютерные кресла и столы</a>
+                </li>
+            </ul>
+
+        </div>
         <div class="container">
             <div class="row justify-content-end align-items-center slon__main__single-product__top-row">
                 <div class="col-lg-3">
@@ -405,27 +404,32 @@
                             <div class="rating-result">
                                 <span class="active">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
-                                          <path fill="currentColor" d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
+                                          <path fill="currentColor"
+                                                d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
                                     </svg>
                                 </span>
                                 <span class="active">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
-                                          <path fill="currentColor" d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
+                                          <path fill="currentColor"
+                                                d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
                                     </svg>
                                 </span>
                                 <span class="active">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
-                                          <path fill="currentColor" d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
+                                          <path fill="currentColor"
+                                                d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
                                     </svg>
                                 </span>
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
-                                          <path fill="currentColor" d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
+                                          <path fill="currentColor"
+                                                d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
                                     </svg>
                                 </span>
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 488.41">
-                                          <path fill="currentColor" d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
+                                          <path fill="currentColor"
+                                                d="M511.27,185.46a15,15,0,0,0-12.11-10.21L340.44,152.19l-71-143.83a15,15,0,0,0-26.9,0l-71,143.83L12.84,175.25a15,15,0,0,0-8.31,25.59l114.85,112L92.27,470.87A15,15,0,0,0,114,486.69l142-74.64,142,74.64a15,15,0,0,0,21.77-15.82L392.61,312.79l114.86-112A15,15,0,0,0,511.27,185.46Z"/>
                                     </svg>
                                 </span>
                             </div>
@@ -462,20 +466,816 @@
                             <span class="slon__main__single-product__top-right__item__label">Цвет:</span>
                             <ul class="nav slon__list-catalog__product__politra">
                                 <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color is_active" style="background: #ff4545"></a>
+                                    <a href="" class="slon__list-catalog__product__politra__color is_active"
+                                       style="background: #ff4545"></a>
                                 </li>
                                 <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color" style="background: #73ba00"></a>
+                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                       style="background: #73ba00"></a>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="slon__main__single-product__top-right__item">
+                            <div class="slon__list-catalog__product__price">
+                                <span class="slon__product__price-value">26 091 <span class="b-rub">Р</span></span>
+                                <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
+                            </div>
+                        </div>
+
+                        <div class="slon__main__single-product__top-right__item">
+                            <div class="row slon__main__single-product__btn-row">
+                                <div class="col-sm-6 fpad15">
+                                    <button class="slon__btn-bay">
+                                        <i></i> В КОРЗИНУ
+                                    </button>
+                                </div>
+                                <div class="col-sm-6 fpad15">
+                                    <button class="slon__btn-border">
+                                        <span>Купить в 1 клик</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slon__main__single-product__credit">
+                                Купить в кредит за 3 000 ₽ / мес
+                            </div>
+                        </div>
+
+                        <div class="slon__main__single-product__top-right__footer">
+                            <div class="slon__main__single-product__delivery">
+                                <span class="slon__main__single-product__delivery__label">Доставка</span>
+                                <span>20 ноября</span>
+                                <span>от 300 ₽</span>
+                            </div>
+                            <div class="slon__main__single-product__delivery">
+                                <span class="slon__main__single-product__delivery__label">Самовывоз</span>
+                                <span>19 ноября</span>
+                                <span>бесплатно</span>
+                            </div>
+                            <a href="" class="slon__main__single-product__delivery__link">Подробнее про условия доставки
+                                и оплаты</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="slon__main__single-product__body" id="productDesc">
+            <div class="slon__main__single-product__body__nav" id="productDescNav">
+                <div class="container">
+                    <nav class="navbar">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#description" class="nav-link slon__main__anchor">ОПИСАНИЕ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#characteristic" class="nav-link slon__main__anchor">Характеристики</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#driver" class="nav-link slon__main__anchor">ДрайверЫ и инструкции </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="slon__main__single-product__desc-wrap viewport" id="productDescWrap">
+                <div class="slon__main__section section" id="description">
+                    <div class="container">
+                        <div class="row tpad60 fpad60">
+                            <div class="col-lg-4 fpad30">
+                                <div class="slon__main__caption">Описание</div>
+                            </div>
+                            <div class="col-lg-8 slon__main__text">
+                                <p>Игровой ковер COUGAR CONTROL II имеет износостойкий край со стильной прострочкой для
+                                    более долгого срока службы. Коврик водонепроницаемый, предназначен для лазерных и
+                                    оптических мышей. Текстурная поверхность COUGAR CONTROL II идеальна для максимальной
+                                    точности.</p>
+                                <br>
+                                <br>
+                                <h2>Особенности</h2>
+                                <h4>Нескользящая черная резиновая основа с волнообразной фактурой</h4>
+                                <p>Гарантирует высокоточную работу сенсора, позволяя обойтись без лишних рывков</p>
+                                <br>
+                                <br>
+                                <h4>Толщина 5 мм</h4>
+                                <p>Идеальная толщина для наилучшего комфорта кисти руки. Износостойкий край с
+                                    прострочкой обеспечивает более долгий срок службы</p>
+                                <br>
+                                <br>
+                                <h4>Водонепроницаемая текстурная 3d поверхность</h4>
+                                <p>Обеспечивает максимально точное сцепление с мышью</p>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="slon__main__bg-desc" id="bg-desc1">
+                        <style>
+                            #bg-desc1 {
+                                background-image: url("./img/bg-desc1.jpg");
+                            }
+
+                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                                #bg-desc1 {
+                                    background-image: url("./img/bg-desc1@2.jpg");
+                                }
+                            }
+                        </style>
+                        <div class="container">
+                            <div class="row align-items-center slon__main__bg-desc__row">
+                                <div class="col-lg-6">
+                                    <div class="slon__main__bg-desc__text slon__main__text">
+                                        <h2>Непревзойденный комфорт</h2>
+                                        <h4>Эргономичная спинка с увеличенным подголовником</h4>
+                                        <p>Благодаря эргономичной спинке, вашей спине и шее будет комфортно на
+                                            протяжении длительного времени.</p>
+                                        <br><br>
+                                        <h4>Мягкие, удлиненные подлокотники</h4>
+                                        <p>Обеспечат максимальную поддержки рук и подарят невероятный комфорт.</p>
+                                        <br><br>
+                                        <h4>Дышащая ПВХ-кожа</h4>
+                                        <p>Его толстая высококачественная ПВХ-кожа прекрасна на ощупь и пропускает
+                                            воздух, обеспечивая оптимальную вентиляцию.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="slon__main__bg-desc" id="bg-desc2">
+                        <style>
+                            #bg-desc2 {
+                                background-image: url("./img/bg-desc2.jpg");
+                            }
+
+                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                                #bg-desc2 {
+                                    background-image: url("./img/bg-desc2@2.jpg");
+                                }
+                            }
+                        </style>
+                        <div class="container">
+                            <div class="row align-items-center slon__main__bg-desc__row">
+                                <div class="col-lg-6">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="slon__main__bg-desc__text slon__main__text">
+                                        <h2>Встроенные подушки</h2>
+                                        <p>Встроенные ортопедические подушки для поддержки шейного и позвоночного отделов.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="slon__main__bg-desc slon__main__bg-desc--center" id="bg-desc3">
+                        <style>
+                            #bg-desc3 {
+                                background-image: url("./img/bg-desc3.jpg");
+                            }
+
+                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                                #bg-desc3 {
+                                    background-image: url("./img/bg-desc3@2.jpg");
+                                }
+                            }
+                        </style>
+                        <div class="container">
+                            <div class="row justify-content-center text-center align-items-center slon__main__bg-desc__row">
+                                <div class="col-lg-5">
+                                    <div class="slon__main__text">
+                                        <h2>Качественные материалы</h2>
+                                        <p>Дышащая ПВХ-кожа - толстая высококачественная ПВХ-кожа прекрасна на ощупь и пропускает воздух, обеспечивая оптимальную вентиляцию.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="slon__main__img-desc">
+                        <div class="container">
+                            <div class="row fpad60 align-items-center">
+                                <div class="col-lg-6">
+                                    <img
+                                            src="./img/img1.jpg"
+                                            data-src="./img/img1.jpg"
+                                            data-srcset="./img/img1@2.jpg"
+                                            class="img-fluid"
+                                            alt=""
+                                    />
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="slon__main__text pt-2 pb-2">
+                                        <h2>Газлифт четвертого класса</h2>
+                                        <p>Для дополнительной надежности, газовый лифт защищен прочным стальным кожухом.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fpad60 align-items-center">
+
+                                <div class="col-lg-6">
+                                    <div class="slon__main__text pt-2 pb-2">
+                                        <h2>Газлифт четвертого класса</h2>
+                                        <p>Для дополнительной надежности, газовый лифт защищен прочным стальным кожухом.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img
+                                            src="./img/img1.jpg"
+                                            data-src="./img/img1.jpg"
+                                            data-srcset="./img/img1@2.jpg"
+                                            class="img-fluid"
+                                            alt=""
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 fpad60">
+                                    <img
+                                            src="./img/img1.jpg"
+                                            data-src="./img/img1.jpg"
+                                            data-srcset="./img/img1@2.jpg"
+                                            class="img-fluid"
+                                            alt=""
+                                    />
+                                    <div class="slon__main__text pt-4">
+                                        <h2>Газлифт четвертого класса</h2>
+                                        <p>Для дополнительной надежности, газовый лифт защищен прочным стальным кожухом.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 fpad60">
+                                    <img
+                                            src="./img/img1.jpg"
+                                            data-src="./img/img1.jpg"
+                                            data-srcset="./img/img1@2.jpg"
+                                            class="img-fluid"
+                                            alt=""
+                                    />
+                                    <div class="slon__main__text pt-4">
+                                        <h2>Газлифт четвертого класса</h2>
+                                        <p>Для дополнительной надежности, газовый лифт защищен прочным стальным кожухом.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 fpad60">
+                                    <img
+                                            src="./img/img1.jpg"
+                                            data-src="./img/img1.jpg"
+                                            data-srcset="./img/img1@2.jpg"
+                                            class="img-fluid"
+                                            alt=""
+                                    />
+                                    <div class="slon__main__text pt-4">
+                                        <h2>Газлифт четвертого класса</h2>
+                                        <p>Для дополнительной надежности, газовый лифт защищен прочным стальным кожухом.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 fpad60">
+                                    <img
+                                            src="./img/img1.jpg"
+                                            data-src="./img/img1.jpg"
+                                            data-srcset="./img/img1@2.jpg"
+                                            class="img-fluid"
+                                            alt=""
+                                    />
+                                    <div class="slon__main__text pt-4">
+                                        <h2>Газлифт четвертого класса</h2>
+                                        <p>Для дополнительной надежности, газовый лифт защищен прочным стальным кожухом.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 fpad60">
+                                    <img
+                                            src="./img/img1.jpg"
+                                            data-src="./img/img1.jpg"
+                                            data-srcset="./img/img1@2.jpg"
+                                            class="img-fluid"
+                                            alt=""
+                                    />
+                                    <div class="slon__main__text pt-4">
+                                        <h2>Газлифт четвертого класса</h2>
+                                        <p>Для дополнительной надежности, газовый лифт защищен прочным стальным кожухом.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="slon__main__section section" id="characteristic">
+
+                    <section>
+                        <div class="container">
+
+                            <div class="row tpad60 fpad60">
+                                <div class="col-lg-4 fpad30">
+                                    <div class="slon__main__caption">ХАРАКТЕРИСТИКИ</div>
+                                </div>
+                                <div class="col-lg-8 slon__main__characteristic">
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Название модели</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Цвет</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Для людей ростом от</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Нагрузка до</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Регулируемый подлокотник</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Колесики</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Крестовина</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Тип механизма</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Класс газлифта</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Материал каркаса</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+                                    <div class="slon__main__characteristic__row">
+                                        <div class="slon__main__characteristic__label">Гарантия</div>
+                                        <div class="slon__main__characteristic__value"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="slon__main__section section" id="driver">
+
+                    <section>
+                        <div class="container">
+                            <div class="row tpad60 fpad60">
+                                <div class="col-lg-4 fpad30">
+                                    <div class="slon__main__caption">ДрайверЫ и
+                                        инструкции
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="slon__main__single-product__footer">
+            <div class="container fpad60">
+                <aside class="slon__list-catalog tpad60">
+                    <div class="slon__list-catalog__caption">С этим товаром покупают</div>
+                    <div class="slon__list-catalog__wrap">
+                        <div class="slon__list-catalog__slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="slon__list-catalog__slider__item slon__product">
+                                        <div class="slon__list-catalog__slider__item__wrap">
+                                            <ul class="nav slon__product__fav-compare">
+                                                <li>
+                                                    <a href="" class="slon__product__favorite">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 238.38 238.43">
+                                                            <path d="M119.18,20.58c6.43-6.43,12.71-12.65,18.91-19A4.93,4.93,0,0,1,142,0c16.79,0,33.59,0,50.39.09a4.82,4.82,0,0,1,3.27,1.51c13.68,16.28,27.25,32.65,40.91,49a7.33,7.33,0,0,1,1.82,5.13q-.08,40,0,79.94a5.93,5.93,0,0,1-2.07,4.92q-52.42,48.26-104.76,96.58a5,5,0,0,1-3,1.22q-9.3.17-18.62,0a5,5,0,0,1-3-1.15Q54.12,188.6,1.48,139.85a5.13,5.13,0,0,1-1.42-3.37q-.12-40.71,0-81.43a6.72,6.72,0,0,1,1.43-4Q21.89,26.42,42.41,1.83A4.29,4.29,0,0,1,46.12,0c16.8.07,33.6,0,50.39.11a5.69,5.69,0,0,1,3.61,1.51C106.46,7.79,112.68,14.09,119.18,20.58ZM119.24,43c-.8-.75-1.41-1.29-2-1.87-7.84-7.84-15.71-15.65-23.49-23.55a5.21,5.21,0,0,0-4.12-1.67c-12.08.06-24.16,0-36.24.08a4.56,4.56,0,0,0-3.11,1.35Q33.61,37.17,17.1,57.18a5.66,5.66,0,0,0-1.16,3.31c-.06,22.92,0,45.84-.08,68.76a5,5,0,0,0,1.81,4q46.19,42.56,92.22,85.25c3.15,2.94,6.18,4.47,10.47,4.06,2.27-.22,4.14-.43,6-2.14q47.15-43.71,94.44-87.24a4.72,4.72,0,0,0,1.7-3.83c-.06-22.92,0-45.84-.11-68.76A6.37,6.37,0,0,0,221,56.9q-16.35-19.82-32.89-39.46A4.83,4.83,0,0,0,184.8,16c-12-.11-24,0-36-.11a5.46,5.46,0,0,0-4.32,1.78C136.19,26.09,127.8,34.43,119.24,43Z"></path>
+                                                            <path d="M163.41,36.92c4.13-3.45,8.06-6.72,12.19-10.18L182,34.36c7.09,8.51,14.2,17,21.24,25.57a4.89,4.89,0,0,1,1.23,2.79c.08,13.15.06,26.3.05,39.45a7.71,7.71,0,0,1-.14,1H188.61v-2.62c0-10.25-.05-20.51,0-30.77A6.9,6.9,0,0,0,186.82,65C179,55.73,171.33,46.43,163.41,36.92Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__product__compare">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 512 511.07">
+                                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="slon__list-catalog__product">
+                                                <div class="slon__product__discount">
+                                                    -10%
+                                                </div>
+                                                <div class="slon__list-catalog__product__pic">
+                                                    <div class="swiper-container js_slider_item_product">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                            alt=""
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                            alt=""
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                            </a>
+                                            <ul class="nav slon__list-catalog__product__politra">
+                                            </ul>
+                                            <div class="slon__list-catalog__product__price">
+                                        <span class="slon__product__price-value">26 091 <span
+                                                class="b-rub">Р</span></span>
+                                                <span class="slon__product__old-price-value">28 990 <span
+                                                        class="b-rub">Р</span></span>
+                                            </div>
+                                            <div class="slon__list-catalog__product__bay">
+                                                <button class="slon__btn-bay">
+                                                    <i></i> В КОРЗИНУ
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slon__list-catalog__slider__item slon__product">
+                                        <div class="slon__list-catalog__slider__item__wrap">
+                                            <ul class="nav slon__product__fav-compare">
+                                                <li>
+                                                    <a href="" class="slon__product__favorite">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 238.38 238.43">
+                                                            <path d="M119.18,20.58c6.43-6.43,12.71-12.65,18.91-19A4.93,4.93,0,0,1,142,0c16.79,0,33.59,0,50.39.09a4.82,4.82,0,0,1,3.27,1.51c13.68,16.28,27.25,32.65,40.91,49a7.33,7.33,0,0,1,1.82,5.13q-.08,40,0,79.94a5.93,5.93,0,0,1-2.07,4.92q-52.42,48.26-104.76,96.58a5,5,0,0,1-3,1.22q-9.3.17-18.62,0a5,5,0,0,1-3-1.15Q54.12,188.6,1.48,139.85a5.13,5.13,0,0,1-1.42-3.37q-.12-40.71,0-81.43a6.72,6.72,0,0,1,1.43-4Q21.89,26.42,42.41,1.83A4.29,4.29,0,0,1,46.12,0c16.8.07,33.6,0,50.39.11a5.69,5.69,0,0,1,3.61,1.51C106.46,7.79,112.68,14.09,119.18,20.58ZM119.24,43c-.8-.75-1.41-1.29-2-1.87-7.84-7.84-15.71-15.65-23.49-23.55a5.21,5.21,0,0,0-4.12-1.67c-12.08.06-24.16,0-36.24.08a4.56,4.56,0,0,0-3.11,1.35Q33.61,37.17,17.1,57.18a5.66,5.66,0,0,0-1.16,3.31c-.06,22.92,0,45.84-.08,68.76a5,5,0,0,0,1.81,4q46.19,42.56,92.22,85.25c3.15,2.94,6.18,4.47,10.47,4.06,2.27-.22,4.14-.43,6-2.14q47.15-43.71,94.44-87.24a4.72,4.72,0,0,0,1.7-3.83c-.06-22.92,0-45.84-.11-68.76A6.37,6.37,0,0,0,221,56.9q-16.35-19.82-32.89-39.46A4.83,4.83,0,0,0,184.8,16c-12-.11-24,0-36-.11a5.46,5.46,0,0,0-4.32,1.78C136.19,26.09,127.8,34.43,119.24,43Z"></path>
+                                                            <path d="M163.41,36.92c4.13-3.45,8.06-6.72,12.19-10.18L182,34.36c7.09,8.51,14.2,17,21.24,25.57a4.89,4.89,0,0,1,1.23,2.79c.08,13.15.06,26.3.05,39.45a7.71,7.71,0,0,1-.14,1H188.61v-2.62c0-10.25-.05-20.51,0-30.77A6.9,6.9,0,0,0,186.82,65C179,55.73,171.33,46.43,163.41,36.92Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__product__compare">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 512 511.07">
+                                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="slon__list-catalog__product">
+                                                <div class="slon__product__discount">
+                                                    -10%
+                                                </div>
+                                                <div class="slon__list-catalog__product__pic">
+                                                    <div class="swiper-container js_slider_item_product">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                            alt=""
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                            alt=""
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                            </a>
+                                            <ul class="nav slon__list-catalog__product__politra">
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #ff4545"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #73ba00"
+                                                    ></a>
+                                                </li>
+                                            </ul>
+                                            <div class="slon__list-catalog__product__price">
+                                        <span class="slon__product__price-value">26 091 <span
+                                                class="b-rub">Р</span></span>
+                                                <span class="slon__product__old-price-value">28 990 <span
+                                                        class="b-rub">Р</span></span>
+                                            </div>
+                                            <div class="slon__list-catalog__product__bay">
+                                                <button class="slon__btn-bay">
+                                                    <i></i> В КОРЗИНУ
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slon__list-catalog__slider__item slon__product">
+                                        <div class="slon__list-catalog__slider__item__wrap">
+                                            <ul class="nav slon__product__fav-compare">
+                                                <li>
+                                                    <a href="" class="slon__product__favorite">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 238.38 238.43">
+                                                            <path d="M119.18,20.58c6.43-6.43,12.71-12.65,18.91-19A4.93,4.93,0,0,1,142,0c16.79,0,33.59,0,50.39.09a4.82,4.82,0,0,1,3.27,1.51c13.68,16.28,27.25,32.65,40.91,49a7.33,7.33,0,0,1,1.82,5.13q-.08,40,0,79.94a5.93,5.93,0,0,1-2.07,4.92q-52.42,48.26-104.76,96.58a5,5,0,0,1-3,1.22q-9.3.17-18.62,0a5,5,0,0,1-3-1.15Q54.12,188.6,1.48,139.85a5.13,5.13,0,0,1-1.42-3.37q-.12-40.71,0-81.43a6.72,6.72,0,0,1,1.43-4Q21.89,26.42,42.41,1.83A4.29,4.29,0,0,1,46.12,0c16.8.07,33.6,0,50.39.11a5.69,5.69,0,0,1,3.61,1.51C106.46,7.79,112.68,14.09,119.18,20.58ZM119.24,43c-.8-.75-1.41-1.29-2-1.87-7.84-7.84-15.71-15.65-23.49-23.55a5.21,5.21,0,0,0-4.12-1.67c-12.08.06-24.16,0-36.24.08a4.56,4.56,0,0,0-3.11,1.35Q33.61,37.17,17.1,57.18a5.66,5.66,0,0,0-1.16,3.31c-.06,22.92,0,45.84-.08,68.76a5,5,0,0,0,1.81,4q46.19,42.56,92.22,85.25c3.15,2.94,6.18,4.47,10.47,4.06,2.27-.22,4.14-.43,6-2.14q47.15-43.71,94.44-87.24a4.72,4.72,0,0,0,1.7-3.83c-.06-22.92,0-45.84-.11-68.76A6.37,6.37,0,0,0,221,56.9q-16.35-19.82-32.89-39.46A4.83,4.83,0,0,0,184.8,16c-12-.11-24,0-36-.11a5.46,5.46,0,0,0-4.32,1.78C136.19,26.09,127.8,34.43,119.24,43Z"></path>
+                                                            <path d="M163.41,36.92c4.13-3.45,8.06-6.72,12.19-10.18L182,34.36c7.09,8.51,14.2,17,21.24,25.57a4.89,4.89,0,0,1,1.23,2.79c.08,13.15.06,26.3.05,39.45a7.71,7.71,0,0,1-.14,1H188.61v-2.62c0-10.25-.05-20.51,0-30.77A6.9,6.9,0,0,0,186.82,65C179,55.73,171.33,46.43,163.41,36.92Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__product__compare">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 512 511.07">
+                                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="slon__list-catalog__product">
+                                                <div class="slon__product__discount">
+                                                    -10%
+                                                </div>
+                                                <div class="slon__list-catalog__product__pic">
+                                                    <div class="swiper-container js_slider_item_product">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                            alt=""
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                            </a>
+                                            <ul class="nav slon__list-catalog__product__politra">
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #ff4545"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #73ba00"
+                                                    ></a>
+                                                </li>
+                                            </ul>
+                                            <div class="slon__list-catalog__product__price">
+                                        <span class="slon__product__price-value">26 091 <span
+                                                class="b-rub">Р</span></span>
+                                                <span class="slon__product__old-price-value">28 990 <span
+                                                        class="b-rub">Р</span></span>
+                                            </div>
+                                            <div class="slon__list-catalog__product__bay">
+                                                <button class="slon__btn-bay">
+                                                    <i></i> В КОРЗИНУ
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slon__list-catalog__slider__item slon__product">
+                                        <div class="slon__list-catalog__slider__item__wrap">
+                                            <ul class="nav slon__product__fav-compare">
+                                                <li>
+                                                    <a href="" class="slon__product__favorite">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 238.38 238.43">
+                                                            <path d="M119.18,20.58c6.43-6.43,12.71-12.65,18.91-19A4.93,4.93,0,0,1,142,0c16.79,0,33.59,0,50.39.09a4.82,4.82,0,0,1,3.27,1.51c13.68,16.28,27.25,32.65,40.91,49a7.33,7.33,0,0,1,1.82,5.13q-.08,40,0,79.94a5.93,5.93,0,0,1-2.07,4.92q-52.42,48.26-104.76,96.58a5,5,0,0,1-3,1.22q-9.3.17-18.62,0a5,5,0,0,1-3-1.15Q54.12,188.6,1.48,139.85a5.13,5.13,0,0,1-1.42-3.37q-.12-40.71,0-81.43a6.72,6.72,0,0,1,1.43-4Q21.89,26.42,42.41,1.83A4.29,4.29,0,0,1,46.12,0c16.8.07,33.6,0,50.39.11a5.69,5.69,0,0,1,3.61,1.51C106.46,7.79,112.68,14.09,119.18,20.58ZM119.24,43c-.8-.75-1.41-1.29-2-1.87-7.84-7.84-15.71-15.65-23.49-23.55a5.21,5.21,0,0,0-4.12-1.67c-12.08.06-24.16,0-36.24.08a4.56,4.56,0,0,0-3.11,1.35Q33.61,37.17,17.1,57.18a5.66,5.66,0,0,0-1.16,3.31c-.06,22.92,0,45.84-.08,68.76a5,5,0,0,0,1.81,4q46.19,42.56,92.22,85.25c3.15,2.94,6.18,4.47,10.47,4.06,2.27-.22,4.14-.43,6-2.14q47.15-43.71,94.44-87.24a4.72,4.72,0,0,0,1.7-3.83c-.06-22.92,0-45.84-.11-68.76A6.37,6.37,0,0,0,221,56.9q-16.35-19.82-32.89-39.46A4.83,4.83,0,0,0,184.8,16c-12-.11-24,0-36-.11a5.46,5.46,0,0,0-4.32,1.78C136.19,26.09,127.8,34.43,119.24,43Z"></path>
+                                                            <path d="M163.41,36.92c4.13-3.45,8.06-6.72,12.19-10.18L182,34.36c7.09,8.51,14.2,17,21.24,25.57a4.89,4.89,0,0,1,1.23,2.79c.08,13.15.06,26.3.05,39.45a7.71,7.71,0,0,1-.14,1H188.61v-2.62c0-10.25-.05-20.51,0-30.77A6.9,6.9,0,0,0,186.82,65C179,55.73,171.33,46.43,163.41,36.92Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__product__compare">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 512 511.07">
+                                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="slon__list-catalog__product">
+                                                <div class="slon__product__discount">
+                                                    -10%
+                                                </div>
+                                                <div class="slon__list-catalog__product__pic">
+                                                    <div class="swiper-container js_slider_item_product">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                            </a>
+                                            <ul class="nav slon__list-catalog__product__politra">
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #ff4545"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #73ba00"
+                                                    ></a>
+                                                </li>
+                                            </ul>
+                                            <div class="slon__list-catalog__product__price">
+                                        <span class="slon__product__price-value">26 091 <span
+                                                class="b-rub">Р</span></span>
+                                                <span class="slon__product__old-price-value">28 990 <span
+                                                        class="b-rub">Р</span></span>
+                                            </div>
+                                            <div class="slon__list-catalog__product__bay">
+                                                <button class="slon__btn-bay">
+                                                    <i></i> В КОРЗИНУ
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slon__list-catalog__slider__item slon__product">
+                                        <div class="slon__list-catalog__slider__item__wrap">
+                                            <ul class="nav slon__product__fav-compare">
+                                                <li>
+                                                    <a href="" class="slon__product__favorite">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 238.38 238.43">
+                                                            <path d="M119.18,20.58c6.43-6.43,12.71-12.65,18.91-19A4.93,4.93,0,0,1,142,0c16.79,0,33.59,0,50.39.09a4.82,4.82,0,0,1,3.27,1.51c13.68,16.28,27.25,32.65,40.91,49a7.33,7.33,0,0,1,1.82,5.13q-.08,40,0,79.94a5.93,5.93,0,0,1-2.07,4.92q-52.42,48.26-104.76,96.58a5,5,0,0,1-3,1.22q-9.3.17-18.62,0a5,5,0,0,1-3-1.15Q54.12,188.6,1.48,139.85a5.13,5.13,0,0,1-1.42-3.37q-.12-40.71,0-81.43a6.72,6.72,0,0,1,1.43-4Q21.89,26.42,42.41,1.83A4.29,4.29,0,0,1,46.12,0c16.8.07,33.6,0,50.39.11a5.69,5.69,0,0,1,3.61,1.51C106.46,7.79,112.68,14.09,119.18,20.58ZM119.24,43c-.8-.75-1.41-1.29-2-1.87-7.84-7.84-15.71-15.65-23.49-23.55a5.21,5.21,0,0,0-4.12-1.67c-12.08.06-24.16,0-36.24.08a4.56,4.56,0,0,0-3.11,1.35Q33.61,37.17,17.1,57.18a5.66,5.66,0,0,0-1.16,3.31c-.06,22.92,0,45.84-.08,68.76a5,5,0,0,0,1.81,4q46.19,42.56,92.22,85.25c3.15,2.94,6.18,4.47,10.47,4.06,2.27-.22,4.14-.43,6-2.14q47.15-43.71,94.44-87.24a4.72,4.72,0,0,0,1.7-3.83c-.06-22.92,0-45.84-.11-68.76A6.37,6.37,0,0,0,221,56.9q-16.35-19.82-32.89-39.46A4.83,4.83,0,0,0,184.8,16c-12-.11-24,0-36-.11a5.46,5.46,0,0,0-4.32,1.78C136.19,26.09,127.8,34.43,119.24,43Z"></path>
+                                                            <path d="M163.41,36.92c4.13-3.45,8.06-6.72,12.19-10.18L182,34.36c7.09,8.51,14.2,17,21.24,25.57a4.89,4.89,0,0,1,1.23,2.79c.08,13.15.06,26.3.05,39.45a7.71,7.71,0,0,1-.14,1H188.61v-2.62c0-10.25-.05-20.51,0-30.77A6.9,6.9,0,0,0,186.82,65C179,55.73,171.33,46.43,163.41,36.92Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__product__compare">
+                                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                             viewBox="0 0 512 511.07">
+                                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="slon__list-catalog__product">
+                                                <div class="slon__product__discount">
+                                                    -10%
+                                                </div>
+                                                <div class="slon__list-catalog__product__pic">
+                                                    <div class="swiper-container js_slider_item_product">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="slon__list-catalog__product__pic__item">
+                                                                    <img
+                                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                            data-src="./img/t1.png"
+                                                                            data-srcset="./img/t1@2.png 2x"
+                                                                            class="swiper-lazy"
+                                                                    />
+                                                                    <div class="swiper-lazy-preloader"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                                </div>
+                                                <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                            </a>
+                                            <ul class="nav slon__list-catalog__product__politra">
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #ff4545"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #73ba00"
+                                                    ></a>
+                                                </li>
+                                            </ul>
+                                            <div class="slon__list-catalog__product__price">
+                                        <span class="slon__product__price-value">26 091 <span
+                                                class="b-rub">Р</span></span>
+                                                <span class="slon__product__old-price-value">28 990 <span
+                                                        class="b-rub">Р</span></span>
+                                            </div>
+                                            <div class="slon__list-catalog__product__bay">
+                                                <button class="slon__btn-bay">
+                                                    <i></i> В КОРЗИНУ
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination scroll"></div>
+                            <div class="swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">
+                                    <path d="M281.2,226.8,62.25,7.86a27,27,0,0,0-38.06,0L8.06,24A27,27,0,0,0,8.06,62L191.92,245.9,7.86,430a27,27,0,0,0,0,38.07L24,484.14a27,27,0,0,0,38.07,0L281.2,265a27.16,27.16,0,0,0,0-38.2Z"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">
+                                    <path class="cls-1"
+                                          d="M7.85,265.2l219,218.94a27,27,0,0,0,38.06,0L281,468A26.93,26.93,0,0,0,281,430L97.13,246.1,281.19,62a27,27,0,0,0,0-38.06L265.06,7.86a27,27,0,0,0-38.06,0L7.85,227a27.16,27.16,0,0,0,0,38.2Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
     </div>
-
-
     <footer class="slon__main__footer">
         <div class="container">
             <div class="row fpad30">
@@ -645,6 +1445,7 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"></script>
 <script src="./js/lightslider.js"></script>
+<script src="./js/waypoints.min.js"></script>
 
 
 </body>
