@@ -89,6 +89,21 @@ if (document.getElementById("bannerSlider")) {
     });
 }
 
+if (document.getElementsByClassName("slon__complect__slider").length) {
+    let swiperComplect = new Swiper('.slon__complect__slider', {
+        pagination: {
+            el: '.swiper-pagination--complect',
+            clickable: true,
+        },
+        /*simulateTouch: false,*/
+        loop: false,
+        navigation: {
+            nextEl: '.swiper-button-next--complect',
+            prevEl: '.swiper-button-prev--complect',
+        },
+    });
+}
+
 //alertify.error('Error message');
 
 function validateEmail(email) {
@@ -110,6 +125,17 @@ function validateCheckbox(checkbox) {
         return true;
     }
 }
+
+function countProduct(action) {
+    let count = parseInt(document.getElementById('countProduct').value);
+    if (action == 'plus') {
+        document.getElementById('countProduct').value = count + 1;
+    }
+    if (action == 'minus' && count > 1) {
+        document.getElementById('countProduct').value = count * 1 - 1;
+    }
+}
+
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
@@ -178,3 +204,46 @@ function hoverSubMenu(box, imgSrc, link, title) {
     document.getElementById(box).innerHTML = "<a href='" + link + "'><div><img alt='" + title + "' src='" + imgSrc + "' /></div>" + title + "</a>";
 }
 
+/**
+ * модалка при добавлении товара в корзину
+ */
+if (document.getElementById('cartModal')) {
+
+    let cartModal = document.getElementById('cartModal');
+    let relevantSliderPopup = '';
+    cartModal.addEventListener('shown.bs.modal', function (event) {
+        if(relevantSliderPopup === '') {
+            swiperRelevantSliderPopup();
+        }
+    });
+
+    function swiperRelevantSliderPopup() {
+        relevantSliderPopup = new Swiper('#relevantSliderPopup', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 4,
+            spaceBetween: 10,
+            lazy: true,
+            breakpoints: {
+                440: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                991: {
+                    slidesPerView: 3,
+                },
+                1180: {
+                    slidesPerView: 4,
+                },
+            }
+        });
+    }
+}
