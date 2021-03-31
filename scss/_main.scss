@@ -2973,3 +2973,97 @@ a:hover {
   font-weight: 500;
   color: #fff;
 }
+
+.slon-form--subscription {
+  .slon-form__submit {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      width: 7px;
+      height: 1px;
+      background-color: #7a7a7a;
+    }
+    &:hover {
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+  .slon-form__submit__btn {
+    height: 50px !important;
+    background-image: none !important;
+    background-color: #eee417;
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #060606;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 200px;
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 7px solid #000;
+      border-right: 7px solid transparent;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+    }
+    &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-bottom: 7px solid #000;
+      border-left: 7px solid transparent;
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      right: 0;
+      transition: all ease-in 0.2s;
+    }
+    &:hover {
+      &::before {
+        bottom: -10px;
+        right: -10px;
+      }
+      &::after {
+        top: -10px;
+        left: -10px;
+      }
+    }
+  }
+}
+.slon__main__submit-btn-box.slon__main__submit-btn-box--black {
+  &::after,
+  &::before {
+    background-color: #000 !important;
+  }
+}
+.modal-dialog__send-ok {
+  padding-bottom: 30px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.modal-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 5px;
+}

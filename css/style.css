@@ -12895,6 +12895,99 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
   font-weight: 500;
   color: #fff; }
 
+.slon-form--subscription .slon-form__submit {
+  position: relative; }
+  .slon-form--subscription .slon-form__submit::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 1px;
+    background-color: #7a7a7a; }
+  .slon-form--subscription .slon-form__submit:hover::after {
+    opacity: 0; }
+.slon-form--subscription .slon-form__submit__btn {
+  height: 50px !important;
+  background-image: none !important;
+  background-color: #eee417;
+  position: relative;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #060606;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 200px; }
+  .slon-form--subscription .slon-form__submit__btn::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid #000;
+    border-right: 7px solid transparent;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0; }
+  .slon-form--subscription .slon-form__submit__btn::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid #000;
+    border-left: 7px solid transparent;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: all ease-in 0.2s;
+    transition: all ease-in 0.2s; }
+  .slon-form--subscription .slon-form__submit__btn:hover::before {
+    bottom: -10px;
+    right: -10px; }
+  .slon-form--subscription .slon-form__submit__btn:hover::after {
+    top: -10px;
+    left: -10px; }
+
+.slon__main__submit-btn-box.slon__main__submit-btn-box--black::after, .slon__main__submit-btn-box.slon__main__submit-btn-box--black::before {
+  background-color: #000 !important; }
+
+.modal-dialog__send-ok {
+  padding-bottom: 30px;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+
+.modal-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 5px; }
+
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2016 Sachin N; Licensed MIT */
@@ -14748,6 +14841,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     height: 45px; }
   .slon__main__input-box textarea {
     height: 140px; }
+    .slon__main__input-box textarea.h-90 {
+      height: 90px; }
   .slon__main__input-box::before {
     width: 14px;
     height: 14px;
@@ -14798,7 +14893,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     text-transform: uppercase;
     font-weight: bold;
     color: #060606;
-    background: #eee417; }
+    background: #eee417;
+    border-radius: 0 !important; }
   .slon__main__submit-btn-box::before {
     width: 14px;
     height: 14px;
@@ -14837,8 +14933,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .slon__main__form-persona span {
   color: #a9a9a9;
   font-size: 10px;
-  line-height: 12px;
-  margin-top: -5px; }
+  line-height: 12px; }
   .slon__main__form-persona span a {
     color: #a9a9a9;
     text-decoration: underline; }
@@ -15104,6 +15199,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: inline-block;
   height: 24px;
   width: 26px;
+  min-width: 26px;
   background: url("../img/svg/ico-cart.svg") 50% 50% no-repeat;
   background-size: cover;
   vertical-align: top;
@@ -15414,9 +15510,69 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: inline-block;
   height: 24px;
   width: 26px;
+  min-width: 26px;
   background: url(../img/svg/ico-cart2.svg) 50% 50% no-repeat;
   background-size: cover;
   vertical-align: top;
   margin-right: 10px; }
+
+.one-bay-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .one-bay-product .one-bay-product__col-product {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    padding-right: 30px;
+    min-width: 300px; }
+    .one-bay-product .one-bay-product__col-product .slon__product__min-product {
+      padding: 0 30px; }
+      .one-bay-product .one-bay-product__col-product .slon__product__min-product .slon__product__min-product__images {
+        height: 305px; }
+      .one-bay-product .one-bay-product__col-product .slon__product__min-product .slon__product__min-product__title {
+        text-align: center; }
+      .one-bay-product .one-bay-product__col-product .slon__product__min-product .slon_main__min-product__color__active {
+        margin-left: auto;
+        margin-right: auto; }
+      .one-bay-product .one-bay-product__col-product .slon__product__min-product .slon_main__min-product__price {
+        text-align: center;
+        padding-bottom: 20px; }
+        .one-bay-product .one-bay-product__col-product .slon__product__min-product .slon_main__min-product__price .slon__product__price-value {
+          margin-right: 5px; }
+    .one-bay-product .one-bay-product__col-product .slon__product__min-product__badge {
+      margin-left: -30px; }
+  .one-bay-product .one-bay-product__col-form {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+
+.slon__main__form__label {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 0 8px 20px; }
+
+.slon__main__form__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .slon__main__form__footer .slon__main__form__footer__col-persona {
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-right: 30px; }
+  .slon__main__form__footer .slon__main__form__footer__col-submit {
+    -ms-flex-preferred-size: 170px;
+        flex-basis: 170px; }
+
+input:focus,
+input:active {
+  outline: none;
+  border-radius: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -498,7 +498,10 @@
                                 </li>
                             </ul>
                             <div class="slon__main__single-product__razmer__info">
-                                <a href="" class="slon__main__link">Размерная сетка</a>
+                                <a href="" class="slon__main__link" data-toggle="modal"
+                                   data-target="#razmerModal">
+                                    Размерная сетка
+                                </a>
                             </div>
                         </div>
                         <!-- выбор цвета -->
@@ -534,7 +537,8 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6 fpad15">
-                                    <button class="slon__btn-border">
+                                    <button class="slon__btn-border" data-toggle="modal"
+                                            data-target="#oneBayModal">
                                         <span>Купить в 1 клик</span>
                                     </button>
                                 </div>
@@ -838,7 +842,6 @@
                     </section>
                 </div>
                 <div class="slon__main__section section" id="characteristic">
-
                     <section class="section__border">
                         <div class="container">
 
@@ -1012,6 +1015,14 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-8 slon__main__single-product__reviews tpad60 fpad60">
+                                    <!--если нет отзывов -->
+                                    <div class="slon__main__caption">
+                                        ОБ ЭТОМ ТОВАРЕ ОТЗЫВОВ НЕТ
+                                    </div>
+                                    <div class="slon__main__text pt-2">Cтаньте первым, кто оставит отзыв об этом
+                                        товаре
+                                    </div>
+                                    <!--если есть отзывы -->
                                     <div class="slon__main__caption">
                                         ОТЗЫВЫ <span class="slon__main__single-product__reviews__count">15</span>
                                     </div>
@@ -1196,7 +1207,7 @@
                                     <div class="slon__main__single-product__reviews__add-form ">
                                         <div class="slon__main__review__form">
                                             <div class="slon__main__review__form__title">Оставить отзыв</div>
-                                            <form action="">
+                                            <form action="" id="addReviewsForm">
                                                 <div class="slon__main__review__form__wrap">
                                                     <div class="slon__main__review__form__rating">
                                                         <div class="slon__review__form__rating__label">
@@ -1237,11 +1248,15 @@
                                                     </div>
                                                     <div class="slon__main__input-box">
                                                         <input type="text" placeholder="Ваше имя" name="fio"
-                                                               class="slon__main__inp" required>
+                                                               class="slon__main__inp"
+                                                               id="reviews_name"
+                                                               required>
                                                     </div>
                                                     <div class="slon__main__input-box">
                                                         <input type="email" placeholder="Ваш E-mail" name="email"
-                                                               class="slon__main__inp" required>
+                                                               class="slon__main__inp"
+                                                               id="reviews_email"
+                                                               required>
                                                     </div>
                                                     <div class="slon__main__input-box">
                                                         <textarea placeholder="Отзыв" name="rev"
@@ -1249,11 +1264,15 @@
                                                     </div>
                                                     <div class="slon__main__submit-btn-box">
                                                         <input type="submit" value="ОТПРАВИТЬ"
-                                                               class="slon__main__btn-yellow">
+                                                               class="slon__main__btn-yellow"
+                                                                id="addReviewsSubmit"
+                                                        >
                                                     </div>
                                                     <div class="slon__main__form-persona">
                                                         <label class="smart-filter__checkbox">
-                                                            <input type="checkbox" value="1" name="pol" checked
+                                                            <input type="checkbox"
+                                                                   id="reviews_persona"
+                                                                   value="1" name="pol" checked
                                                                    required>
                                                             <span>Я подтверждаю, что ознакомлен с<br>
                                                                 Политикой обработки <a
@@ -2006,12 +2025,11 @@
                                         <div class="col-lg-6">
                                             <div class="slon__subscription__promo">
                                                 <div class="slon__subscription__promo__caption">Хочешь скидку?</div>
-                                                <div class="slon__subscription__promo__text">Подпишись на рассылку!
-                                                </div>
+                                                <div class="slon__subscription__promo__text">Подпишись на рассылку!</div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <form id="subscription2" class="slon-form" action="">
+                                            <form id="subscription2" class="slon-form slon-form--subscription" action="">
                                                 <div class="d-flex slon-form__row-inp">
                                                     <div class="slon-form__input">
                                                         <div class="slon-form__input__inner">
@@ -2021,7 +2039,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="slon-form__submit">
-                                                        <button class="slon__btn-orange" id="submitSubscription2"
+                                                        <button class="slon-form__submit__btn" id="submitSubscription2"
                                                                 type="submit">
                                                             ПОДПИСАТЬСЯ
                                                         </button>
@@ -2029,8 +2047,7 @@
                                                 </div>
                                                 <div class="slon-form__politika">
                                                     <label class="slon-form__politika__inp">
-                                                        <input id="politikaSubscription2" type="checkbox"
-                                                               name="politika"
+                                                        <input id="politikaSubscription2" type="checkbox" name="politika"
                                                                value="1" checked>
                                                         <span>
                                                     Я подтверждаю, что ознакомлен с <a href="" target="_blank">Политикой обработки персональных данных</a>
@@ -2314,7 +2331,7 @@
                     <div class="col-md-3">
                         <div class="slon__product__count-box">
                             <button class="slon__product__count-box__nav slon__product__count-box__nav--minus"
-                                    onclick="countProduct('minus')">
+                                    onclick="countProduct('minus', 'countProduct')">
                                 <svg width="12" height="12">
                                     <use xlink:href="#svg-minus"></use>
                                 </svg>
@@ -2322,7 +2339,7 @@
                             <input type="text" value="1" readonly class="slon__product__count-box__value"
                                    id="countProduct">
                             <button class="slon__product__count-box__nav slon__product__count-box__nav--plus"
-                                    onclick="countProduct('plus')">
+                                    onclick="countProduct('plus', 'countProduct')">
                                 <svg width="12" height="12">
                                     <use xlink:href="#svg-plus"></use>
                                 </svg>
@@ -2367,10 +2384,12 @@
                                             </a>
                                             <ul class="nav slon__list-catalog__product__politra">
                                                 <li>
-                                                    <a href="" class="slon__list-catalog__product__politra__color" style="background: #ff4545"></a>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #ff4545"></a>
                                                 </li>
                                                 <li>
-                                                    <a href="" class="slon__list-catalog__product__politra__color" style="background: #73ba00"></a>
+                                                    <a href="" class="slon__list-catalog__product__politra__color"
+                                                       style="background: #73ba00"></a>
                                                 </li>
                                             </ul>
                                             <div class="slon__list-catalog__product__price">
@@ -2380,7 +2399,8 @@
                                                 <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
                                             </div>
                                             <div class="slon__product__min-product__bay">
-                                                <button class="slon__btn-border slon__btn-border--min" data-dismiss="modal">
+                                                <button class="slon__btn-border slon__btn-border--min"
+                                                        data-dismiss="modal">
                                                     <span><i class="ico-cart2"></i> В КОРЗИНУ</span>
                                                 </button>
                                             </div>
@@ -2419,7 +2439,8 @@
                                                 <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
                                             </div>
                                             <div class="slon__product__min-product__bay">
-                                                <button class="slon__btn-border slon__btn-border--min" data-dismiss="modal">
+                                                <button class="slon__btn-border slon__btn-border--min"
+                                                        data-dismiss="modal">
                                                     <span><i class="ico-cart2"></i> В КОРЗИНУ</span>
                                                 </button>
                                             </div>
@@ -2453,7 +2474,8 @@
                                                 <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
                                             </div>
                                             <div class="slon__product__min-product__bay">
-                                                <button class="slon__btn-border slon__btn-border--min" data-dismiss="modal">
+                                                <button class="slon__btn-border slon__btn-border--min"
+                                                        data-dismiss="modal">
                                                     <span><i class="ico-cart2"></i> В КОРЗИНУ</span>
                                                 </button>
                                             </div>
@@ -2487,7 +2509,8 @@
                                                 <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
                                             </div>
                                             <div class="slon__product__min-product__bay">
-                                                <button class="slon__btn-border slon__btn-border--min" data-dismiss="modal">
+                                                <button class="slon__btn-border slon__btn-border--min"
+                                                        data-dismiss="modal">
                                                     <span><i class="ico-cart2"></i> В КОРЗИНУ</span>
                                                 </button>
                                             </div>
@@ -2521,7 +2544,8 @@
                                                 <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
                                             </div>
                                             <div class="slon__product__min-product__bay">
-                                                <button class="slon__btn-border slon__btn-border--min" data-dismiss="modal">
+                                                <button class="slon__btn-border slon__btn-border--min"
+                                                        data-dismiss="modal">
                                                     <span><i class="ico-cart2"></i> В КОРЗИНУ</span>
                                                 </button>
                                             </div>
@@ -2560,7 +2584,8 @@
                                                 <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
                                             </div>
                                             <div class="slon__product__min-product__bay">
-                                                <button class="slon__btn-border slon__btn-border--min" data-dismiss="modal">
+                                                <button class="slon__btn-border slon__btn-border--min"
+                                                        data-dismiss="modal">
                                                     <span><i class="ico-cart2"></i> В КОРЗИНУ</span>
                                                 </button>
                                             </div>
@@ -2589,6 +2614,199 @@
     </div>
 </div>
 
+<div class="modal fade" id="oneBayModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-content__left"></div>
+            <div class="modal-content__right"></div>
+            <div class="modal-header">
+                <div class="modal-title">Купить в 1 клик</div>
+                <button class="close" data-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="fpad30">
+                <div class="one-bay-product slon__product">
+                    <div class="one-bay-product__col-product">
+                        <div class="slon__product__min-product">
+                            <div class="slon__product__min-product__images">
+                                <ul class="nav slon__product__min-product__badge slon__badge">
+                                    <li class="slon__main__single-product__badge__item">
+                                        <span class="slon__badge__discount">-10%</span>
+                                    </li>
+                                </ul>
+                                <img
+                                        src="./img/t1.png"
+                                        data-src="./img/t1.png"
+                                        data-srcset="./img/t1@2.png 2x"
+                                        alt=""
+                                />
+                            </div>
+                            <div class="slon__product__min-product__desc">
+                                <div class="slon__product__min-product__title">
+                                    Кресло компьютерное игровое Cougar FUSION Orange
+                                </div>
+                                <div class="slon_main__min-product__color">
+                                    <div class="slon_main__min-product__color__active"
+                                         style="background: #ff4545"></div>
+                                </div>
+                                <div class="slon_main__min-product__price">
+                                    <span class="slon__product__price-value">26 091 <span class="b-rub">Р</span></span>
+                                    <span class="slon__product__old-price-value">28 990 <span
+                                            class="b-rub">Р</span></span>
+                                </div>
+                            </div>
+                            <div class="slon__product__count-box">
+                                <button class="slon__product__count-box__nav slon__product__count-box__nav--minus"
+                                        onclick="countProduct('minus', 'countProduct2')">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-minus"></use>
+                                    </svg>
+                                </button>
+                                <input type="text" value="1" readonly class="slon__product__count-box__value"
+                                       id="countProduct2">
+                                <button class="slon__product__count-box__nav slon__product__count-box__nav--plus"
+                                        onclick="countProduct('plus', 'countProduct2')">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-bay-product__col-form">
+                        <form action="" class="slon__main__form" id="oneBayClickForm">
+                            <label class="slon__main__form__label" for="one_bay_name">Ваше имя *</label>
+                            <div class="slon__main__input-box">
+                                <input type="text" id="one_bay_name" name="one_bay_name" class="slon__main__inp"
+                                       required="">
+                            </div>
+                            <label class="slon__main__form__label" for="one_bay_phone">Номер телефона *</label>
+                            <div class="slon__main__input-box">
+                                <input type="tel" id="one_bay_phone" name="one_bay_phone" class="slon__main__inp"
+                                       required="">
+                            </div>
+                            <label class="slon__main__form__label" for="one_bay_email">E-mail *</label>
+                            <div class="slon__main__input-box">
+                                <input type="email" id="one_bay_email" name="one_bay_email" class="slon__main__inp"
+                                       required="">
+                            </div>
+                            <label class="slon__main__form__label" for="one_bay_comment">Комментарий</label>
+                            <div class="slon__main__input-box">
+                                <textarea name="one_bay_comment" id="one_bay_comment"
+                                          class="slon__main__inp h-90"></textarea>
+                            </div>
+                            <div class="slon__main__form__footer">
+                                <div class="slon__main__form__footer__col-persona">
+                                    <div class="slon__main__form-persona">
+                                        <label class="smart-filter__checkbox">
+                                            <input id="oneBayClickPolitika" type="checkbox" value="1" name="pol" checked="" required="">
+                                            <span>
+                                            Я подтверждаю, что ознакомлен с<br>
+                                            Политикой обработки <a href="">персональных данных</a>
+                                        </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="slon__main__form__footer__col-submit">
+                                    <div class="slon__main__submit-btn-box">
+                                        <input id="oneBayClickSubmit" type="submit" value="КУПИТЬ" class="slon__main__btn-yellow">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="razmerModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-content__left"></div>
+            <div class="modal-content__right"></div>
+            <div class="modal-header">
+                <div class="modal-title">Размерная сетка</div>
+                <button class="close" data-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="fpad30 slon__main__characteristic">
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Название модели</div>
+                        <div class="slon__main__characteristic__value">COUGAR Fusion</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Цвет</div>
+                        <div class="slon__main__characteristic__value">Черный с оранжевой отделкой</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Для людей ростом от</div>
+                        <div class="slon__main__characteristic__value">160 до 180 см</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Нагрузка до</div>
+                        <div class="slon__main__characteristic__value">120 кг</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Регулируемый подлокотник</div>
+                        <div class="slon__main__characteristic__value">Нет, фиксированный</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Колесики</div>
+                        <div class="slon__main__characteristic__value"> 5 см, полиуретан</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Крестовина</div>
+                        <div class="slon__main__characteristic__value">Металл</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Тип механизма</div>
+                        <div class="slon__main__characteristic__value">Топ ган</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Класс газлифта</div>
+                        <div class="slon__main__characteristic__value">4-й класс</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Материал каркаса</div>
+                        <div class="slon__main__characteristic__value">Фанера + металл</div>
+                    </div>
+                    <div class="slon__main__characteristic__row">
+                        <div class="slon__main__characteristic__label">Гарантия</div>
+                        <div class="slon__main__characteristic__value">1 год</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sendOkModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-content__left"></div>
+            <div class="modal-content__right"></div>
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </button>
+                <div class="modal-dialog__send-ok">
+                    <div class="modal-title">Спасибо за честный отзыв!</div>
+                    <div class="modal-text">Он будет опубликован после проверки модератором.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>

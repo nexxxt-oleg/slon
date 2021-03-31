@@ -104,13 +104,23 @@ if (document.getElementsByClassName("slon__complect__slider").length) {
     });
 }
 
-//alertify.error('Error message');
+
 
 function validateEmail(email) {
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     var address = document.getElementById(email).value;
     if (reg.test(address) == false) {
         alertify.error('Введите корректный e-mail');
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function validateText(input, error_text) {
+    var inpValue = document.getElementById(input).value;
+    if (inpValue === '') {
+        alertify.error(error_text);
         return false;
     } else {
         return true;
@@ -126,13 +136,15 @@ function validateCheckbox(checkbox) {
     }
 }
 
-function countProduct(action) {
-    let count = parseInt(document.getElementById('countProduct').value);
-    if (action == 'plus') {
-        document.getElementById('countProduct').value = count + 1;
-    }
-    if (action == 'minus' && count > 1) {
-        document.getElementById('countProduct').value = count * 1 - 1;
+function countProduct(action, input) {
+    if (document.getElementById(input)) {
+        let count = parseInt(document.getElementById(input).value);
+        if (action == 'plus') {
+            document.getElementById(input).value = count + 1;
+        }
+        if (action == 'minus' && count > 1) {
+            document.getElementById(input).value = count * 1 - 1;
+        }
     }
 }
 
@@ -177,6 +189,51 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
     }
 
+    if (document.getElementById("oneBayClickSubmit")) {
+        document.getElementById('oneBayClickSubmit').onclick = function () {
+            /**
+             * форма купить в один клик
+             *
+             */
+            if (
+                validateText('one_bay_name', 'Введите Имя') &&
+                validateText('one_bay_phone', 'Укажите номер телефона') &&
+                validateEmail('one_bay_email') &&
+                validateCheckbox('oneBayClickPolitika')
+            ) {
+                /**
+                 * тут аякс куда слать данные
+                 */
+                alertify.success('Success message');
+                document.getElementById('oneBayClickForm').reset();
+            }
+            return false;
+        }
+    }
+
+    if (document.getElementById("addReviewsSubmit")) {
+        document.getElementById('addReviewsSubmit').onclick = function () {
+            /**
+             * форма добавить отзыв
+             *
+             */
+            if (
+                validateText('reviews_name', 'Введите Имя') &&
+                validateEmail('reviews_email') &&
+                validateCheckbox('reviews_persona')
+            ) {
+                /**
+                 * тут аякс куда слать данные
+                 */
+
+                let sendOk = new bootstrap.Modal(document.getElementById('sendOkModal'), {});
+                sendOk.show();
+                document.getElementById('addReviewsForm').reset();
+            }
+            return false;
+        }
+    }
+
 
     let filterItemBox = document.querySelectorAll('.smart-filter__item__title');
     [].forEach.call(filterItemBox, function (elem) {
@@ -208,6 +265,8 @@ function hoverSubMenu(box, imgSrc, link, title) {
  * модалка при добавлении товара в корзину
  */
 if (document.getElementById('cartModal')) {
+
+
 
     let cartModal = document.getElementById('cartModal');
     let relevantSliderPopup = '';

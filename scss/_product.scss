@@ -2336,6 +2336,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   textarea {
     height: 140px;
+    &.h-90 {
+      height: 90px;
+    }
   }
 
   &::before {
@@ -2396,6 +2399,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-weight: bold;
     color: #060606;
     background: #eee417;
+    border-radius: 0 !important;
   }
 
   &::before {
@@ -2444,7 +2448,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     color: #a9a9a9;
     font-size: 10px;
     line-height: 12px;
-    margin-top: -5px;
 
     a {
       color: #a9a9a9;
@@ -2747,6 +2750,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: inline-block;
   height: 24px;
   width: 26px;
+  min-width: 26px;
   background: url("../img/svg/ico-cart.svg") 50% 50% no-repeat;
   background-size: cover;
   vertical-align: top;
@@ -3097,8 +3101,67 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: inline-block;
   height: 24px;
   width: 26px;
+  min-width: 26px;
   background: url(../img/svg/ico-cart2.svg) 50% 50% no-repeat;
   background-size: cover;
   vertical-align: top;
   margin-right: 10px;
+}
+.one-bay-product {
+  display: flex;
+  .one-bay-product__col-product {
+    flex-basis: 300px;
+    padding-right: 30px;
+    min-width: 300px;
+    .slon__product__min-product {
+      padding: 0 30px;
+      .slon__product__min-product__images {
+        height: 305px;
+      }
+      .slon__product__min-product__title {
+        text-align: center;
+      }
+      .slon_main__min-product__color__active {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .slon_main__min-product__price {
+        text-align: center;
+        padding-bottom: 20px;
+        .slon__product__price-value {
+          margin-right: 5px;
+        }
+      }
+    }
+    .slon__product__min-product__badge {
+      margin-left: -30px;
+    }
+  }
+  .one-bay-product__col-form {
+    flex-basis: 300px;
+    flex-grow: 1;
+  }
+}
+.slon__main__form__label {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 0 8px 20px;
+}
+.slon__main__form__footer {
+  display: flex;
+  .slon__main__form__footer__col-persona {
+    flex-basis: 250px;
+    flex-grow: 1;
+    padding-right: 30px;
+  }
+  .slon__main__form__footer__col-submit {
+    flex-basis: 170px;
+  }
+}
+input:focus,
+input:active {
+  outline: none;
+  border-radius: 0;
 }
