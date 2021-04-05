@@ -16065,7 +16065,8 @@ input:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 32px; }
+  padding-bottom: 32px;
+  max-width: 270px; }
   .slon-nav-props .slon-props__line {
     padding: 15px 0;
     color: #fff;
