@@ -340,8 +340,6 @@
     align-items: center;
 
     .slon__page__sort {
-      flex-basis: auto;
-      width: auto;
       padding-left: 15px;
     }
 
@@ -349,6 +347,10 @@
       padding-left: 10px;
     }
   }
+}
+.slon__page__sort.w-auto {
+  flex-basis: auto;
+  width: auto;
 }
 
 .slon__label {
@@ -411,4 +413,7 @@
       }
     }
   }
+}
+.mr-10 {
+  margin-right: 10px;
 }

@@ -11426,7 +11426,11 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
   .slon__news-item .slon__news-item__img {
     display: block;
     width: 100%;
-    height: auto; }
+    height: auto;
+    min-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 380px; }
   .slon__news-item .slon__news-item__desc {
     position: absolute;
     top: 0;
@@ -13253,6 +13257,209 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
       bottom: 0;
       left: 100%; }
 
+.slon__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none !important;
+  background: transparent;
+  text-decoration: none;
+  padding: 0 !important; }
+  .slon__btn .slon__btn__left,
+  .slon__btn .slon__btn__right {
+    -ms-flex-preferred-size: 8px;
+        flex-basis: 8px;
+    min-width: 8px;
+    width: 8px;
+    position: relative; }
+  .slon__btn .slon__btn__center {
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .slon__btn .slon__btn__left {
+    margin-top: 8px; }
+    .slon__btn .slon__btn__left::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-bottom: 8px solid;
+      border-left: 8px solid transparent;
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      bottom: 100%; }
+    .slon__btn .slon__btn__left::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      -webkit-transition: all ease-in 0.3s;
+      transition: all ease-in 0.3s;
+      left: 4px;
+      bottom: 100%;
+      margin-bottom: -4px;
+      opacity: 0;
+      z-index: 20;
+      position: absolute; }
+  .slon__btn .slon__btn__right {
+    margin-bottom: 8px; }
+    .slon__btn .slon__btn__right::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 8px solid;
+      border-right: 8px solid transparent;
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      top: 100%; }
+    .slon__btn .slon__btn__right::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      -webkit-transition: all ease-in 0.3s;
+      transition: all ease-in 0.3s;
+      top: 100%;
+      margin-top: -4px;
+      opacity: 0;
+      z-index: 20;
+      position: absolute;
+      right: 4px; }
+  .slon__btn--yellow span {
+    background-color: #eee417;
+    color: #060606; }
+  .slon__btn--yellow .slon__btn__left::after {
+    border-bottom-color: #eee417; }
+  .slon__btn--yellow .slon__btn__left::before {
+    background-color: #eee417; }
+  .slon__btn--yellow .slon__btn__right::after {
+    border-top-color: #eee417; }
+  .slon__btn--yellow .slon__btn__right::before {
+    background-color: #eee417; }
+  .slon__btn--h50 {
+    height: 50px; }
+    .slon__btn--h50 .slon__btn__left,
+    .slon__btn--h50 .slon__btn__right {
+      height: 42px; }
+    .slon__btn--h50 .slon__btn__center {
+      height: 50px; }
+  .slon__btn:hover .slon__btn__left::before {
+    left: 0;
+    margin-bottom: 0;
+    opacity: 1; }
+  .slon__btn:hover .slon__btn__right::before {
+    right: 0;
+    margin-top: 0;
+    opacity: 1; }
+
+.slon__article__header {
+  background-position: 50% 50%;
+  background-size: contain;
+  background-color: #000;
+  min-height: 520px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+  margin-top: -1px; }
+
+.slon__article__header__wrap {
+  padding: 50px 0;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  .slon__article__header__wrap .slon__article__date {
+    height: 32px;
+    padding: 5px 15px;
+    background-color: #bf55ec;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .slon__article__header__wrap .h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 30px;
+    text-align: center; }
+  .slon__article__header__wrap .slon__article__anons {
+    color: #a9a9a9;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 30px; }
+  .slon__article__header__wrap .slon__article__tags {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .slon__article__header__wrap .slon__article__tags li:not(:last-child) {
+      padding-right: 20px; }
+    .slon__article__header__wrap .slon__article__tags li {
+      padding-top: 10px; }
+      .slon__article__header__wrap .slon__article__tags li a {
+        padding: 5px 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 1px solid #00ffff;
+        -webkit-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+        font-size: 14px;
+        line-height: 20px;
+        color: #00ffff; }
+        .slon__article__header__wrap .slon__article__tags li a:hover {
+          color: #000;
+          background-color: #00ffff; }
+
+.slon__article__body {
+  border-bottom: 1px solid #5f5f63;
+  margin-bottom: 60px; }
+
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2016 Sachin N; Licensed MIT */
@@ -14813,6 +15020,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   color: #fff;
   font-size: 14px;
   line-height: 24px; }
+  .slon__main__text h3, .slon__main__text .h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 0 0 30px;
+    margin: 0; }
   .slon__main__text h2, .slon__main__text .h2 {
     font-size: 24px;
     font-weight: 700;
@@ -14828,6 +15041,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .slon__main__text p {
     font-size: 14px;
     line-height: 24px; }
+  .slon__main__text ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+    .slon__main__text ul li {
+      display: block;
+      position: relative;
+      padding: 0 0 20px 35px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff; }
+      .slon__main__text ul li::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 12px;
+        left: 0;
+        width: 20px;
+        height: 1px;
+        background-color: #00ffff; }
+  .slon__main__text img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
 
 .slon__main__caption {
   color: #fff;
@@ -16119,12 +16357,14 @@ input:active {
         -ms-flex-align: center;
             align-items: center; }
     .slon__compare__header__col-filter .slon__page__sort {
-      -ms-flex-preferred-size: auto;
-          flex-basis: auto;
-      width: auto;
       padding-left: 15px; }
     .slon__compare__header__col-filter .slon__list-filter {
       padding-left: 10px; }
+
+.slon__page__sort.w-auto {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  width: auto; }
 
 .slon__label {
   color: #fff;
@@ -16175,5 +16415,8 @@ input:active {
     height: 6px;
     border-radius: 3px;
     background-color: #eee417; }
+
+.mr-10 {
+  margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map */
