@@ -13460,6 +13460,40 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
   border-bottom: 1px solid #5f5f63;
   margin-bottom: 60px; }
 
+.slon__page--news {
+  min-height: 520px;
+  background-position: 50% 0;
+  background-size: auto 100%;
+  background-color: #000;
+  background-repeat: no-repeat; }
+
+.slon__date {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 10px;
+  background-color: #bf55ec;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 10px; }
+
+.slon__page__top-news {
+  padding-top: 60px;
+  padding-bottom: 30px; }
+  .slon__page__top-news .slon__date {
+    margin-bottom: 30px; }
+  .slon__page__top-news p {
+    font-size: 18px !important;
+    font-weight: 500; }
+
+.slon__dop-mat {
+  border-top: 1px solid #5f5f63;
+  padding-top: 60px; }
+
+.pr-50 {
+  padding-right: 50px; }
+
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2016 Sachin N; Licensed MIT */
@@ -15032,6 +15066,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     line-height: 30px;
     padding: 0 0 30px;
     margin: 0; }
+  .slon__main__text h1, .slon__main__text .h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    padding: 0 0 30px;
+    margin: 0; }
   .slon__main__text h4, .slon__main__text .h4 {
     font-weight: bold;
     font-size: 16px;
@@ -15066,6 +15106,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     display: block;
     max-width: 100%;
     height: auto; }
+  .slon__main__text--black {
+    color: #000; }
 
 .slon__main__caption {
   color: #fff;

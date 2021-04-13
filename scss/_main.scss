@@ -3599,3 +3599,39 @@ a:hover {
   border-bottom: 1px solid #5f5f63;
   margin-bottom: 60px;
 }
+.slon__page--news {
+  min-height: 520px;
+  background-position: 50% 0;
+  background-size: auto 100%;
+  background-color: #000;
+  background-repeat: no-repeat;
+}
+.slon__date {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 10px;
+  background-color: #bf55ec;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.slon__page__top-news {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  .slon__date {
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 18px !important;
+    font-weight: 500;
+  }
+}
+.slon__dop-mat {
+  border-top: 1px solid #5f5f63;
+  padding-top: 60px;
+}
+.pr-50 {
+  padding-right: 50px;
+}
