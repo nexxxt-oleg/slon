@@ -3635,3 +3635,53 @@ a:hover {
 .pr-50 {
   padding-right: 50px;
 }
+.slon__page__actions__desc {
+  padding-top: 20px;
+  padding-left: 30px;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    color: #fff !important;
+    text-decoration: none;
+  }
+}
+.slon__page__actions__data {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #8c8c8c;
+  color: #8c8c8c;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  &--action {
+    color: #bf55ec;
+    border-color: #bf55ec;
+  }
+}
+.tpad40 {
+  padding-top: 40px;
+}
+.slon__page__actions__step__number {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 15px;
+  color: #1a1a1d;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #00ffff;
+}
+.slon__big-link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #00ffff;
+}
