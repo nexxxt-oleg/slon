@@ -3685,3 +3685,116 @@ a:hover {
   font-weight: bold;
   border-bottom: 1px solid #00ffff;
 }
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.slon__brands__list {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  .slon__brands__item {
+    display: block;
+    position: relative;
+  }
+}
+.slon__brands__item {
+  display: flex;
+  flex-direction: column;
+  &__top {
+    height: 9px;
+    flex-basis: 9px;
+    width: 100%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 9px;
+      height: 9px;
+      border-top: 1px solid #4f4f4f;
+      border-left: 1px solid #4f4f4f;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      width: 9px;
+      height: 9px;
+      border-top: 1px solid #4f4f4f;
+      border-right: 1px solid #4f4f4f;
+    }
+  }
+  &__bottom {
+    height: 9px;
+    flex-basis: 9px;
+    width: 100%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      left: 0;
+      width: 9px;
+      height: 9px;
+      border-bottom: 1px solid #4f4f4f;
+      border-left: 1px solid #4f4f4f;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      right: 0;
+      width: 9px;
+      height: 9px;
+      border-bottom: 1px solid #4f4f4f;
+      border-right: 1px solid #4f4f4f;
+    }
+  }
+  &__logo-box {
+    height: 200px;
+    padding: 30px;
+    flex-basis: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.slon__single-brand__top {
+  height: 320px;
+  background-color: #000;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  &__logo {
+    height: 150px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+}
