@@ -1041,8 +1041,8 @@ $accordion-icon-active-color:             $accordion-button-active-color !defaul
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(180deg) !default;
 
-$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-icon:         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492 289.05'%3E%3Cpath fill='%238a8a8a' d='M265.2,281.2,484.14,62.25a27,27,0,0,0,0-38.06L468,8.06a27,27,0,0,0-38.06,0L246.1,191.92,62,7.86A27,27,0,0,0,24,7.86L7.86,24a27,27,0,0,0,0,38.07L227,281.2a27.16,27.16,0,0,0,38.2,0Z'/%3E%3C/svg%3E%0A") !default;
+$accordion-button-active-icon:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 492 289.05'%3E%3Cpath fill='%238a8a8a' d='M265.2,281.2,484.14,62.25a27,27,0,0,0,0-38.06L468,8.06a27,27,0,0,0-38.06,0L246.1,191.92,62,7.86A27,27,0,0,0,24,7.86L7.86,24a27,27,0,0,0,0,38.07L227,281.2a27.16,27.16,0,0,0,38.2,0Z'/%3E%3C/svg%3E%0A") !default;
 
 // Tooltips
 

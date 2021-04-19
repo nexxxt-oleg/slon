@@ -2987,6 +2987,21 @@ a:hover {
       right: -15px;
     }
   }
+
+  &--yellow {
+    span {
+      color: #ede316;
+      border-color: #ede316;
+    }
+
+    &::after {
+      border-bottom-color: #ede316;
+    }
+
+    &::before {
+      border-top-color: #ede316;
+    }
+  }
 }
 
 .slon__main__single-product__credit {
@@ -3797,4 +3812,174 @@ a:hover {
       height: auto;
     }
   }
+}
+.slon__modal-box__wrap {
+  padding: 0 40px;
+}
+.slon__modal-box__title {
+  margin: 0 0 30px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #5f5f63;
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+}
+.slon__reg-bg {
+  padding: 100px 0;
+  background: url("../img/bg-reg.jpg") 0 0 repeat;
+}
+.slon__reg-soc {
+  display: flex;
+  align-items: center;
+  &__label {
+    flex-basis: 50px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #5f5f63;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  &__box {
+    flex-basis: 200px;
+    max-width: 200px;
+    &__caption {
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      line-height: 14px;
+      padding-bottom: 10px;
+    }
+
+  }
+}
+.slon__reg-soc__list {
+  flex-direction: column;
+  li {
+    width: 100%;
+  }
+  li:not(:last-child) {
+    padding-bottom: 20px;
+  }
+}
+.slon__reg-soc__btn {
+  position: relative;
+  overflow: hidden;
+  color: #a9a9a9;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px 5px 40px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 200px;
+  .icon-box {
+    width: 40px;
+    flex-basis: 40px;
+    max-width: 40px;
+    padding-right: 16px;
+    text-align: center;
+  }
+  .btn-bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 45px;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &--inst:hover svg {
+    color: #f97b21;
+  }
+  &--google:hover svg {
+    color: #2095f3;
+  }
+  &--face:hover svg {
+    color: #39579a;
+  }
+  &--vk:hover svg {
+    color: #4a75a2;
+  }
+}
+.text-right {
+  text-align: right;
+}
+.tpad15 {
+  padding-top: 15px;
+}
+.slon__page__navbar {
+  .slon__page__navbar__item {
+    background-color: #2a2a2f;
+    &:not(:last-child) {
+      border-bottom: 1px solid #1a1a1d;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      .icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        flex-basis: 70px;
+        min-width: 70px;
+        max-width: 70px;
+      }
+      &.is_active {
+        color: #fff;
+      }
+    }
+  }
+
+}
+.slon__main__input-box.slon__main__input-box--v2::after,
+.slon__main__input-box.slon__main__input-box--v2::before,
+.slon__btn-border.slon__btn-border--v2::before,
+.slon__btn-border.slon__btn-border--v2::after {
+  background-color: #1a1a1d !important;
+}
+.slon__main__input-text p {
+  color: #a9a9a9;
+  font-size: 12px;
+  line-height: 18px;
+}
+.slon__lk-item__link {
+  display: block;
+  margin-bottom: 30px;
+
+  text-decoration: none;
+  &:hover {
+    filter: drop-shadow(0px 0px 8px rgba(0, 226, 218, 0.8));
+    transition: drop-shadow 0.3s ease-in-out;
+    .slon__lk-item__title {
+      color: #fff;
+    }
+  }
+  .slon__lk-item__img {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .slon__lk-item__title {
+    color: #a9a9a9;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 500;
+    min-height: 35px;
+  }
+}
+.slon__lk-item {
+  flex-basis: 20%;
 }

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 528.86 527.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#Безымянный_градиент_3);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        fill: url(#Безымянный_градиент_3-2);
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-7 {
+        fill: url(#Безымянный_градиент_3-3);
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(0 0)">
+      <path class="cls-1" d="M288.48,0V39.79l4.8.61A225.71,225.71,0,0,1,473.83,348.61L472,353l33.48,19.34,2.44-5.73A264.53,264.53,0,0,0,294.6.7Z"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_3" data-name="Безымянный градиент 3" y1="527.85" x2="1" y2="527.85" gradientTransform="matrix(0, 516.59, 516.59, 0, -272270.29, -3.94)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="aqua"/>
+      <stop offset="0.04" stop-color="aqua"/>
+      <stop offset="1" stop-color="#0a898f"/>
+      <stop offset="1" stop-color="#0a898f"/>
+    </linearGradient>
+    <clipPath id="clip-path-2" transform="translate(0 0)">
+      <path class="cls-1" d="M240.43,0l-6.12.7A264.5,264.5,0,0,0,21,366.66l2.44,5.72,33.42-19.33L55,348.62A225.74,225.74,0,0,1,235.63,40.39l4.8-.61Z"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_3-2" y1="527.85" y2="527.85" gradientTransform="matrix(0, 516.59, 516.59, 0, -272558.75, -3.94)" xlink:href="#Безымянный_градиент_3"/>
+    <clipPath id="clip-path-3" transform="translate(0 0)">
+      <path class="cls-1" d="M136.69,450.3l-.11-28a127.85,127.85,0,1,1,255.7,0l.74,27.41a225.31,225.31,0,0,1-256.33.59m66.57-252.72a61.18,61.18,0,1,1,61.17,61.17,61.25,61.25,0,0,1-61.17-61.17m-35.7,0a96.91,96.91,0,0,0,34,73.65A163.94,163.94,0,0,0,100.9,419.82a222.1,222.1,0,0,1-17.69-20.95L80.28,395,47,414.12l3.61,4.95a264.57,264.57,0,0,0,335.59,79.1,266.8,266.8,0,0,0,92-79.1l3.6-4.95-33.23-19.18-2.92,3.93A225,225,0,0,1,428,419.82,163.9,163.9,0,0,0,327.29,271.23a96.85,96.85,0,1,0-159.73-73.65"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_3-3" y1="527.85" y2="527.85" gradientTransform="matrix(0, 516.59, 516.59, 0, -272414.53, -3.94)" xlink:href="#Безымянный_градиент_3"/>
+  </defs>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g class="cls-2">
+        <rect class="cls-3" x="288.48" width="240.38" height="372.38"/>
+      </g>
+      <g class="cls-4">
+        <rect class="cls-5" width="240.43" height="372.38"/>
+      </g>
+      <g class="cls-6">
+        <rect class="cls-7" x="47.05" y="100.71" width="434.77" height="427.14"/>
+      </g>
+    </g>
+  </g>
+</svg>

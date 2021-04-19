@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 399.81 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#Безымянный_градиент_8);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        fill: url(#Безымянный_градиент_8-2);
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-4);
+      }
+
+      .cls-8 {
+        fill: url(#Безымянный_градиент_8-4);
+      }
+
+      .cls-9 {
+        clip-path: url(#clip-path-5);
+      }
+
+      .cls-10 {
+        clip-path: url(#clip-path-6);
+      }
+
+      .cls-11 {
+        clip-path: url(#clip-path-7);
+      }
+
+      .cls-12 {
+        clip-path: url(#clip-path-8);
+      }
+
+      .cls-13 {
+        fill: url(#Безымянный_градиент_8-8);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path class="cls-1" d="M324.77,36.23h0L363.58,75H324.77ZM30,30H294.76v75h75V482H30ZM0,0V512H399.81V68.82L331,0Z"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_8" data-name="Безымянный градиент 8" y1="512" x2="1" y2="512" gradientTransform="matrix(0, 508.56, 508.56, 0, -260183.64, -1.26)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="aqua"/>
+      <stop offset="0.04" stop-color="aqua"/>
+      <stop offset="1" stop-color="#0a898f"/>
+      <stop offset="1" stop-color="#0a898f"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" x="74.97" y="342.17" width="30.01" height="30.01"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_8-2" y1="512" y2="512" gradientTransform="matrix(0, 508.56, 508.56, 0, -260293.57, -1.26)" xlink:href="#Безымянный_градиент_8"/>
+    <clipPath id="clip-path-3">
+      <rect class="cls-1" x="74.97" y="402.2" width="30.01" height="30.01"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect class="cls-1" x="135" y="342.17" width="189.85" height="30.01"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_8-4" y1="512" y2="512" gradientTransform="matrix(0, 508.56, 508.56, 0, -260153.63, -1.26)" xlink:href="#Безымянный_градиент_8"/>
+    <clipPath id="clip-path-5">
+      <rect class="cls-1" x="74.97" y="282.14" width="30.01" height="30.01"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect class="cls-1" x="135" y="282.14" width="189.85" height="30.01"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <rect class="cls-1" x="135" y="402.2" width="189.85" height="30.01"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <path class="cls-1" d="M146.16,234.45H253.65l17.84-70.06H283v-30H266.3L211.68,80H188.14l-54.62,54.33H116.87v30h11.46Zm84.16-30H169.49l-10.19-40h81.22Zm-30.41-93.76,23.83,23.7H176.07Z"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_8-8" y1="512" y2="512" xlink:href="#Безымянный_градиент_8"/>
+  </defs>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g class="cls-2">
+        <rect class="cls-3" width="399.81" height="512"/>
+      </g>
+      <g class="cls-4">
+        <rect class="cls-5" x="74.97" y="342.17" width="30.01" height="30.02"/>
+      </g>
+      <g class="cls-6">
+        <rect class="cls-5" x="74.97" y="402.2" width="30.01" height="30.02"/>
+      </g>
+      <g class="cls-7">
+        <rect class="cls-8" x="135" y="342.17" width="189.85" height="30.02"/>
+      </g>
+      <g class="cls-9">
+        <rect class="cls-5" x="74.97" y="282.14" width="30.01" height="30.02"/>
+      </g>
+      <g class="cls-10">
+        <rect class="cls-8" x="135" y="282.14" width="189.85" height="30.02"/>
+      </g>
+      <g class="cls-11">
+        <rect class="cls-8" x="135" y="402.2" width="189.85" height="30.02"/>
+      </g>
+      <g class="cls-12">
+        <rect class="cls-13" x="116.87" y="80.04" width="166.08" height="154.41"/>
+      </g>
+    </g>
+  </g>
+</svg>

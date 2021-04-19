@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 513.67 511.07">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#Безымянный_градиент);
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(1.67)">
+      <path class="cls-1" d="M30,433V396.6H192.8V433l-81.4,44.64ZM319.2,352.69V316.27H482v36.42L400.6,397.33ZM111.4,250.08,181.31,366.6H41.5Zm289.2-80.33,69.91,116.52H330.69ZM256,0a15,15,0,0,0-15,15V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.84,14.84,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5L423.6,149.78,501,128.27A15,15,0,0,0,512,114v-.25a15,15,0,0,0-19-14.33L396.75,126.1h0L271,161V15A15,15,0,0,0,256,0Z"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент" data-name="Безымянный градиент" y1="511.07" x2="1" y2="511.07" gradientTransform="matrix(0, 511.07, 511.07, 0, -260937.79, 0.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="aqua"/>
+      <stop offset="0.04" stop-color="aqua"/>
+      <stop offset="1" stop-color="#0a898f"/>
+      <stop offset="1" stop-color="#0a898f"/>
+    </linearGradient>
+  </defs>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g class="cls-2">
+        <rect class="cls-3" width="513.67" height="511.07"/>
+      </g>
+    </g>
+  </g>
+</svg>

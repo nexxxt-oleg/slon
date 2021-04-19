@@ -2068,6 +2068,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   &--black {
     color: #000;
   }
+  a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: underline;
+  }
 }
 
 .slon__main__caption {
@@ -2377,6 +2382,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       outline: none;
     }
 
+    &--pass {
+      padding-right: 50px;
+    }
   }
 
   input.slon__main__inp {
@@ -2428,6 +2436,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     &::after {
       border-bottom: 1px solid #fff;
     }
+  }
+  .slon__main__inp__show-pass {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    background: url("../img/pas.svg") 50% 50% no-repeat;
+    background-size: 25px auto;
   }
 }
 
@@ -2855,6 +2875,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-bottom: 2px solid #149c9e;
   font-weight: 500;
 
+  &--min {
+    font-size: 12px;
+  }
+
   &:hover {
     color: #fff;
     border-bottom-color: transparent;
@@ -3124,8 +3148,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .slon__btn-border.slon__btn-border--min {
   span {
-    padding: 5px;
+    padding: 5px 10px;
     height: 40px;
+  }
+}
+.slon__btn-border.slon__btn-border--small {
+  span {
+    padding: 3px 10px;
+    height: 24px;
+  }
+  &:not(:hover)::before {
+    right: -11px;
   }
 }
 .slon__product--mini-slide {

@@ -1,0 +1,159 @@
+.slon__order-detail__header {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  color: #fff;
+  .slon__order-detail__header__col1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding-right: 15px;
+    .slon__order-detail__number {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      padding-bottom: 13px;
+    }
+    .slon__order-detail__status {
+      padding: 5px 0 5px 40px;
+      font-size: 12px;
+      line-height: 16px;
+      background-position: 0 50%;
+      background-repeat: no-repeat;
+      background-size: 24px auto;
+      &--processed {
+        background-image: url("../img/svg/status1.svg");
+      }
+      &--waiting {
+        background-image: url("../img/svg/waiting.svg");
+      }
+      &--completed {
+        background-image: url("../img/svg/completed.svg");
+      }
+    }
+  }
+  .slon__order-detail__header__col2 {
+    flex-basis: 150px;
+    padding-right: 15px;
+    .slon__order-detail__label {
+      padding-bottom: 15px;
+    }
+
+  }
+  .slon__order-detail__header__col3 {
+    flex-basis: 220px;
+  }
+  .slon__order-detail__header__col4 {
+    flex-basis: 50px;
+    min-width: 50px;
+    padding-left: 20px;
+    .accordion-button {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::after {
+        margin: auto 0 auto auto !important;
+      }
+    }
+  }
+}
+.slon__order-detail {
+  margin-bottom: 10px;
+  .accordion-body {
+    padding: 20px 40px 0;
+    .slon__order-detail__list-products {
+      border-top: 1px solid #1a1a1d;
+      padding-bottom: 30px;
+    }
+  }
+}
+.slon__order-detail__product {
+  padding: 15px 0;
+  border-bottom: 1px solid #1a1a1d;
+}
+
+.slon__order-detail__value {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+}
+.slon__order-detail__label {
+  color: #a8a4a9;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+.slon__order-detail__info {
+  .slon__order-detail__label {
+    line-height: 20px;
+    padding: 7px 0;
+  }
+}
+.slon__order-detail__params {
+  padding-bottom: 9px;
+}
+.slon__order-detail__params-itog {
+  .slon__order-detail__value {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.slon__order-detail__btns {
+  button {
+    margin-top: 30px;
+  }
+}
+.slon__subscription__wrap {
+  width: 100%;
+  padding: 5px 40px;
+  cursor: pointer;
+  span {
+    display: block;
+    padding: 3px 60px 3px 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #fff;
+    &::after {
+      content: "";
+      display: block;
+      height: 25px;
+      width: 48px;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      border-radius: 12px;
+      background-color: #a9a9a9;
+      transition: all ease-in-out 0.3s;
+    }
+    &::before {
+      content: "";
+      display: block;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      z-index: 2;
+      top: 2px;
+      right: 26px;
+      border-radius: 10px;
+      background-color: #2a2a2f;
+      transition: all ease-in-out 0.3s;
+    }
+  }
+  input {
+    display: none;
+    &:checked + span {
+      &::after {
+        background-color: #00ffff;
+      }
+      &::before {
+        right: 2px;
+      }
+    }
+  }
+}
