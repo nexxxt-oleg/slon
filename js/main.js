@@ -23,10 +23,11 @@ if (document.getElementsByClassName("slon__list-catalog__slider").length) {
         //loop: true,
         simulateTouch: false,
         breakpoints: {
-            440: {
-                slidesPerView: 1,
+            300: {
+                slidesPerView: 'auto',
+                centeredSlides: true,
             },
-            768: {
+            600: {
                 slidesPerView: 2,
             },
             991: {
@@ -51,6 +52,14 @@ if (document.getElementsByClassName("js_slider_item_product").length) {
         fadeEffect: {
             crossFade: true
         },
+        breakpoints: {
+            300: {
+
+            },
+            600: {
+
+            }
+        }
     });
 }
 
@@ -64,10 +73,11 @@ if (document.getElementsByClassName("slon__brands__slider").length) {
         slidesPerView: 5,
         //loop: true,
         breakpoints: {
-            440: {
-                slidesPerView: 1,
+            300: {
+                slidesPerView: 'auto',
+                centeredSlides: true,
             },
-            768: {
+            600: {
                 slidesPerView: 3,
             },
             991: {
@@ -291,7 +301,7 @@ if (document.getElementById('cartModal')) {
             spaceBetween: 10,
             lazy: true,
             breakpoints: {
-                440: {
+                300: {
                     slidesPerView: 1,
                 },
                 768: {
@@ -307,3 +317,46 @@ if (document.getElementById('cartModal')) {
         });
     }
 }
+
+if(window.screen.width < 798) {
+
+    function getScrollMenu() {
+        let el = document.getElementById('scrollMenu');
+        if(pageYOffset > 150) {
+            el.classList.add('is_active');
+        } else {
+            el.classList.remove("is_active");
+        }
+    }
+    getScrollMenu();
+    window.addEventListener('scroll', function() {
+        getScrollMenu();
+        //document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+    });
+}
+
+if (document.getElementById("js-mob-nav")) {
+    document.getElementById('js-mob-nav').onclick = function () {
+        document.getElementById('topMenu').classList.add('show');
+        document.getElementById('main').classList.add('show_modal');
+        return false;
+    }
+    document.getElementById('menuClose').onclick = function () {
+        document.getElementById('topMenu').classList.remove('show');
+        document.getElementById('main').classList.remove('show_modal');
+        return false;
+    }
+}
+if (document.getElementById("mobCatalogOpen")) {
+    document.getElementById('mobCatalogOpen').onclick = function () {
+        document.getElementById('catalogMenuMob').classList.add('show');
+        document.getElementById('main').classList.add('show_modal');
+        return false;
+    }
+    document.getElementById('menuCloseCatalog').onclick = function () {
+        document.getElementById('catalogMenuMob').classList.remove('show');
+        document.getElementById('main').classList.remove('show_modal');
+        return false;
+    }
+}
+
