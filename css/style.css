@@ -13837,6 +13837,16 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
   background-size: auto 100%;
   height: 520px; }
 
+.slon__page--guarantee {
+  background: url("../img/bg-garant.jpg") 50% 0 no-repeat;
+  background-size: auto 100%;
+  height: 520px; }
+
+.slon__page--order-guarantee {
+  background: url("../img/bg-order-garant.jpg") 50% 0 no-repeat;
+  background-size: auto 100%;
+  height: 520px; }
+
 .slon__page__tabs-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -13915,7 +13925,7 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
     right: 100%;
     z-index: 2; }
   .slon__page__tabs-nav .is_active::before {
-    display: none; }
+    display: none !important; }
 
 .slon__page__center-title {
   display: -webkit-box;
@@ -13942,6 +13952,227 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
 
 .text-uppercase {
   text-transform: uppercase; }
+
+.slon__main__submit-btn-box.slon__main__submit-btn-box--v2::after,
+.slon__main__submit-btn-box.slon__main__submit-btn-box--v2::before,
+.slon__btn-border--yellow--v2::after,
+.slon__btn-border--yellow--v2::before {
+  background-color: #1a1a1d !important; }
+
+.slon__main__form--border {
+  border: 1px solid #5f5f63;
+  position: relative;
+  z-index: 1; }
+  .slon__main__form--border form {
+    position: relative;
+    padding: 30px 30px 15px;
+    z-index: 10; }
+    .slon__main__form--border form > * {
+      position: relative;
+      z-index: 20; }
+    .slon__main__form--border form::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: -1px;
+      left: -1px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 188 188'%3E%3Cpolygon fill='%235f5f63' points='47.52 0 0 47.52 0 48 0 64.49 0 188 12 173 12 52.49 52.49 12 173 12 188 0 47.52 0'/%3E%3C/svg%3E%0A");
+      width: 60px;
+      height: 60px;
+      background-size: 61px 61px;
+      background-repeat: no-repeat;
+      background-color: #1a1a1d;
+      background-position: 0 0; }
+    .slon__main__form--border form::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      bottom: -1px;
+      right: -1px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 188.02 187.99'%3E%3Cpolygon fill='%235f5f63' points='140.49 187.99 188.01 140.48 188.01 140 188.01 123.51 188.02 0 176.02 15 176.01 135.51 135.51 175.99 15 175.98 0 187.98 140.49 187.99'/%3E%3C/svg%3E%0A");
+      width: 60px;
+      height: 60px;
+      background-size: 61px 61px;
+      background-repeat: no-repeat;
+      background-color: #1a1a1d;
+      background-position: 100% 100%; }
+
+.slon__big-link {
+  border-bottom: none !important;
+  text-decoration: none !important;
+  font-size: 16px !important;
+  font-weight: bold; }
+
+.slon__danger-block {
+  padding: 10px;
+  background: url("../img/bg-danger.png") 0 0 repeat;
+  margin-bottom: 60px; }
+  .slon__danger-block .slon__danger-block__wrap {
+    padding: 25px 25px 9px;
+    background-color: #1a1a1d; }
+
+.slon__ol-list {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0; }
+  .slon__ol-list li {
+    padding: 2px 0 2px 70px;
+    margin-bottom: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 36px; }
+    .slon__ol-list li::after {
+      content: counter(num);
+      counter-increment: num;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      text-align: center;
+      line-height: 36px;
+      color: #1a1a1d;
+      font-size: 20px;
+      font-weight: bold;
+      background-color: #00ffff; }
+
+.slon__ol-list__footer-btn {
+  max-width: 285px;
+  margin-left: 70px; }
+
+.slon__guarantee {
+  border: 1px solid #5f5f63;
+  position: relative;
+  margin-bottom: 60px; }
+  .slon__guarantee::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #5f5f63;
+    left: 50%; }
+  .slon__guarantee .slon__guarantee__warning {
+    padding: 25px 25px 5px; }
+  .slon__guarantee .slon__guarantee__not-list {
+    list-style-type: none;
+    padding: 15px 25px;
+    margin: 0; }
+    .slon__guarantee .slon__guarantee__not-list li {
+      font-size: 14px;
+      line-height: 24px;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-left: 48px;
+      background: url("../img/svg/ico-del.svg") 0 50% no-repeat;
+      background-size: 24px 24px; }
+      .slon__guarantee .slon__guarantee__not-list li:last-child {
+        margin-bottom: 0; }
+
+.slon__info-contacts {
+  padding: 0 0 0 70px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px; }
+  .slon__info-contacts .slon__info-contacts__label {
+    position: relative;
+    min-height: 50px;
+    padding-bottom: 10px;
+    font-weight: 600; }
+    .slon__info-contacts .slon__info-contacts__label svg {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: -45px; }
+  .slon__info-contacts .phone {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1.2; }
+
+.slon__main__sel {
+  padding: 5px 20px 5px 15px;
+  width: 100%;
+  display: block;
+  color: #fff;
+  border: 1px solid #a9a9a9;
+  line-height: 33px;
+  background-color: transparent;
+  height: 45px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 444.82 280.37'%3E%3Cpath fill='%23a9a9a9' d='M434.25,32,412.84,10.56A36.55,36.55,0,0,0,386.87,0a35,35,0,0,0-25.7,10.56L222.41,149.32,83.65,10.56A35,35,0,0,0,58,0,36.6,36.6,0,0,0,32,10.56L10.85,32A35.45,35.45,0,0,0,0,58a34,34,0,0,0,10.85,25.7L196.71,269.52a34,34,0,0,0,25.7,10.85,35.45,35.45,0,0,0,26-10.85L434.25,83.66A35,35,0,0,0,444.82,58,36.53,36.53,0,0,0,434.25,32Z'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat, repeat;
+  background-position: right 15px top 50%;
+  background-size: 12px auto; }
+  .slon__main__sel option {
+    color: #000; }
+  .slon__main__sel:focus {
+    border: 1px solid #a9a9a9;
+    outline: none; }
+
+.slon__main__input-box__footer {
+  padding: 0 0 20px 20px;
+  color: #a9a9a9;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: -25px; }
+
+.slon__main__form__file {
+  padding-top: 15px;
+  color: #a9a9a9;
+  font-size: 12px;
+  line-height: 18px; }
+  .slon__main__form__file .slon__main__form__file__caption {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px; }
+  .slon__main__form__file p {
+    margin: 0;
+    color: #a9a9a9;
+    font-size: 12px;
+    line-height: 18px; }
+  .slon__main__form__file .input__wrapper {
+    padding-top: 20px;
+    padding-bottom: 10px; }
+    .slon__main__form__file .input__wrapper .input__file {
+      display: none; }
+
+.input__file-button {
+  display: block;
+  width: 100%; }
+
+.slon__main__form__file__res {
+  min-height: 50px; }
+
+.slon__btn-orange {
+  border: none; }
+
+.slon__main__form__center-submit {
+  text-align: center;
+  padding-bottom: 16px; }
+  .slon__main__form__center-submit .slon__btn-orange {
+    margin: 0 auto; }
 
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
@@ -15529,7 +15760,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin: 0; }
   .slon__main__text p {
     font-size: 14px;
-    line-height: 24px; }
+    line-height: 24px;
+    margin-bottom: 16px; }
   .slon__main__text ul {
     padding: 0;
     margin: 0;
