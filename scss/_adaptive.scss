@@ -259,6 +259,13 @@
   .slon__main__header {
     padding-top: 100px;
   }
+  .slon__list-catalog__slider__item .slon__list-catalog__product__bay {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {

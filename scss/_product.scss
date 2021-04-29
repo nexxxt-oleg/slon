@@ -2386,6 +2386,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     &--pass {
       padding-right: 50px;
     }
+
+    &--date {
+      padding-right: 50px;
+      background-image: url("../img/svg/ico-data.svg");
+      background-position: right 10px top 50%;
+      background-repeat: no-repeat;
+      background-size: 16px auto;
+    }
   }
 
   input.slon__main__inp {

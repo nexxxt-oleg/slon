@@ -11371,7 +11371,7 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
 
 .slon__all-link {
   margin: 5px 0 0 auto;
-  text-decoration: none; }
+  text-decoration: none !important; }
   .slon__all-link span {
     display: inline;
     border-bottom: 1px solid #00e2da;
@@ -13847,6 +13847,20 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
   background-size: auto 100%;
   height: 520px; }
 
+.slon__page--delivery {
+  background: url("../img/bg-delivery.jpg") 50% 0 no-repeat;
+  background-size: auto 100%;
+  height: 520px; }
+
+.slon__page--header {
+  background-size: auto 100%;
+  height: 520px;
+  background-position: 50% 0;
+  background-repeat: no-repeat; }
+
+.slon__page--oplata {
+  background-image: url("../img/bg-oplata.jpg"); }
+
 .slon__page__tabs-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -13962,7 +13976,8 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
 .slon__main__form--border {
   border: 1px solid #5f5f63;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #1a1a1d; }
   .slon__main__form--border form {
     position: relative;
     padding: 30px 30px 15px;
@@ -14173,6 +14188,245 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
   padding-bottom: 16px; }
   .slon__main__form__center-submit .slon__btn-orange {
     margin: 0 auto; }
+
+.slon__page__subtitle {
+  padding: 15px 0 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff; }
+
+.slon__card {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  height: 100%; }
+  .slon__card .card-body {
+    background-color: #2a2a2f;
+    padding: 20px 30px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    .slon__card .card-body .card-title {
+      text-align: center;
+      min-height: 90px;
+      margin: 0;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px; }
+  .slon__card .slon__card__list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #5f5f63;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff; }
+    .slon__card .slon__card__list li .label {
+      color: #a9a9a9; }
+    .slon__card .slon__card__list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+  .slon__card .slon__card__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff; }
+
+.slon__sb-left li {
+  border-bottom: 1px solid #5f5f63; }
+  .slon__sb-left li .nav-link {
+    display: block;
+    padding: 20px 20px 20px 30px;
+    position: relative;
+    color: #a9a9a9;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold; }
+    .slon__sb-left li .nav-link.active {
+      color: #fff; }
+      .slon__sb-left li .nav-link.active::after {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 6px;
+        background-color: #00ffff;
+        z-index: 1;
+        position: absolute; }
+      .slon__sb-left li .nav-link.active::before {
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-left: 4px solid #1a1a1d;
+        border-bottom: 4px solid transparent;
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 0;
+        margin-top: -4px; }
+
+.slon__box-rev {
+  padding: 15px 30px 15px 70px;
+  background-color: #2a2a2f;
+  margin-bottom: 10px; }
+  .slon__box-rev .slon__box-rev__title {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative; }
+    .slon__box-rev .slon__box-rev__title::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      left: -40px;
+      width: 12px;
+      height: 3px;
+      background-color: #fff;
+      margin-top: -1.5px; }
+    .slon__box-rev .slon__box-rev__title.collapsed {
+      color: #a9a9a9; }
+      .slon__box-rev .slon__box-rev__title.collapsed::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: -40px;
+        width: 12px;
+        height: 3px;
+        background-color: #00ffff;
+        margin-top: -1.5px; }
+      .slon__box-rev .slon__box-rev__title.collapsed::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: -35.5px;
+        width: 3px;
+        height: 12px;
+        background-color: #00ffff;
+        margin-top: -6px; }
+  .slon__box-rev .slon__box-rev__body {
+    padding-top: 15px; }
+
+.slon__sub-text-min {
+  font-size: 12px;
+  line-height: 18px;
+  color: #a9a9a9; }
+
+.slon__sub-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #a9a9a9;
+  text-decoration: none;
+  display: block; }
+
+.h3 {
+  padding: 0 0 15px 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0; }
+
+.slon__ico-left {
+  position: relative;
+  padding-left: 35px; }
+  .slon__ico-left .slon__ico-left__img {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0; }
+
+.tpad30 {
+  padding-top: 30px; }
+
+.slon__page--vopros {
+  padding-bottom: 80px;
+  background: url("../img/bg-vopros.jpg") 50% 0 no-repeat;
+  background-size: auto 100%;
+  border-bottom: 1px solid #5f5f63; }
+
+.slon__company-desc,
+.slon__desc-404 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
+  padding-bottom: 30px; }
+
+.slon__page--company {
+  background-image: url("../img/bg-company.jpg"); }
+
+.slon__pic {
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .slon__pic img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto; }
+
+.slon__pic__caption {
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600; }
+
+.slon_wallpaper img {
+  display: block;
+  margin-bottom: 10px; }
+.slon_wallpaper a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px; }
+
+.block-w24 {
+  width: 240px; }
+
+a.slon__btn--yellow {
+  text-decoration: none !important; }
+
+.slon__desc-404 h1, .slon__desc-404 .h1 {
+  font-size: 40px;
+  color: #00ffff;
+  line-height: 1.3;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 20px;
+  text-shadow: 3px 3px 0px #da17e2; }
+.slon__desc-404 p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  display: block;
+  color: #fff;
+  font-weight: 500; }
+
+.slon__page--404 {
+  background-image: url("../img/bg-404.jpg"); }
 
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
@@ -16069,6 +16323,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       outline: none; }
     .slon__main__input-box .slon__main__inp--pass {
       padding-right: 50px; }
+    .slon__main__input-box .slon__main__inp--date {
+      padding-right: 50px;
+      background-image: url("../img/svg/ico-data.svg");
+      background-position: right 10px top 50%;
+      background-repeat: no-repeat;
+      background-size: 16px auto; }
   .slon__main__input-box input.slon__main__inp {
     height: 45px; }
   .slon__main__input-box textarea {
@@ -17534,7 +17794,15 @@ input:active {
       overflow: hidden; }
 
   .slon__main__header {
-    padding-top: 100px; } }
+    padding-top: 100px; }
+
+  .slon__list-catalog__slider__item .slon__list-catalog__product__bay {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    padding-top: 20px; } }
 @media screen and (max-width: 768px) {
   .slon__main__home-slider__item__desc {
     -webkit-box-pack: start;
