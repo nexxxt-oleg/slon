@@ -163,7 +163,8 @@ function countProduct(action, input) {
 document.addEventListener("DOMContentLoaded", function (event) {
 
     if (document.getElementById("submitSubscription")) {
-        document.getElementById('submitSubscription').onclick = function () {
+        document.getElementById('submitSubscription').onclick = function (event) {
+            event.preventDefault();
             /**
              * форма подписки
              */
@@ -182,7 +183,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     if (document.getElementById("submitSubscription2")) {
-        document.getElementById('submitSubscription2').onclick = function () {
+        document.getElementById('submitSubscription2').onclick = function (event) {
+            event.preventDefault();
             /**
              * форма подписки с акцией
              */
@@ -201,7 +203,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
 
     if (document.getElementById("oneBayClickSubmit")) {
-        document.getElementById('oneBayClickSubmit').onclick = function () {
+        document.getElementById('oneBayClickSubmit').onclick = function (event) {
+            event.preventDefault();
             /**
              * форма купить в один клик
              *
@@ -218,7 +221,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 alertify.success('Success message');
                 document.getElementById('oneBayClickForm').reset();
             }
-            return false;
         }
     }
 
@@ -335,28 +337,53 @@ if(window.screen.width < 798) {
     });
 }
 
+/**
+ * мобильное основное меню
+ */
+
 if (document.getElementById("js-mob-nav")) {
-    document.getElementById('js-mob-nav').onclick = function () {
+    document.getElementById('js-mob-nav').onclick = function (event) {
+        event.preventDefault();
         document.getElementById('topMenu').classList.add('show');
         document.getElementById('main').classList.add('show_modal');
-        return false;
     }
-    document.getElementById('menuClose').onclick = function () {
+    document.getElementById('menuClose').onclick = function (event) {
+        event.preventDefault();
         document.getElementById('topMenu').classList.remove('show');
         document.getElementById('main').classList.remove('show_modal');
-        return false;
     }
 }
+
+/***
+ * мобильное меню каталога
+ */
 if (document.getElementById("mobCatalogOpen")) {
-    document.getElementById('mobCatalogOpen').onclick = function () {
+    document.getElementById('mobCatalogOpen').onclick = function (event) {
+        event.preventDefault();
         document.getElementById('catalogMenuMob').classList.add('show');
         document.getElementById('main').classList.add('show_modal');
-        return false;
     }
-    document.getElementById('menuCloseCatalog').onclick = function () {
+    document.getElementById('menuCloseCatalog').onclick = function (event) {
+        event.preventDefault();
         document.getElementById('catalogMenuMob').classList.remove('show');
         document.getElementById('main').classList.remove('show_modal');
-        return false;
+    }
+}
+
+
+/***
+ * мобильный фильтр товаров
+ */
+if (document.getElementById("mobFilterOpen")) {
+    document.getElementById('mobFilterOpen').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('filterProduct').classList.add('show');
+        document.getElementById('main').classList.add('show_modal');
+    }
+    document.getElementById('filterClose').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('filterProduct').classList.remove('show');
+        document.getElementById('main').classList.remove('show_modal');
     }
 }
 
@@ -365,4 +392,57 @@ function getFileName () {
     var file = document.getElementById ('uploaded-file').value;
     file = file.replace(/\\/g, "/").split('/').pop();
     document.getElementById ('file-name').innerHTML = 'Имя файла: ' + file;
+}
+
+/***
+ * промокод
+ */
+if (document.getElementById("productPromoOpen")) {
+    document.getElementById('productPromoOpen').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('productPromoBox').classList.add('show');
+
+    }
+    document.getElementById('productPromoClose').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('productPromoBox').classList.remove('show');
+    }
+}
+
+/***
+ * подарки
+ */
+if (document.getElementById("productGiftOpen")) {
+    document.getElementById('productGiftOpen').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('productGiftBox').classList.add('show');
+
+    }
+    document.getElementById('productGiftClose').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('productGiftBox').classList.remove('show');
+    }
+}
+
+if (document.getElementsByClassName("slon__main__section__mob__header").length) {
+    let mobProductTabs = document.querySelectorAll('.slon__main__section__mob__header');
+    [].forEach.call(mobProductTabs, function (elem) {
+        elem.addEventListener('click', function (e) {
+            this.parentNode.classList.toggle('is_active');
+        }, false);
+    });
+}
+
+/**
+ * мобильная отправка отзыва
+ */
+if (document.getElementById("addRevModal")) {
+    let addRevModal = document.getElementById('addRevModal')
+    addRevModal.addEventListener('show.bs.modal', function (event) {
+
+        let clonedForm = document.getElementById("addReviewsForm").cloneNode(true);
+        let mobFormRev = document.getElementById("mobFormRev");
+        mobFormRev.innerHTML = '';
+        mobFormRev.appendChild(clonedForm);
+    })
 }

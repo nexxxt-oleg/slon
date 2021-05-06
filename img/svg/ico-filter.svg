@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #5f5f63;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(0 0)">
+      <rect class="cls-1" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Слой_1-2" data-name="Слой 1">
+      <g class="cls-2">
+        <path class="cls-3" d="M10.93,2.75a3.72,3.72,0,0,0-7.19,0H0v2H3.74a3.72,3.72,0,0,0,7.19,0H24v-2ZM7.33,5.5A1.75,1.75,0,1,1,9.08,3.75,1.75,1.75,0,0,1,7.33,5.5" transform="translate(0 0)"/>
+        <path class="cls-3" d="M16.67,8.25A3.76,3.76,0,0,0,13.07,11H0v2H13.07a3.72,3.72,0,0,0,7.19,0H24V11H20.26a3.74,3.74,0,0,0-3.59-2.75m0,5.5A1.75,1.75,0,1,1,18.42,12a1.75,1.75,0,0,1-1.75,1.75" transform="translate(0 0)"/>
+        <path class="cls-3" d="M7.33,16.5a3.76,3.76,0,0,0-3.6,2.75H0v2H3.74a3.72,3.72,0,0,0,7.19,0H24v-2H10.93a3.76,3.76,0,0,0-3.6-2.75m0,5.5a1.75,1.75,0,1,1,1.75-1.75A1.75,1.75,0,0,1,7.33,22" transform="translate(0 0)"/>
+      </g>
+    </g>
+  </g>
+</svg>
