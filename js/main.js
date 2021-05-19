@@ -320,7 +320,7 @@ if (document.getElementById('cartModal')) {
     }
 }
 
-if(window.screen.width < 798) {
+if(window.screen.width < 768) {
 
     function getScrollMenu() {
         let el = document.getElementById('scrollMenu');
@@ -331,8 +331,23 @@ if(window.screen.width < 798) {
         }
     }
     getScrollMenu();
+
+    function fixPriceMob() {
+        if (document.getElementById("mobProductPrice")) {
+            let mobProductPrice = document.getElementById("mobProductPrice");
+            //console.log(mobProductPrice.getBoundingClientRect().top);
+            if(mobProductPrice.getBoundingClientRect().top < 300) {
+                mobProductPrice.classList.add('is_active');
+            } else {
+                mobProductPrice.classList.remove('is_active');
+            }
+        }
+    }
+    fixPriceMob();
+
     window.addEventListener('scroll', function() {
         getScrollMenu();
+        fixPriceMob();
         //document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
     });
 }
@@ -445,4 +460,20 @@ if (document.getElementById("addRevModal")) {
         mobFormRev.innerHTML = '';
         mobFormRev.appendChild(clonedForm);
     })
+}
+
+
+/***
+ * форма поиска в мобильном
+ */
+if (document.getElementById("js-mob-search")) {
+    document.getElementById('js-mob-search').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('mobSearch').classList.add('show');
+
+    }
+    document.getElementById('searchClose').onclick = function (event) {
+        event.preventDefault();
+        document.getElementById('mobSearch').classList.remove('show');
+    }
 }

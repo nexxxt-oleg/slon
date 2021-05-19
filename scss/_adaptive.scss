@@ -8,7 +8,9 @@
 .smart-filter__footer__col--mob,
 .slon__main__single-product--title-mob,
 .slon__main__single-product__reviews__mob-btn,
-.slon__main__section__mob__header {
+.slon__main__section__mob__header,
+.slon__fix__price-mob,
+.slon__main__header__mob__search {
   display: none;
 }
 
@@ -435,6 +437,30 @@
     top: 0;
     margin-left: -15px;
   }
+  .slon__main__header__mob__search.show {
+    display: block;
+    padding-top: 20px;
+    position: relative;
+    padding-right: 30px;
+    .slon__main__header__search-form::after {
+      background-color: #000;
+    }
+    .slon__main__header__search-form::before {
+      background-color: #000;
+    }
+    .smart-filter__header__close {
+      position: absolute;
+      z-index: 10;
+      top: 20px;
+      right: 0;
+      height: 40px;
+      width: 30px;
+      color: #a9a9a9;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -514,7 +540,7 @@
       }
     }
   }
-  .slon__page__sort .btn-sort {
+  .slon__page__sort--catalog .btn-sort {
     text-align: left;
     justify-content: flex-start;
     padding: 5px 10px;
@@ -608,7 +634,7 @@
     &.show {
       display: block !important;
       position: fixed;
-      z-index: 200;
+      z-index: 600;
       top: 0;
       left: 0;
       right: 0;
@@ -732,6 +758,32 @@
   .slon__review .slon__review__body {
     padding-right: 0;
     font-size: 12px;
+  }
+  .mob-price.is_active {
+    .slon__fix__price-mob {
+      display: block;
+      position: fixed;
+      bottom: 70px;
+      left: 0;
+      right: 0;
+      z-index: 350;
+      background-color: #000;
+      padding: 10px 0;
+      .slon__list-catalog__product__price {
+        padding-left: 0;
+      }
+      .slon__fix__price-mob__btn {
+        margin-left: auto;
+      }
+    }
+  }
+  .slon__page__sort--art {
+    .dropdown-menu.dropdown-menu--black {
+      min-width: 100% ;
+      width: auto !important;
+      left: auto !important;
+      right: -30px !important;
+    }
   }
 }
 

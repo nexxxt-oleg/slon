@@ -70,6 +70,7 @@ body {
   fill: #0a898f;
   transition: all 0.3s ease-in-out;
 }
+
 .icon {
   color: #0a898f;
   transition: all 0.3s ease-in-out;
@@ -433,6 +434,7 @@ body {
 
     &:hover {
       color: #00e2da;
+
       .slon__main__header__links__icon {
         svg path {
           fill: #00e2da;
@@ -442,6 +444,7 @@ body {
       .slon__main__header__links__caption {
         color: #fff;
       }
+
       svg {
         color: #00e2da !important;
       }
@@ -1059,9 +1062,13 @@ a:hover {
   }
 }
 
+.slon__main__pattern {
+  background: url("../img/pattern.png") 50% 0 repeat;
+}
+
 .slon__brands {
   position: relative;
-  background: url("../img/pattern.jpg") 0 0 repeat;
+  background: url("../img/pattern.png") 50% 0 repeat;
 
   .slon__brands__wrap {
     position: relative;
@@ -2972,9 +2979,11 @@ a:hover {
       border-color: #959597;
       color: #959597;
     }
+
     &::before {
       border-top: 1px solid #959597 !important;
     }
+
     &::after {
       border-bottom: 1px solid #959597 !important;
     }
@@ -3620,6 +3629,7 @@ a:hover {
   z-index: 10;
   margin-top: -1px;
 }
+
 .slon__article__header__wrap {
   padding: 50px 0;
   min-height: 300px;
@@ -3628,6 +3638,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+
   .slon__article__date {
     height: 32px;
     padding: 5px 15px;
@@ -3639,6 +3650,7 @@ a:hover {
     font-weight: 700;
     margin-bottom: 30px;
   }
+
   .h1 {
     color: #fff;
     font-size: 40px;
@@ -3648,6 +3660,7 @@ a:hover {
     padding-bottom: 30px;
     text-align: center;
   }
+
   .slon__article__anons {
     color: #a9a9a9;
     text-align: center;
@@ -3656,13 +3669,17 @@ a:hover {
     line-height: 24px;
     padding-bottom: 30px;
   }
+
   .slon__article__tags {
     justify-content: center;
+
     li:not(:last-child) {
       padding-right: 20px;
     }
+
     li {
       padding-top: 10px;
+
       a {
         padding: 5px 20px;
         display: flex;
@@ -3672,10 +3689,11 @@ a:hover {
         text-decoration: none;
         border-radius: 5px;
         border: 1px solid #00ffff;
-        transition:all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
         font-size: 14px;
         line-height: 20px;
         color: #00ffff;
+
         &:hover {
           color: #000;
           background-color: #00ffff;
@@ -3684,10 +3702,12 @@ a:hover {
     }
   }
 }
+
 .slon__article__body {
   border-bottom: 1px solid #5f5f63;
   margin-bottom: 60px;
 }
+
 .slon__page--news {
   min-height: 520px;
   background-position: 50% 0;
@@ -3695,6 +3715,7 @@ a:hover {
   background-color: #000;
   background-repeat: no-repeat;
 }
+
 .slon__date {
   display: inline-block;
   vertical-align: top;
@@ -3706,34 +3727,42 @@ a:hover {
   font-weight: 700;
   border-radius: 10px;
 }
+
 .slon__page__top-news {
   padding-top: 60px;
   padding-bottom: 30px;
+
   .slon__date {
     margin-bottom: 30px;
   }
+
   p {
     font-size: 18px !important;
     font-weight: 500;
   }
 }
+
 .slon__dop-mat {
   border-top: 1px solid #5f5f63;
   padding-top: 60px;
 }
+
 .pr-50 {
   padding-right: 50px;
 }
+
 .slon__page__actions__desc {
   padding-top: 20px;
   padding-left: 30px;
   display: block;
   text-decoration: none;
+
   &:hover {
     color: #fff !important;
     text-decoration: none;
   }
 }
+
 .slon__page__actions__data {
   display: inline-block;
   vertical-align: top;
@@ -3745,14 +3774,17 @@ a:hover {
   line-height: 20px;
   font-weight: bold;
   margin-bottom: 25px;
+
   &--action {
     color: #bf55ec;
     border-color: #bf55ec;
   }
 }
+
 .tpad40 {
   padding-top: 40px;
 }
+
 .slon__page__actions__step__number {
   width: 36px;
   height: 36px;
@@ -3765,6 +3797,7 @@ a:hover {
   font-size: 20px;
   background-color: #00ffff;
 }
+
 .slon__big-link {
   color: #fff;
   text-decoration: none;
@@ -3774,6 +3807,7 @@ a:hover {
   font-weight: bold;
   border-bottom: 1px solid #00ffff;
 }
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -3784,22 +3818,27 @@ a:hover {
     padding-left: 0;
   }
 }
+
 .slon__brands__list {
   padding-top: 20px;
   padding-bottom: 100px;
+
   .slon__brands__item {
     display: block;
     position: relative;
   }
 }
+
 .slon__brands__item {
   display: flex;
   flex-direction: column;
+
   &__top {
     height: 9px;
     flex-basis: 9px;
     width: 100%;
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -3811,6 +3850,7 @@ a:hover {
       border-top: 1px solid #4f4f4f;
       border-left: 1px solid #4f4f4f;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -3823,11 +3863,13 @@ a:hover {
       border-right: 1px solid #4f4f4f;
     }
   }
+
   &__bottom {
     height: 9px;
     flex-basis: 9px;
     width: 100%;
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -3839,6 +3881,7 @@ a:hover {
       border-bottom: 1px solid #4f4f4f;
       border-left: 1px solid #4f4f4f;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -3851,6 +3894,7 @@ a:hover {
       border-right: 1px solid #4f4f4f;
     }
   }
+
   &__logo-box {
     height: 200px;
     padding: 30px;
@@ -3858,6 +3902,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
     img {
       display: block;
       max-width: 100%;
@@ -3867,17 +3912,20 @@ a:hover {
     }
   }
 }
+
 .slon__single-brand__top {
   height: 320px;
   background-color: #000;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: auto 100%;
+
   &__logo {
     height: 150px;
     padding: 10px 0;
     display: flex;
     align-items: center;
+
     img {
       display: block;
       max-width: 100%;
@@ -3887,9 +3935,11 @@ a:hover {
     }
   }
 }
+
 .slon__modal-box__wrap {
   padding: 0 40px;
 }
+
 .slon__modal-box__title {
   margin: 0 0 30px 0;
   padding: 0 0 20px 0;
@@ -3899,13 +3949,16 @@ a:hover {
   font-size: 24px;
   line-height: 30px;
 }
+
 .slon__reg-bg {
   padding: 100px 0;
   background: url("../img/bg-reg.jpg") 0 0 repeat;
 }
+
 .slon__reg-soc {
   display: flex;
   align-items: center;
+
   &__label {
     flex-basis: 50px;
     flex-grow: 1;
@@ -3915,9 +3968,11 @@ a:hover {
     line-height: 20px;
     font-weight: 500;
   }
+
   &__box {
     flex-basis: 200px;
     max-width: 200px;
+
     &__caption {
       text-align: center;
       font-size: 12px;
@@ -3928,15 +3983,19 @@ a:hover {
 
   }
 }
+
 .slon__reg-soc__list {
   flex-direction: column;
+
   li {
     width: 100%;
   }
+
   li:not(:last-child) {
     padding-bottom: 20px;
   }
 }
+
 .slon__reg-soc__btn {
   position: relative;
   overflow: hidden;
@@ -3951,6 +4010,7 @@ a:hover {
   font-weight: 500;
   line-height: 20px;
   width: 200px;
+
   .icon-box {
     width: 40px;
     flex-basis: 40px;
@@ -3958,6 +4018,7 @@ a:hover {
     padding-right: 16px;
     text-align: center;
   }
+
   .btn-bg {
     position: absolute;
     z-index: 1;
@@ -3966,38 +4027,49 @@ a:hover {
     width: 200px;
     height: 45px;
   }
+
   &:hover {
     color: #fff;
   }
+
   &--inst:hover svg {
     color: #f97b21;
   }
+
   &--google:hover svg {
     color: #2095f3;
   }
+
   &--face:hover svg {
     color: #39579a;
   }
+
   &--vk:hover svg {
     color: #4a75a2;
   }
 }
+
 .text-right {
   text-align: right;
 }
+
 .tpad15 {
   padding-top: 15px;
 }
+
 .slon__page__navbar {
   .slon__page__navbar__item {
     background-color: #2a2a2f;
+
     &:not(:last-child) {
       border-bottom: 1px solid #1a1a1d;
     }
+
     a {
       display: flex;
       align-items: center;
       height: 60px;
+
       .icon-box {
         display: flex;
         align-items: center;
@@ -4007,6 +4079,7 @@ a:hover {
         min-width: 70px;
         max-width: 70px;
       }
+
       &.is_active {
         color: #fff;
       }
@@ -4014,29 +4087,35 @@ a:hover {
   }
 
 }
+
 .slon__main__input-box.slon__main__input-box--v2::after,
 .slon__main__input-box.slon__main__input-box--v2::before,
 .slon__btn-border.slon__btn-border--v2::before,
 .slon__btn-border.slon__btn-border--v2::after {
   background-color: #1a1a1d !important;
 }
+
 .slon__main__input-text p {
   color: #a9a9a9;
   font-size: 12px;
   line-height: 18px;
 }
+
 .slon__lk-item__link {
   display: block;
   margin-bottom: 30px;
 
   text-decoration: none;
+
   &:hover {
     filter: drop-shadow(0px 0px 8px rgba(0, 226, 218, 0.8));
     transition: drop-shadow 0.3s ease-in-out;
+
     .slon__lk-item__title {
       color: #fff;
     }
   }
+
   .slon__lk-item__img {
     display: flex;
     padding: 15px;
@@ -4044,6 +4123,7 @@ a:hover {
     justify-content: center;
     height: 100px;
   }
+
   .slon__lk-item__title {
     color: #a9a9a9;
     transition: all 0.3s ease-in-out;
@@ -4054,40 +4134,49 @@ a:hover {
     min-height: 35px;
   }
 }
+
 .slon__lk-item {
   flex-basis: 20%;
 }
+
 .slon__page--refund {
   background: url("../img/bg-refund.jpg") 50% 0 no-repeat;
   background-size: auto 100%;
   height: 520px;
 }
+
 .slon__page--guarantee {
   background: url("../img/bg-garant.jpg") 50% 0 no-repeat;
   background-size: auto 100%;
   height: 520px;
 }
+
 .slon__page--order-guarantee {
   background: url("../img/bg-order-garant.jpg") 50% 0 no-repeat;
   background-size: auto 100%;
   height: 520px;
 }
+
 .slon__page--delivery {
   background: url("../img/bg-delivery.jpg") 50% 0 no-repeat;
   background-size: auto 100%;
   height: 520px;
 }
+
 .slon__page--header {
   background-size: auto 100%;
   height: 520px;
   background-position: 50% 0;
   background-repeat: no-repeat;
 }
+
 .slon__page--oplata {
   background-image: url("../img/bg-oplata.jpg");
 }
+
 .slon__page__tabs-nav {
   justify-content: center;
+
   a {
     display: block;
     min-width: 160px;
@@ -4105,16 +4194,19 @@ a:hover {
     padding: 0 30px;
     transition: all ease-in-out 0.2s;
     position: relative;
+
     &.is_active {
       background-color: #00ffff;
       color: #000;
     }
   }
+
   li:not(:last-child) {
     a {
       border-right: 1px solid #00ffff;
     }
   }
+
   li:last-child {
     a::after {
       content: "";
@@ -4129,6 +4221,7 @@ a:hover {
       left: 100%;
       z-index: 1;
     }
+
     a::before {
       content: "";
       display: block;
@@ -4142,10 +4235,12 @@ a:hover {
       left: 100%;
       z-index: 2;
     }
+
     .is_active::before {
       display: none;
     }
   }
+
   li:first-child {
     a::after {
       content: "";
@@ -4160,6 +4255,7 @@ a:hover {
       right: 100%;
       z-index: 1;
     }
+
     a::before {
       content: "";
       display: block;
@@ -4174,16 +4270,19 @@ a:hover {
       z-index: 2;
     }
   }
+
   .is_active::before {
     display: none !important;
   }
 }
+
 .slon__page__center-title {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   height: 400px;
+
   h1 {
     font-size: 30px;
     line-height: 1.3;
@@ -4191,33 +4290,40 @@ a:hover {
     color: #fff;
   }
 }
+
 .slon.show_modal {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
+
 .text-uppercase {
   text-transform: uppercase;
 }
+
 .slon__main__submit-btn-box.slon__main__submit-btn-box--v2::after,
 .slon__main__submit-btn-box.slon__main__submit-btn-box--v2::before,
 .slon__btn-border--yellow--v2::after,
 .slon__btn-border--yellow--v2::before {
   background-color: #1a1a1d !important;
 }
+
 .slon__main__form--border {
   border: 1px solid #5f5f63;
   position: relative;
   z-index: 1;
   background-color: #1a1a1d;
+
   form {
     position: relative;
     padding: 30px 30px 15px;
     z-index: 10;
+
     & > * {
       position: relative;
       z-index: 20;
     }
+
     &::after {
       content: "";
       display: block;
@@ -4233,6 +4339,7 @@ a:hover {
       background-color: #1a1a1d;
       background-position: 0 0;
     }
+
     &::before {
       content: "";
       display: block;
@@ -4251,21 +4358,25 @@ a:hover {
   }
 
 }
+
 .slon__big-link {
   border-bottom: none !important;
   text-decoration: none !important;
   font-size: 16px !important;
   font-weight: bold;
 }
+
 .slon__danger-block {
   padding: 10px;
   background: url("../img/bg-danger.png") 0 0 repeat;
   margin-bottom: 60px;
+
   .slon__danger-block__wrap {
     padding: 25px 25px 9px;
     background-color: #1a1a1d;
   }
 }
+
 .slon__ol-list {
   list-style-type: none;
   counter-reset: num;
@@ -4273,6 +4384,7 @@ a:hover {
   font-size: 14px;
   line-height: 24px;
   padding: 0;
+
   li {
     padding: 2px 0 2px 70px;
     margin-bottom: 30px;
@@ -4280,6 +4392,7 @@ a:hover {
     display: flex;
     align-items: center;
     min-height: 36px;
+
     &::after {
       content: counter(num);
       counter-increment: num;
@@ -4299,14 +4412,17 @@ a:hover {
     }
   }
 }
+
 .slon__ol-list__footer-btn {
   max-width: 285px;
   margin-left: 70px;
 }
+
 .slon__guarantee {
   border: 1px solid #5f5f63;
   position: relative;
   margin-bottom: 60px;
+
   &::after {
     content: "";
     display: block;
@@ -4318,13 +4434,16 @@ a:hover {
     background-color: #5f5f63;
     left: 50%;
   }
+
   .slon__guarantee__warning {
     padding: 25px 25px 5px;
   }
+
   .slon__guarantee__not-list {
     list-style-type: none;
     padding: 15px 25px;
     margin: 0;
+
     li {
       font-size: 14px;
       line-height: 24px;
@@ -4334,22 +4453,26 @@ a:hover {
       padding-left: 48px;
       background: url("../img/svg/ico-del.svg") 0 50% no-repeat;
       background-size: 24px 24px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
 }
+
 .slon__info-contacts {
   padding: 0 0 0 70px;
   color: #fff;
   font-size: 14px;
   line-height: 18px;
+
   .slon__info-contacts__label {
     position: relative;
     min-height: 50px;
     padding-bottom: 10px;
     font-weight: 600;
+
     svg {
       display: block;
       position: absolute;
@@ -4358,6 +4481,7 @@ a:hover {
       left: -45px;
     }
   }
+
   .phone {
     color: #fff;
     font-size: 20px;
@@ -4366,6 +4490,7 @@ a:hover {
     line-height: 1.2;
   }
 }
+
 .slon__main__sel {
   padding: 5px 20px 5px 15px;
   width: 100%;
@@ -4382,14 +4507,17 @@ a:hover {
   background-repeat: no-repeat, repeat;
   background-position: right 15px top 50%;
   background-size: 12px auto;
+
   option {
     color: #000;
   }
+
   &:focus {
     border: 1px solid #a9a9a9;
     outline: none;
   }
 }
+
 .slon__main__input-box__footer {
   padding: 0 0 20px 20px;
   color: #a9a9a9;
@@ -4397,11 +4525,13 @@ a:hover {
   line-height: 14px;
   margin-top: -25px;
 }
+
 .slon__main__form__file {
   padding-top: 15px;
   color: #a9a9a9;
   font-size: 12px;
   line-height: 18px;
+
   .slon__main__form__file__caption {
     font-size: 14px;
     line-height: 18px;
@@ -4409,37 +4539,46 @@ a:hover {
     color: #fff;
     padding-bottom: 15px;
   }
+
   p {
     margin: 0;
     color: #a9a9a9;
     font-size: 12px;
     line-height: 18px;
   }
+
   .input__wrapper {
     padding-top: 20px;
     padding-bottom: 10px;
+
     .input__file {
       display: none;
     }
   }
 }
+
 .input__file-button {
   display: block;
   width: 100%;
 }
+
 .slon__main__form__file__res {
   min-height: 50px;
 }
+
 .slon__btn-orange {
   border: none;
 }
+
 .slon__main__form__center-submit {
   text-align: center;
   padding-bottom: 16px;
+
   .slon__btn-orange {
     margin: 0 auto;
   }
 }
+
 .slon__page__subtitle {
   padding: 15px 0 30px;
   text-align: center;
@@ -4448,15 +4587,18 @@ a:hover {
   font-weight: 500;
   color: #fff;
 }
+
 .slon__card {
   border-radius: 0;
   border: none;
   background-color: transparent;
   height: 100%;
+
   .card-body {
     background-color: #2a2a2f;
     padding: 20px 30px;
     flex-grow: 1;
+
     .card-title {
       text-align: center;
       min-height: 90px;
@@ -4467,6 +4609,7 @@ a:hover {
       line-height: 28px;
     }
   }
+
   .slon__card__list {
     li {
       padding: 15px 0;
@@ -4474,15 +4617,18 @@ a:hover {
       font-size: 14px;
       line-height: 20px;
       color: #fff;
+
       .label {
         color: #a9a9a9;
       }
+
       &:last-child {
         border-bottom: none;
         padding-bottom: 0;
       }
     }
   }
+
   .slon__card__text {
     text-align: center;
     font-size: 14px;
@@ -4490,9 +4636,11 @@ a:hover {
     color: #fff;
   }
 }
+
 .slon__sb-left {
   li {
     border-bottom: 1px solid #5f5f63;
+
     .nav-link {
       display: block;
       padding: 20px 20px 20px 30px;
@@ -4501,8 +4649,10 @@ a:hover {
       font-size: 16px;
       line-height: 20px;
       font-weight: bold;
+
       &.active {
         color: #fff;
+
         &::after {
           content: "";
           display: block;
@@ -4514,6 +4664,7 @@ a:hover {
           z-index: 1;
           position: absolute;
         }
+
         &::before {
           width: 0;
           height: 0;
@@ -4532,10 +4683,12 @@ a:hover {
     }
   }
 }
+
 .slon__box-rev {
   padding: 15px 30px 15px 70px;
   background-color: #2a2a2f;
   margin-bottom: 10px;
+
   .slon__box-rev__title {
     color: #fff;
     font-size: 16px;
@@ -4543,6 +4696,7 @@ a:hover {
     font-weight: 600;
     cursor: pointer;
     position: relative;
+
     &::after {
       content: "";
       display: block;
@@ -4555,8 +4709,10 @@ a:hover {
       background-color: #fff;
       margin-top: -1.5px;
     }
+
     &.collapsed {
       color: #a9a9a9;
+
       &::after {
         content: "";
         display: block;
@@ -4569,6 +4725,7 @@ a:hover {
         background-color: #00ffff;
         margin-top: -1.5px;
       }
+
       &::before {
         content: "";
         display: block;
@@ -4583,15 +4740,18 @@ a:hover {
       }
     }
   }
+
   .slon__box-rev__body {
     padding-top: 15px;
   }
 }
+
 .slon__sub-text-min {
   font-size: 12px;
   line-height: 18px;
   color: #a9a9a9;
 }
+
 .slon__sub-text {
   font-size: 14px;
   line-height: 24px;
@@ -4599,6 +4759,7 @@ a:hover {
   text-decoration: none;
   display: block;
 }
+
 .h3 {
   padding: 0 0 15px 0;
   color: #fff;
@@ -4607,9 +4768,11 @@ a:hover {
   font-weight: bold;
   margin: 0;
 }
+
 .slon__ico-left {
   position: relative;
   padding-left: 35px;
+
   .slon__ico-left__img {
     position: absolute;
     z-index: 10;
@@ -4617,29 +4780,35 @@ a:hover {
     left: 0;
   }
 }
+
 .tpad30 {
   padding-top: 30px;
 }
+
 .slon__page--vopros {
   padding-bottom: 80px;
   background: url("../img/bg-vopros.jpg") 50% 0 no-repeat;
   background-size: auto 100%;
   border-bottom: 1px solid #5f5f63;
 }
+
 .slon__company-desc,
 .slon__desc-404 {
   align-items: center;
   min-height: 400px;
   padding-bottom: 30px;
 }
+
 .slon__page--company {
   background-image: url("../img/bg-company.jpg");
 }
+
 .slon__pic {
   height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
     display: block;
     max-height: 100%;
@@ -4648,6 +4817,7 @@ a:hover {
     height: auto;
   }
 }
+
 .slon__pic__caption {
   padding: 15px;
   color: #fff;
@@ -4656,11 +4826,13 @@ a:hover {
   line-height: 24px;
   font-weight: 600;
 }
+
 .slon_wallpaper {
   img {
     display: block;
     margin-bottom: 10px;
   }
+
   a {
     display: block;
     color: #fff;
@@ -4669,22 +4841,26 @@ a:hover {
     line-height: 26px;
   }
 }
+
 .block-w24 {
   width: 240px;
 }
+
 a.slon__btn--yellow {
   text-decoration: none !important;
 }
+
 .slon__desc-404 {
   h1 {
     font-size: 40px;
-     color: #00ffff;
+    color: #00ffff;
     line-height: 1.3;
     font-weight: bold;
     margin: 0;
     padding: 0 0 20px;
     text-shadow: 3px 3px 0px #da17e2;
   }
+
   p {
     font-size: 18px;
     line-height: 24px;
@@ -4694,6 +4870,107 @@ a.slon__btn--yellow {
     font-weight: 500;
   }
 }
+
 .slon__page--404 {
   background-image: url("../img/bg-404.jpg");
+}
+
+.slon__page__quiz {
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: center;
+
+  .slon__page__quiz__pic {
+    flex-basis: 410px;
+    background: url("../img/bg-quiz.jpg") 50% 50% no-repeat;
+    background-size: cover;
+  }
+
+  .slon__page__quiz__wrap {
+    flex-basis: 440px;
+
+    .slon__product__inner__body {
+      padding: 50px 30px 20px;
+
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.modal-quiz {
+  height: 400px;
+  max-width: 630px;
+}
+
+.modal-quiz__step__top-inp {
+  display: flex;
+
+  .modal-quiz__step__top-inp__col {
+    flex-basis: 45%;
+
+    .slon__main__inp {
+      text-align: center;
+    }
+  }
+
+  .modal-quiz__step__top-inp__center {
+    flex-basis: 10%;
+    color: #00ffff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+}
+
+.modal-dialog.modal--quiz {
+  max-width: 620px;
+}
+
+.modal-quiz {
+  padding: 20px;
+  .modal-quiz__step {
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .modal-quiz__step__caption {
+    font-size: 20px;
+    padding-bottom: 25px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .modal-quiz__step__wrap {
+    height: 120px;
+  }
+
+  .swiper-pagination.swiper-pagination-fraction {
+    position: relative !important;
+    bottom: auto;
+    left: auto;
+    text-align: left !important;
+    padding:0 10px 15px;
+    color: #a9a9a9;
+    font-size: 14px;
+    line-height: 20px;
+
+    .swiper-pagination-current {
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .modal-quiz__step__footer {
+    max-width: 360px;
+    width: 100%;
+    margin: auto auto 0;
+  }
 }

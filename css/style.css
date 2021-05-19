@@ -11290,9 +11290,12 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
     color: #fff;
     background-color: #00e2da; }
 
+.slon__main__pattern {
+  background: url("../img/pattern.png") 50% 0 repeat; }
+
 .slon__brands {
   position: relative;
-  background: url("../img/pattern.jpg") 0 0 repeat; }
+  background: url("../img/pattern.png") 50% 0 repeat; }
   .slon__brands .slon__brands__wrap {
     position: relative; }
     .slon__brands .slon__brands__wrap .slon__brands__slider__item {
@@ -14460,6 +14463,91 @@ a.slon__btn--yellow {
 
 .slon__page--404 {
   background-image: url("../img/bg-404.jpg"); }
+
+.slon__page__quiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .slon__page__quiz .slon__page__quiz__pic {
+    -ms-flex-preferred-size: 410px;
+        flex-basis: 410px;
+    background: url("../img/bg-quiz.jpg") 50% 50% no-repeat;
+    background-size: cover; }
+  .slon__page__quiz .slon__page__quiz__wrap {
+    -ms-flex-preferred-size: 440px;
+        flex-basis: 440px; }
+    .slon__page__quiz .slon__page__quiz__wrap .slon__product__inner__body {
+      padding: 50px 30px 20px; }
+      .slon__page__quiz .slon__page__quiz__wrap .slon__product__inner__body p {
+        font-size: 16px;
+        margin-bottom: 20px; }
+
+.modal-quiz {
+  height: 400px;
+  max-width: 630px; }
+
+.modal-quiz__step__top-inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .modal-quiz__step__top-inp .modal-quiz__step__top-inp__col {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%; }
+    .modal-quiz__step__top-inp .modal-quiz__step__top-inp__col .slon__main__inp {
+      text-align: center; }
+  .modal-quiz__step__top-inp .modal-quiz__step__top-inp__center {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    color: #00ffff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 20px; }
+
+.modal-dialog.modal--quiz {
+  max-width: 620px; }
+
+.modal-quiz {
+  padding: 20px; }
+  .modal-quiz .modal-quiz__step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px; }
+  .modal-quiz .modal-quiz__step__caption {
+    font-size: 20px;
+    padding-bottom: 25px;
+    line-height: 24px;
+    color: #fff; }
+  .modal-quiz .modal-quiz__step__wrap {
+    height: 120px; }
+  .modal-quiz .swiper-pagination.swiper-pagination-fraction {
+    position: relative !important;
+    bottom: auto;
+    left: auto;
+    text-align: left !important;
+    padding: 0 10px 15px;
+    color: #a9a9a9;
+    font-size: 14px;
+    line-height: 20px; }
+    .modal-quiz .swiper-pagination.swiper-pagination-fraction .swiper-pagination-current {
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px; }
+  .modal-quiz .modal-quiz__step__footer {
+    max-width: 360px;
+    width: 100%;
+    margin: auto auto 0; }
 
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
@@ -17730,7 +17818,9 @@ input:active {
 .smart-filter__footer__col--mob,
 .slon__main__single-product--title-mob,
 .slon__main__single-product__reviews__mob-btn,
-.slon__main__section__mob__header {
+.slon__main__section__mob__header,
+.slon__fix__price-mob,
+.slon__main__header__mob__search {
   display: none; }
 
 @media screen and (max-width: 1199px) {
@@ -18099,7 +18189,34 @@ input:active {
   .slon__complect__wrap__result::after {
     left: 50%;
     top: 0;
-    margin-left: -15px; } }
+    margin-left: -15px; }
+
+  .slon__main__header__mob__search.show {
+    display: block;
+    padding-top: 20px;
+    position: relative;
+    padding-right: 30px; }
+    .slon__main__header__mob__search.show .slon__main__header__search-form::after {
+      background-color: #000; }
+    .slon__main__header__mob__search.show .slon__main__header__search-form::before {
+      background-color: #000; }
+    .slon__main__header__mob__search.show .smart-filter__header__close {
+      position: absolute;
+      z-index: 10;
+      top: 20px;
+      right: 0;
+      height: 40px;
+      width: 30px;
+      color: #a9a9a9;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
 @media screen and (max-width: 768px) {
   .slon__main__home-slider__item__desc {
     -webkit-box-pack: start;
@@ -18167,7 +18284,7 @@ input:active {
       .slon__page__header .slon__page__sort .dropdown-menu.dropdown-menu--black {
         width: 100%; }
 
-  .slon__page__sort .btn-sort {
+  .slon__page__sort--catalog .btn-sort {
     text-align: left;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -18175,7 +18292,7 @@ input:active {
     padding: 5px 10px;
     border: 1px solid #5f5f63;
     position: relative; }
-    .slon__page__sort .btn-sort.dropdown-toggle::after {
+    .slon__page__sort--catalog .btn-sort.dropdown-toggle::after {
       position: absolute !important;
       right: 10px; }
 
@@ -18259,7 +18376,7 @@ input:active {
   .slon__col-filter.show {
     display: block !important;
     position: fixed;
-    z-index: 200;
+    z-index: 600;
     top: 0;
     left: 0;
     right: 0;
@@ -18355,7 +18472,27 @@ input:active {
 
   .slon__review .slon__review__body {
     padding-right: 0;
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .mob-price.is_active .slon__fix__price-mob {
+    display: block;
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    z-index: 350;
+    background-color: #000;
+    padding: 10px 0; }
+    .mob-price.is_active .slon__fix__price-mob .slon__list-catalog__product__price {
+      padding-left: 0; }
+    .mob-price.is_active .slon__fix__price-mob .slon__fix__price-mob__btn {
+      margin-left: auto; }
+
+  .slon__page__sort--art .dropdown-menu.dropdown-menu--black {
+    min-width: 100%;
+    width: auto !important;
+    left: auto !important;
+    right: -30px !important; } }
 @media screen and (max-width: 599px) {
   .slon__list-catalog__slider__item {
     width: 320px; }
