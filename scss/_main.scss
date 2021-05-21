@@ -1608,20 +1608,19 @@ a:hover {
   background: url("../img/svg/i-percent.svg") 0 50% no-repeat;
   background-size: 120px auto;
 
-  .slon__subscription__promo__caption {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
-    color: #fff;
-    padding-bottom: 5px;
-  }
-
   .slon__subscription__promo__text {
     font-weight: 500;
     font-size: 18px;
     line-height: 36px;
     color: #fff;
   }
+}
+.slon__subscription__promo__caption {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  padding-bottom: 5px;
 }
 
 .slon__border-box--promo {
@@ -2966,6 +2965,12 @@ a:hover {
     padding: 10px;
     display: flex;
   }
+  &--h50 {
+    span {
+      height: auto;
+      min-height: 50px;
+    }
+  }
 
   &--mini {
     span {
@@ -3052,6 +3057,11 @@ a:hover {
   line-height: 18px;
   font-weight: 500;
   color: #fff;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    color: #00ffff;
+  }
 }
 
 .slon-form--subscription {
@@ -4926,7 +4936,7 @@ a.slon__btn--yellow {
   }
 }
 
-.modal-dialog.modal--quiz {
+.modal-dialog.modal--min {
   max-width: 620px;
 }
 
@@ -4973,4 +4983,15 @@ a.slon__btn--yellow {
     width: 100%;
     margin: auto auto 0;
   }
+}
+.slon__box-text {
+  margin-bottom: 30px;
+  padding: 30px 30px 14px;
+  background-color: #2a2a2f;
+}
+.modal-lg.modal-dialog {
+  max-width: 760px;
+}
+.slon__main__input-box .slon__main__inp--h145 {
+  height: 145px;
 }

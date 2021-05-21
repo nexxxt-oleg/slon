@@ -773,7 +773,7 @@
 </div>
 
 <div class="modal fade" id="quizModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal--quiz">
+    <div class="modal-dialog modal-dialog-centered modal--min">
         <div class="modal-content">
             <div class="modal-content__left"></div>
             <div class="modal-content__right"></div>
@@ -859,13 +859,13 @@
                                         </li>
                                         <li>
                                             <label class="slon__radiobaton">
-                                                <input type="radio" name="quiz3" value="Нет" >
+                                                <input type="radio" name="quiz3" value="Нет">
                                                 <span>Нет</span>
                                             </label>
                                         </li>
                                         <li>
                                             <label class="slon__radiobaton">
-                                                <input type="radio" name="quiz3" value="Не особо важно" >
+                                                <input type="radio" name="quiz3" value="Не особо важно">
                                                 <span>Не особо важно</span>
                                             </label>
                                         </li>
@@ -888,13 +888,14 @@
                                     <ul class="modal-quiz__step__list nav slon__list-filter flex-column">
                                         <li>
                                             <label class="slon__radiobaton">
-                                                <input type="radio" name="quiz4" value="Приобретаю кресло для работы за компьютером" checked>
+                                                <input type="radio" name="quiz4"
+                                                       value="Приобретаю кресло для работы за компьютером" checked>
                                                 <span>Приобретаю кресло для работы за компьютером </span>
                                             </label>
                                         </li>
                                         <li>
                                             <label class="slon__radiobaton">
-                                                <input type="radio" name="quiz4" value="Ищу вариант для консоли" >
+                                                <input type="radio" name="quiz4" value="Ищу вариант для консоли">
                                                 <span>Ищу вариант для консоли</span>
                                             </label>
                                         </li>
@@ -934,11 +935,12 @@
                                     </div>
 
                                     <div class="modal-quiz__step__footer">
-                                        <div class="quiz-button-next slon__btn slon__btn--yellow w-100 slon__btn--h50">
+                                        <button id="finishQuiz"
+                                                class="slon__btn slon__btn--yellow w-100 slon__btn--h50">
                                             <span class="slon__btn__left"></span>
                                             <span class="slon__btn__center">ДАЛЕЕ</span>
                                             <span class="slon__btn__right"></span>
-                                        </div>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -947,6 +949,103 @@
                     </div>
                 </form>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="quizNotModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-content__left"></div>
+            <div class="modal-content__right"></div>
+            <div class="tpad60 fpad60">
+                <div class="slon__main__text text-center">
+                    <h3>Ой, по таким параметрам у нас ничего не нашлось :(</h3>
+                    <p>Попробуйте их изменить, и мы подберем для вас идеальное кресло. Испытываете трудности с выбором?
+                        Мы всегда готовы дать подробную консультацию по телефону.</p>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-xl-6">
+                        <div class="tpad30">
+                            <button data-toggle="modal" data-target="#quizModal"
+                                    id="resetQuiz"
+                                    class="slon__btn slon__btn--yellow w-100 slon__btn--h50">
+                                <span class="slon__btn__left"></span>
+                                <span class="slon__btn__center">Изменить параметры поиска</span>
+                                <span class="slon__btn__right"></span>
+                            </button>
+                        </div>
+                        <div class="tpad30">
+                            <button data-toggle="modal" data-target="#consultModal"
+                                    id="consultOpen"
+                                    class="slon__btn-border slon__btn-border--h50 slon__btn-border--yellow">
+                                <span>Получить консультацию по телефону</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="consultModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-content__left"></div>
+            <div class="modal-content__right"></div>
+            <div class="modal-header">
+                <div class="modal-title">Получить консультацию по телефону</div>
+                <button class="close" data-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label class="slon__main__form__label" for="consult_name">
+                            Ваше имя *
+                        </label>
+                        <div class="slon__main__input-box">
+                            <input type="text" id="consult_name" name="consult_name" class="slon__main__inp"
+                                   required="">
+                        </div>
+                        <label class="slon__main__form__label" for="consult_tel">
+                            Номер телефона *
+                        </label>
+                        <div class="slon__main__input-box">
+                            <input type="tel" id="consult_tel" name="consult_tel" class="slon__main__inp"
+                                   required="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="slon__main__form__label" for="consult_text">Сообщение *</label>
+                        <div class="slon__main__input-box">
+                            <textarea name="consult_text" id="consult_text" class="slon__main__inp slon__main__inp--h145" required ></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center fpad60">
+                    <div class="col-lg-6">
+                        <div class="slon__main__form-persona">
+                            <label class="smart-filter__checkbox">
+                                <input type="checkbox" value="1" name="pol" checked="" required="">
+                                <span>Я подтверждаю, что ознакомлен с Политикой обработки
+                                                <a href="">персональных данных</a></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="slon__btn slon__btn--yellow slon__btn--h50 w-100" type="submit">
+                            <span class="slon__btn__left"></span>
+                            <span class="slon__btn__center">Получить консультацию</span>
+                            <span class="slon__btn__right"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -1230,6 +1329,37 @@
                 nextEl: ".quiz-button-next",
             },
         });
+
+
+        let myModalEl = document.getElementById('quizModal')
+        myModalEl.addEventListener('hidden.bs.modal', function (event) {
+            quizSlider.slideTo(0);
+        });
+
+        document.getElementById('finishQuiz').onclick = function (event) {
+            event.preventDefault();
+            let quizModal = bootstrap.Modal.getInstance(document.getElementById('quizModal'));
+            /**
+             * финальная кнопка квиза
+             */
+            quizModal.hide();
+
+            let quizNotModal = new bootstrap.Modal(document.getElementById('quizNotModal'), {});
+            quizNotModal.show();
+
+        }
+
+        document.getElementById('resetQuiz').onclick = function (event) {
+            let quizNotModal = bootstrap.Modal.getInstance(document.getElementById('quizNotModal'));
+            quizNotModal.hide();
+
+        }
+
+        document.getElementById('consultOpen').onclick = function (event) {
+            let quizNotModal = bootstrap.Modal.getInstance(document.getElementById('quizNotModal'));
+            quizNotModal.hide();
+        }
+
     });
 </script>
 

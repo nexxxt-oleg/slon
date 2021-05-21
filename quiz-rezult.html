@@ -61,6 +61,27 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="col-12">
+                        <div id="mobSearch" class="slon__main__header__mob__search">
+                            <form action="" class="slon__main__header__search-form">
+                                <div class="slon__main__header__search">
+                                    <input type="text" required="" class="slon__main__header__search__inp"
+                                           placeholder="Поиск">
+                                    <button type="submit" class="slon__main__header__search__submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="#a9a9a9"
+                                                  d="M508.88,493.79,353.09,338a201.62,201.62,0,0,0,52.24-135.34C405.33,90.92,314.42,0,202.67,0S0,90.92,0,202.67,90.92,405.33,202.67,405.33A201.62,201.62,0,0,0,338,353.09L493.79,508.88a10.67,10.67,0,1,0,15.09-15.09ZM202.67,384c-100,0-181.34-81.34-181.34-181.33S102.69,21.33,202.67,21.33,384,102.68,384,202.67,302.65,384,202.67,384Z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                            <a id="searchClose" href="" class="smart-filter__header__close">
+                                <svg class="icon-silver" width="12" height="12">
+                                    <use xlink:href="#svg-close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -338,391 +359,511 @@
         </nav>
     </header>
 
-    <div class="container slon__page">
-        <ul class="breadcrumbs nav">
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Избранное</a>
-            </li>
-        </ul>
-        <div class="slon__page__header">
-            <h1 class="h1">Избранное</h1>
-            <a href="" class="slon__link-ico-left ml-auto slon__clear-link">
-                <svg width="10" height="10" class="icon-silver">
-                    <use xlink:href="#svg-close"></use>
-                </svg>
-                Очистить избранное
-            </a>
-        </div>
-
-        <div class="row fpad60 slon__list-catalog">
-            <div class="col-lg-3 col-md-6 fpad30 slon__col-product">
-                <div class="slon__product slon__product--hover">
-                    <div class="slon__product__inner">
-                        <div class="slon__product__inner__top"></div>
-                        <div class="slon__product__inner__body">
-                            <ul class="nav slon__product__fav-compare">
-                                <li class="slon__product__del-mob">
-                                    <a href="" class="slon__ico-left">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.81 172.12">
-                                            <path fill="#0a898f" d="M94.86,0H53V22H0V58.69H9.86l11,113.43H126.94L138,58.69h9.85V22H94.86ZM63,10.09H84.78V22H63ZM117.79,162H30L20,58.69H127.82ZM137.73,32.09V48.61H10.09V32.09Z"/>
-                                            <rect fill="#0a898f" x="68.86" y="78.33" width="10.09" height="64.1"/>
-                                            <polygon fill="#0a898f" points="95.83 78.33 92.83 142.42 102.92 142.42 105.93 78.33 95.83 78.33"/>
-                                            <polygon fill="#0a898f" points="51.98 78.33 41.88 78.33 44.89 142.42 54.98 142.42 51.98 78.33"/>
-                                        </svg>
-
-                                        <span class="slon__mob-label">Удалить</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="slon__product__compare">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 512 511.07">
-                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
-                                        </svg>
-                                        <span class="slon__mob-label">В сравнение</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="#" class="slon__list-catalog__product">
-                                <div class="slon__product__discount">
-                                    -10%
-                                </div>
-                                <div class="slon__list-catalog__product__pic">
-                                    <div class="swiper-container js_slider_item_product">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="slon__product__text">
-                                <a href="#" class="slon__list-catalog__product__title">Геймерская софа
-                                    Cougar RANGER2 </a>
-                                <ul class="nav slon__list-catalog__product__politra">
-                                </ul>
-                                <div class="slon__list-catalog__product__price">
-                                        <span class="slon__product__price-value">26 091 <span
-                                                class="b-rub">Р</span></span>
-                                    <span class="slon__product__old-price-value">28 990 <span
-                                            class="b-rub">Р</span></span>
-                                </div>
-                                <div class="slon__list-catalog__product__bay is-active fpad15">
-                                    <button class="slon__btn-bay">
-                                        <i></i> В КОРЗИНУ
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slon__product__inner__bottom">
-                            <a href="" class="slon__link-ico-left slon__remove-product">
-                                <svg width="10" height="10" class="icon-silver">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Убрать из избранного
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+    <div class="slon__main__pattern">
+        <div class="container slon__page">
+            <ul class="breadcrumbs nav">
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="breadcrumbs-link" href="#">Сравнение</a>
+                </li>
+            </ul>
+            <div class="slon__page__header">
+                <h1 class="h1">Результат подбора кресел</h1>
             </div>
-            <div class="col-lg-3 col-md-6 fpad30 slon__col-product">
-                <div class="slon__product slon__product--hover">
-                    <div class="slon__product__inner">
-                        <div class="slon__product__inner__top"></div>
-                        <div class="slon__product__inner__body">
-                            <ul class="nav slon__product__fav-compare">
-                                <li>
-                                    <a href="" class="slon__product__compare">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 512 511.07">
-                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="#" class="slon__list-catalog__product">
-                                <div class="slon__product__discount">
-                                    -10%
-                                </div>
-                                <div class="slon__list-catalog__product__pic">
-                                    <div class="swiper-container js_slider_item_product">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="slon__product__text">
-                                <a href="#" class="slon__list-catalog__product__title">Геймерская софа
-                                    Cougar RANGER2 </a>
-                            <ul class="nav slon__list-catalog__product__politra">
-                                <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color"
-                                       style="background: #ff4545"
-                                    ></a>
-                                </li>
-                                <li>
-                                    <a href="" class="slon__list-catalog__product__politra__color"
-                                       style="background: #73ba00"
-                                    ></a>
-                                </li>
-                            </ul>
-                            <div class="slon__list-catalog__product__price">
-                                        <span class="slon__product__price-value">26 091 <span
-                                                class="b-rub">Р</span></span>
-                                <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
-                            </div>
-                            <div class="slon__list-catalog__product__bay is-active fpad15">
-                                <button class="slon__btn-bay">
-                                    <i></i> В КОРЗИНУ
-                                </button>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="slon__product__inner__bottom">
-                            <a href="" class="slon__link-ico-left slon__remove-product">
-                                <svg width="10" height="10" class="icon-silver">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Убрать из избранного
-                            </a>
-                        </div>
 
-                    </div>
-                </div>
+            <div class="slon__box-text slon__main__text">
+                <p>Вот самые подходящие варианты кресел по заданным параметрам.</p>
+                <p>Заранее предвосхищая вопрос: «Чем все эти модели отличаются друг от друга?», мы составили табличку с различающимися характеристиками для наглядности.</p>
+                <p>Не забудьте перейти на страничку понравившегося кресла, чтобы посмотреть подробное описание и отзывы.</p>
             </div>
-            <div class="col-lg-3 col-md-6 fpad30 slon__col-product">
-                <div class="slon__product slon__product--hover">
-                    <div class="slon__product__inner">
-                        <div class="slon__product__inner__top"></div>
-                        <div class="slon__product__inner__body">
-                            <ul class="nav slon__product__fav-compare">
-                                <li class="slon__product__del-mob">
-                                    <a href="" class="slon__ico-left">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.81 172.12">
-                                            <path fill="#0a898f" d="M94.86,0H53V22H0V58.69H9.86l11,113.43H126.94L138,58.69h9.85V22H94.86ZM63,10.09H84.78V22H63ZM117.79,162H30L20,58.69H127.82ZM137.73,32.09V48.61H10.09V32.09Z"/>
-                                            <rect fill="#0a898f" x="68.86" y="78.33" width="10.09" height="64.1"/>
-                                            <polygon fill="#0a898f" points="95.83 78.33 92.83 142.42 102.92 142.42 105.93 78.33 95.83 78.33"/>
-                                            <polygon fill="#0a898f" points="51.98 78.33 41.88 78.33 44.89 142.42 54.98 142.42 51.98 78.33"/>
-                                        </svg>
 
-                                        <span class="slon__mob-label">Удалить</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="slon__product__compare">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 512 511.07">
-                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
-                                        </svg>
-                                        <span class="slon__mob-label">В сравнение</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="#" class="slon__list-catalog__product">
-                                <div class="slon__product__discount">
-                                    -10%
-                                </div>
-                                <div class="slon__list-catalog__product__pic">
-                                    <div class="swiper-container js_slider_item_product">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="slon__product__text">
-                                <a href="#" class="slon__list-catalog__product__title">Геймерская софа
-                                    Cougar RANGER2 </a>
-                                <ul class="nav slon__list-catalog__product__politra">
-                                </ul>
-                                <div class="slon__list-catalog__product__price">
-                                        <span class="slon__product__price-value">26 091 <span
-                                                class="b-rub">Р</span></span>
-                                    <span class="slon__product__old-price-value">28 990 <span
-                                            class="b-rub">Р</span></span>
-                                </div>
-                                <div class="slon__list-catalog__product__bay is-active fpad15">
-                                    <button class="slon__btn-bay">
-                                        <i></i> В КОРЗИНУ
-                                    </button>
-                                </div>
-                            </div>
+            <div class="slon__compare fpad50">
+                <div class="slon__compare__header">
+                    <div class="row align-items-center">
+                        <div class="slon__compare__header__col-count col-lg-3 col-sm-4 col-6">
+                            <span class="slon__label">Товаров в сравнении:</span> <span class="slon__count-products">4</span>
                         </div>
-                        <div class="slon__product__inner__bottom">
-                            <a href="" class="slon__link-ico-left slon__remove-product">
-                                <svg width="10" height="10" class="icon-silver">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Убрать из избранного
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 fpad30 slon__col-product">
-                <div class="slon__product slon__product--hover">
-                    <div class="slon__product__inner">
-                        <div class="slon__product__inner__top"></div>
-                        <div class="slon__product__inner__body">
-                            <ul class="nav slon__product__fav-compare">
-                                <li>
-                                    <a href="" class="slon__product__compare">
-                                        <svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 512 511.07">
-                                            <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                            <a href="#" class="slon__list-catalog__product">
-                                <div class="slon__product__discount">
-                                    -10%
-                                </div>
-                                <div class="slon__list-catalog__product__pic">
-                                    <div class="swiper-container js_slider_item_product">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="slon__list-catalog__product__pic__item">
-                                                    <img
-                                                            src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
-                                                            data-src="./img/t1.png"
-                                                            data-srcset="./img/t1@2.png 2x"
-                                                            class="swiper-lazy"
-                                                            alt=""
-                                                    />
-                                                    <div class="swiper-lazy-preloader"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="slon__product__text">
-                                <a href="#" class="slon__list-catalog__product__title">Геймерская софа
-                                    Cougar RANGER2 </a>
-                                <ul class="nav slon__list-catalog__product__politra">
+                        <div class="slon__compare__header__col-filter col-lg-9 col-sm-8 col-6">
+                            <div class="d-flex align-items-center">
+                                <label class="slon__label">Характеристики:</label>
+                                <ul class="nav slon__list-filter">
                                     <li>
-                                        <a href="" class="slon__list-catalog__product__politra__color"
-                                           style="background: #ff4545"
-                                        ></a>
+                                        <label class="slon__radiobaton">
+                                            <input type="radio" value="1" name="filter" checked>
+                                            <span>Все</span>
+                                        </label>
                                     </li>
                                     <li>
-                                        <a href="" class="slon__list-catalog__product__politra__color"
-                                           style="background: #73ba00"
-                                        ></a>
+                                        <label class="slon__radiobaton">
+                                            <input type="radio" value="2" name="filter">
+                                            <span>Различающиеся</span>
+                                        </label>
                                     </li>
                                 </ul>
-                                <div class="slon__list-catalog__product__price">
-                                        <span class="slon__product__price-value">26 091 <span
-                                                class="b-rub">Р</span></span>
-                                    <span class="slon__product__old-price-value">28 990 <span class="b-rub">Р</span></span>
-                                </div>
-                                <div class="slon__list-catalog__product__bay is-active fpad15">
-                                    <button class="slon__btn-bay">
-                                        <i></i> В КОРЗИНУ
+                            </div>
+                            <div class="d-flex align-items-center ml-auto">
+                                <label class="slon__label">Категория:</label>
+                                <div class="btn-group slon__page__sort w-auto">
+                                    <button class="btn-sort dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        Компьютерные кресла
                                     </button>
+                                    <div class="dropdown-menu dropdown-menu--black dropdown-menu-right">
+                                        <a href="" class="dropdown-item">Компьютерные кресла</a>
+                                        <a href="" class="dropdown-item active"> Компьютерные кресла</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="slon__product__inner__bottom">
-                            <a href="" class="slon__link-ico-left slon__remove-product">
-                                <svg width="10" height="10" class="icon-silver">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Убрать из избранного
-                            </a>
-                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-end ">
+                    <div class="slon__compare__col-props col-lg-3 col-sm-4 col-6">
+                        <ul class="nav slon-nav-props slon-props">
+                            <li class="slon-props__line slon-props__line--n1" data-sinhro=".slon-props__line--n1">
+                                Артикул
+                            </li>
+                            <li class="slon-props__line slon-props__line--n2" data-sinhro=".slon-props__line--n2">
+                                Название модели модели модели модели
+                            </li>
+                            <li class="slon-props__line slon-props__line--n3" data-sinhro=".slon-props__line--n3">
+                                Цвет
+                            </li>
+                            <li class="slon-props__line slon-props__line--n4" data-sinhro=".slon-props__line--n4">
+                                Для людей ростом от
+                            </li>
+                            <li class="slon-props__line slon-props__line--n5" data-sinhro=".slon-props__line--n5">
+                                Нагрузка до
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slon__compare__col-products col-lg-9 col-sm-8 col-6">
+                        <div id="compareSlider" class="slon__list-compare swiper-container">
+                            <div class="swiper-wrapper">
 
+                                <div class="swiper-slide">
+                                    <div class="slon__product">
+                                        <div class="slon__product__inner">
+                                            <div class="slon__product__inner__top"></div>
+                                            <div class="slon__product__inner__body">
+                                                <div class="slon__product__inner__body__top-product">
+                                                    <ul class="nav slon__product__fav-compare">
+                                                        <li>
+                                                            <a href="" class="slon__product__compare slon__link-ico">
+                                                                <svg width="25" height="25" class="icon">
+                                                                    <use xlink:href="#svg-favorite"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="slon__list-catalog__product">
+                                                        <div class="slon__product__discount">
+                                                            -10%
+                                                        </div>
+                                                        <div class="slon__list-catalog__product__pic">
+                                                            <div class="swiper-container js_slider_item_product">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-pagination"></div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                                    </a>
+                                                    <ul class="nav slon__list-catalog__product__politra">
+                                                        <li>
+                                                            <a href="" class="slon__list-catalog__product__politra__color"
+                                                               style="background: #ff4545"
+                                                            ></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="" class="slon__list-catalog__product__politra__color"
+                                                               style="background: #73ba00"
+                                                            ></a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="slon__list-catalog__product__price">
+                                                    <span class="slon__product__price-value">26 091 <span
+                                                            class="b-rub">Р</span></span>
+                                                        <span class="slon__product__old-price-value">28 990 <span
+                                                                class="b-rub">Р</span></span>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__bay is-active fpad15">
+                                                        <button class="slon__btn-bay">
+                                                            <i></i> В КОРЗИНУ
+                                                        </button>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__remove">
+                                                        <a href="" class="slon__link-ico-left slon__remove-product">
+                                                            <svg width="10" height="10" class="icon-silver">
+                                                                <use xlink:href="#svg-close"></use>
+                                                            </svg>
+                                                            Убрать из сравнения
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav slon__list-catalog__product__props-list">
+                                                    <li class="slon-props__line slon-props__line--n1">1000-100-1000</li>
+                                                    <li class="slon-props__line slon-props__line--n2">COUGAR Fusion</li>
+                                                    <li class="slon-props__line slon-props__line--n3">
+                                                        <ul class="nav slon__product__prop-options">
+                                                            <li class="slon__product__prop-options__color" style="background-color: red"></li>
+                                                            <li class="slon__product__prop-options__color" style="background-color: blue"></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="slon-props__line slon-props__line--n4">160 до 180 см 160 до 180 см 160 до 180 см</li>
+                                                    <li class="slon-props__line slon-props__line--n5">Нет, фиксированный</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slon__product__inner__bottom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slon__product">
+                                        <div class="slon__product__inner">
+                                            <div class="slon__product__inner__top"></div>
+                                            <div class="slon__product__inner__body">
+                                                <div class="slon__product__inner__body__top-product">
+                                                    <ul class="nav slon__product__fav-compare">
+                                                        <li>
+                                                            <a href="" class="slon__product__compare">
+                                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                                     viewBox="0 0 512 511.07">
+                                                                    <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="slon__list-catalog__product">
+                                                        <div class="slon__product__discount">
+                                                            -10%
+                                                        </div>
+                                                        <div class="slon__list-catalog__product__pic">
+                                                            <div class="swiper-container js_slider_item_product">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-pagination"></div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                                    </a>
+                                                    <ul class="nav slon__list-catalog__product__politra">
+                                                    </ul>
+                                                    <div class="slon__list-catalog__product__price">
+                                                    <span class="slon__product__price-value">26 091 <span
+                                                            class="b-rub">Р</span></span>
+                                                        <span class="slon__product__old-price-value">28 990 <span
+                                                                class="b-rub">Р</span></span>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__bay is-active fpad15">
+                                                        <button class="slon__btn-bay">
+                                                            <i></i> В КОРЗИНУ
+                                                        </button>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__remove">
+                                                        <a href="" class="slon__link-ico-left slon__remove-product">
+                                                            <svg width="10" height="10" class="icon-silver">
+                                                                <use xlink:href="#svg-close"></use>
+                                                            </svg>
+                                                            Убрать из сравнения
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav slon__list-catalog__product__props-list">
+                                                    <li class="slon-props__line slon-props__line--n1">1000-100-1000</li>
+                                                    <li class="slon-props__line slon-props__line--n2">COUGAR Fusion</li>
+                                                    <li class="slon-props__line slon-props__line--n3">
+                                                        <ul class="nav slon__product__prop-options">
+                                                            <li class="slon__product__prop-options__color" style="background-color: red"></li>
+                                                            <li class="slon__product__prop-options__color" style="background-color: blue"></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="slon-props__line slon-props__line--n4">160 до 180 см</li>
+                                                    <li class="slon-props__line slon-props__line--n5">Нет, фиксированный</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slon__product__inner__bottom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slon__product">
+                                        <div class="slon__product__inner">
+                                            <div class="slon__product__inner__top"></div>
+                                            <div class="slon__product__inner__body">
+                                                <div class="slon__product__inner__body__top-product">
+                                                    <ul class="nav slon__product__fav-compare">
+                                                        <li>
+                                                            <a href="" class="slon__product__compare">
+                                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                                     viewBox="0 0 512 511.07">
+                                                                    <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="slon__list-catalog__product">
+                                                        <div class="slon__product__discount">
+                                                            -10%
+                                                        </div>
+                                                        <div class="slon__list-catalog__product__pic">
+                                                            <div class="swiper-container js_slider_item_product">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-pagination"></div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                                    </a>
+                                                    <ul class="nav slon__list-catalog__product__politra">
+                                                    </ul>
+                                                    <div class="slon__list-catalog__product__price">
+                                                    <span class="slon__product__price-value">26 091 <span
+                                                            class="b-rub">Р</span></span>
+                                                        <span class="slon__product__old-price-value">28 990 <span
+                                                                class="b-rub">Р</span></span>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__bay is-active fpad15">
+                                                        <button class="slon__btn-bay">
+                                                            <i></i> В КОРЗИНУ
+                                                        </button>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__remove">
+                                                        <a href="" class="slon__link-ico-left slon__remove-product">
+                                                            <svg width="10" height="10" class="icon-silver">
+                                                                <use xlink:href="#svg-close"></use>
+                                                            </svg>
+                                                            Убрать из сравнения
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav slon__list-catalog__product__props-list">
+                                                    <li class="slon-props__line slon-props__line--n1">1000-100-1000</li>
+                                                    <li class="slon-props__line slon-props__line--n2">COUGAR Fusion</li>
+                                                    <li class="slon-props__line slon-props__line--n3">
+                                                        <ul class="nav slon__product__prop-options">
+                                                            <li class="slon__product__prop-options__color" style="background-color: red"></li>
+                                                            <li class="slon__product__prop-options__color" style="background-color: blue"></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="slon-props__line slon-props__line--n4">160 до 180 см</li>
+                                                    <li class="slon-props__line slon-props__line--n5">Нет, фиксированный</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slon__product__inner__bottom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slon__product">
+                                        <div class="slon__product__inner">
+                                            <div class="slon__product__inner__top"></div>
+                                            <div class="slon__product__inner__body">
+                                                <div class="slon__product__inner__body__top-product">
+                                                    <ul class="nav slon__product__fav-compare">
+                                                        <li>
+                                                            <a href="" class="slon__product__compare">
+                                                                <svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                                                     viewBox="0 0 512 511.07">
+                                                                    <path d="M423.6,149.78,501,128.27a15,15,0,1,0-8-28.9L396.75,126.1h0L271,161V15a15,15,0,0,0-30,0V169.36L107.56,206.43h0L11,233.25a15,15,0,0,0,4,29.46,14.78,14.78,0,0,0,4-.56L79.2,245.44,6.51,366.6H0v85.11L111.4,511.07l111.4-59.36V366.6h-6.51L134.4,230.11l234-65L295.71,286.27H289.2v85.11l111.4,59.36L512,371.38V286.27h-6.5ZM192.8,433l-81.4,44.64L30,433V396.6H192.8ZM181.31,366.6H41.5l69.9-116.52ZM400.6,169.75l69.91,116.52H330.69Zm0,227.58-81.4-44.64V316.27H482v36.42Z"></path>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="slon__list-catalog__product">
+                                                        <div class="slon__product__discount">
+                                                            -10%
+                                                        </div>
+                                                        <div class="slon__list-catalog__product__pic">
+                                                            <div class="swiper-container js_slider_item_product">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="swiper-slide">
+                                                                        <div class="slon__list-catalog__product__pic__item">
+                                                                            <img
+                                                                                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                                                                    data-src="./img/t1.png"
+                                                                                    data-srcset="./img/t1@2.png 2x"
+                                                                                    class="swiper-lazy"
+                                                                                    alt=""
+                                                                            />
+                                                                            <div class="swiper-lazy-preloader"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-pagination"></div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="slon__list-catalog__product__title">Геймерская софа Cougar RANGER </span>
+                                                    </a>
+                                                    <ul class="nav slon__list-catalog__product__politra">
+                                                    </ul>
+                                                    <div class="slon__list-catalog__product__price">
+                                                    <span class="slon__product__price-value">26 091 <span
+                                                            class="b-rub">Р</span></span>
+                                                        <span class="slon__product__old-price-value">28 990 <span
+                                                                class="b-rub">Р</span></span>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__bay is-active fpad15">
+                                                        <button class="slon__btn-bay">
+                                                            <i></i> В КОРЗИНУ
+                                                        </button>
+                                                    </div>
+                                                    <div class="slon__list-catalog__product__remove">
+                                                        <a href="" class="slon__link-ico-left slon__remove-product">
+                                                            <svg width="10" height="10" class="icon-silver">
+                                                                <use xlink:href="#svg-close"></use>
+                                                            </svg>
+                                                            Убрать из сравнения
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav slon__list-catalog__product__props-list">
+                                                    <li class="slon-props__line slon-props__line--n1">1000-100-1000</li>
+                                                    <li class="slon-props__line slon-props__line--n2">COUGAR Fusion</li>
+                                                    <li class="slon-props__line slon-props__line--n3">
+                                                        <ul class="nav slon__product__prop-options">
+                                                            <li class="slon__product__prop-options__color" style="background-color: red"></li>
+                                                            <li class="slon__product__prop-options__color" style="background-color: blue"></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="slon-props__line slon-props__line--n4">160 до 180 см</li>
+                                                    <li class="slon-props__line slon-props__line--n5">Нет, фиксированный</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slon__product__inner__bottom">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">
+                                    <path d="M281.2,226.8,62.25,7.86a27,27,0,0,0-38.06,0L8.06,24A27,27,0,0,0,8.06,62L191.92,245.9,7.86,430a27,27,0,0,0,0,38.07L24,484.14a27,27,0,0,0,38.07,0L281.2,265a27.16,27.16,0,0,0,0-38.2Z"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">
+                                    <path class="cls-1"
+                                          d="M7.85,265.2l219,218.94a27,27,0,0,0,38.06,0L281,468A26.93,26.93,0,0,0,281,430L97.13,246.1,281.19,62a27,27,0,0,0,0-38.06L265.06,7.86a27,27,0,0,0-38.06,0L7.85,227a27.16,27.16,0,0,0,0,38.2Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row fpad60">
+                <div class="col-12">
+                    <div class="slon__border-box slon__border-box--promo">
+                        <div class="slon__border-box__inner">
+                            <div class="slon__border-box__inner__line-left"></div>
+                            <div class="slon__border-box__inner__line-right"></div>
+                            <div class="slon__border-box__inner__line-top"></div>
+                            <div class="slon__border-box__inner__line-bottom"></div>
+                            <div class="slon__subscription">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7 tpad30">
+                                        <div class="h2">Все равно остались сомнения?</div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <button data-toggle="modal" data-target="#consultModal"
+                                                class="slon__btn slon__btn--yellow slon__btn--h50 w-100" >
+                                            <span class="slon__btn__left"></span>
+                                            <span class="slon__btn__center">Получить консультацию по телефону</span>
+                                            <span class="slon__btn__right"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -882,7 +1023,6 @@
             </div>
         </div>
     </footer>
-
     <div id="topMenu" class="slon__nav-mob">
         <div class="container">
             <nav class="slon__nav-mob__wrap">
@@ -1097,7 +1237,6 @@
         </div>
     </div>
 </div>
-
 <div class="d-none">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="svg-star" viewBox="0 0 512 488.41">
@@ -1279,9 +1418,129 @@
     </svg>
 </div>
 
+<div class="modal fade" id="consultModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-content__left"></div>
+            <div class="modal-content__right"></div>
+            <div class="modal-header">
+                <div class="modal-title">Получить консультацию по телефону</div>
+                <button class="close" data-dismiss="modal">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label class="slon__main__form__label" for="consult_name">
+                            Ваше имя *
+                        </label>
+                        <div class="slon__main__input-box">
+                            <input type="text" id="consult_name" name="consult_name" class="slon__main__inp"
+                                   required="">
+                        </div>
+                        <label class="slon__main__form__label" for="consult_tel">
+                            Номер телефона *
+                        </label>
+                        <div class="slon__main__input-box">
+                            <input type="tel" id="consult_tel" name="consult_tel" class="slon__main__inp"
+                                   required="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="slon__main__form__label" for="consult_text">Сообщение *</label>
+                        <div class="slon__main__input-box">
+                            <textarea name="consult_text" id="consult_text" class="slon__main__inp slon__main__inp--h145" required ></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center fpad60">
+                    <div class="col-lg-6">
+                        <div class="slon__main__form-persona">
+                            <label class="smart-filter__checkbox">
+                                <input type="checkbox" value="1" name="pol" checked="" required="">
+                                <span>Я подтверждаю, что ознакомлен с Политикой обработки
+                                                <a href="">персональных данных</a></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="slon__btn slon__btn--yellow slon__btn--h50 w-100" type="submit">
+                            <span class="slon__btn__left"></span>
+                            <span class="slon__btn__center">Получить консультацию</span>
+                            <span class="slon__btn__right"></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/lib.js"></script>
 <script src="./js/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $.fn.setMaxHeights = function () {
+            var maxHeight = this.map(function (i, e) {
+                return $(e).height();
+            }).get();
+            //console.log(maxHeight);
+            return this.height(Math.max.apply(this, maxHeight));
+        };
+
+        function activeSlideCompare() {
+            let swiperComplect = new Swiper('#compareSlider', {
+                lazy: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                slidesPerView: 3,
+                spaceBetween: 30,
+                //loop: true,
+                breakpoints: {
+                    440: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    991: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1280: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                }
+            });
+
+
+        }
+
+        activeSlideCompare();
+
+        $(".slon-nav-props li").each(function() {
+            let activeRow = $(this).data("sinhro");
+            $(activeRow).setMaxHeights();
+        });
+
+    });
+
+</script>
+
 </body>
 </html>

@@ -216,6 +216,9 @@
   position: relative;
   padding-bottom: 100px;
   overflow: hidden;
+  &.fpad50 {
+    padding-bottom: 50px;
+  }
 
   .slon__compare__col-props {
     position: relative;
