@@ -3638,6 +3638,24 @@ a:hover {
   position: relative;
   z-index: 10;
   margin-top: -1px;
+  & > .container {
+    position: relative;
+    z-index: 20;
+  }
+  .slon__article__header__bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .slon__article__header__wrap {
@@ -3720,10 +3738,40 @@ a:hover {
 
 .slon__page--news {
   min-height: 520px;
-  background-position: 50% 0;
-  background-size: auto 100%;
   background-color: #000;
-  background-repeat: no-repeat;
+  position: relative;
+  & > .container {
+    position: relative;
+    z-index: 10;
+  }
+  .slon__page__news-bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    img {
+      display: block;
+      margin: auto auto 0;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    &--full {
+      picture {
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }
 
 .slon__date {
@@ -3815,7 +3863,15 @@ a:hover {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  border-bottom: 1px solid #00ffff;
+  span {
+    display: inline-block;
+    border-bottom: 1px solid #00ffff;
+  }
+  &:hover {
+    span {
+      border-bottom-color: transparent;
+    }
+  }
 }
 
 .no-gutters {
@@ -3967,7 +4023,9 @@ a:hover {
 
 .slon__reg-soc {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  height: 100%;
+  overflow: hidden;
 
   &__label {
     flex-basis: 50px;
@@ -3977,6 +4035,30 @@ a:hover {
     color: #5f5f63;
     line-height: 20px;
     font-weight: 500;
+    position: relative;
+    margin-top: 130px;
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 200px;
+      bottom: 100%;
+      left: 50%;
+      position: absolute;
+      z-index: 10;
+      background-color: #5f5f63;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 1200px;
+      top: 100%;
+      left: 50%;
+      position: absolute;
+      z-index: 10;
+      background-color: #5f5f63;
+    }
   }
 
   &__box {
@@ -4994,4 +5076,31 @@ a.slon__btn--yellow {
 }
 .slon__main__input-box .slon__main__inp--h145 {
   height: 145px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.slon__page__header--lk {
+  position: relative;
+  padding-left: 100px;
+  padding-right: 100px;
+  .slon__page__header__right-link {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: #a9a9a9;
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: none;
+    top: 50px;
+    img {
+      margin-right: 10px;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
 }

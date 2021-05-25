@@ -13,7 +13,9 @@
 .slon__main__header__mob__search,
 .slon__compare__col-products--mob,
 .slon__mob-compare-params,
-.slon__product__del-mob {
+.slon__product__del-mob,
+.slon__lk-item--mob,
+.slon__page__back-link {
   display: none;
 }
 
@@ -464,9 +466,38 @@
       justify-content: flex-end;
     }
   }
+  .slon__page__actions__desc {
+    padding-left: 0;
+  }
+  .slon__page__actions__step {
+    position: relative;
+    padding-left: 40px;
+    min-height: 50px;
+    .slon__page__actions__step__number {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    p {
+      display: block;
+    }
+  }
+  .slon__main__input-text {
+    margin-top: -20px;
+    margin-bottom: 10px;
+    p {
+      display: block;
+      padding-left: 15px;
+    }
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768.1px) {
   .slon__main__home-slider__item__desc {
     justify-content: flex-start;
     padding-top: 30px;
@@ -740,6 +771,12 @@
     }
   }
   .slon__main__text {
+    & h1,
+    & .h1 {
+      font-size: 20px;
+      line-height: 28px;
+      padding-bottom: 15px;
+    }
     & h2,
     & .h2 {
       font-size: 16px;
@@ -762,6 +799,13 @@
       font-size: 12px;
       line-height: 20px;
       margin-bottom: 5px;
+    }
+    ul li {
+      font-size: 12px;
+      line-height: 20px;
+      &::after {
+        top: 9px;
+      }
     }
   }
   .slon__review .slon__review__body {
@@ -914,7 +958,10 @@
       }
     }
   }
-
+  .slon__page__top-news p {
+    font-size: 14px !important;
+    color: #a9a9a9 !important;
+  }
   .slon__list-catalog__product__props-list .slon-props__line {
     padding: 5px 1px 10px;
     font-size: 12px;
@@ -1186,6 +1233,233 @@
   .slon__product__del-mob {
     display: block;
   }
+  .slon__article__header {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #1a1a1d;
+    .slon__article__header__bg {
+      position: relative;
+      top: auto;
+      left: auto;
+    }
+  }
+  .slon__article__header__wrap {
+    padding: 0 0 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .h1 {
+      font-size: 20px;
+      line-height: 28px;
+      text-align: left;
+      padding-bottom: 15px;
+    }
+    .slon__article__anons {
+      font-size: 14px;
+      line-height: 20px;
+      padding-bottom: 20px;
+      text-align: left;
+    }
+  }
+  .slon__mob-hidden {
+    display: none !important;
+  }
+  .slon__news-item .slon__news-item__desc .slon__news-item__title span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .slon__page--news {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #1a1a1d;
+    min-height: auto;
+    .slon__page__news-bg {
+      position: relative;
+      top: auto;
+      left: auto;
+      height: auto;
+      background-color: #000;
+    }
+  }
+  .slon__page__top-news {
+    padding-top: 0;
+  }
+  .slon__page__top-news h1 {
+    color: #fff !important;
+  }
+  .slon__page--news .slon__page__news-bg--full picture img {
+    height: auto !important;
+  }
+  .pr-50 {
+    padding-right: 0;
+  }
+  .slon__dop-mat {
+    padding-top: 20px;
+  }
+  .slon__single-brand__top {
+    background-position: 50% 50%;
+    background-size: cover;
+    .slon__single-brand__top__logo {
+      justify-content: center;
+    }
+  }
+  .slon__page__header--lk {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    .slon__page__header__right-link {
+      display: none !important;
+    }
+    .h1 {
+      text-align: left !important;
+    }
+  }
+  .slon__lk-item {
+    flex-basis: 100%;
+    .slon__lk-item__link {
+      margin-bottom: 0;
+      .slon__product__inner__top,
+      & .slon__product__inner__bottom {
+        display: none !important;
+      }
+      .slon__product__inner__body {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #1a1a1d;
+        .slon__lk-item__title {
+          min-height: auto;
+        }
+        .slon__lk-item__img {
+          height: 60px;
+          padding: 5px;
+          display: flex;
+          min-width: 70px;
+          flex-basis: 70px;
+          width: 70px;
+          align-items: center;
+          justify-content: center;
+          img {
+            max-width: 25px;
+            max-height: 25px;
+            width: auto;
+            height: auto;
+          }
+        }
+      }
+    }
+    &.slon__lk-item--mob {
+      display: block;
+      .slon__product__inner__body {
+        border-bottom: none !important;
+      }
+    }
+  }
+  .slon__reg-bg {
+    background-image: none;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .slon__product__inner__top,
+    & .slon__product__inner__bottom {
+      display: none;
+    }
+    .slon__modal-box__wrap {
+      padding: 0;
+      background-color: transparent;
+      .slon__main__input-box::after,
+      & .slon__main__input-box::before,
+      & .slon__main__submit-btn-box::after,
+      & .slon__main__submit-btn-box::before {
+        background-color: #1a1a1d;
+      }
+      .slon__modal-box__title {
+        border-bottom: none;
+        margin-bottom: 10px;
+      }
+      .slon__reg-soc {
+        flex-direction: column;
+        .slon__reg-soc__label {
+          flex-basis: auto;
+          margin: 30px auto;
+          &::before {
+            height: 1px;
+            width: 500px;
+            left: 100%;
+            top: 50%;
+            bottom: auto;
+            margin-left: 10px;
+          }
+          &::after {
+            height: 1px;
+            width: 500px;
+            right: 100%;
+            left: auto;
+            top: 50%;
+            bottom: auto;
+            margin-right: 10px;
+          }
+        }
+      }
+      .slon__reg-soc__box {
+        flex-basis: 100%;
+        max-width: 100%;
+        width: 100%;
+        .slon__reg-soc__box__caption {
+          padding-bottom: 20px;
+        }
+        .slon__reg-soc__list {
+          flex-direction: row;
+          justify-content: center;
+          li {
+            width: 50px;
+            flex-basis: 50px;
+            margin: 0 10px;
+            .slon__reg-soc__btn {
+              height: 50px;
+              width: 50px;
+              padding: 0;
+              background-position: 50% 50%;
+              background-repeat: no-repeat;
+              background-size: contain;
+              overflow: hidden;
+              text-indent: 1000px;
+              text-align: left;
+              font-size: 0;
+              color:transparent;
+              display: block;
+              &--vk {
+                background-image: url("../img/svg/vk-mob.svg");
+              }
+              &--face {
+                background-image: url("../img/svg/face-mob.svg");
+              }
+              &--google {
+                background-image: url("../img/svg/google-mob.svg");
+              }
+              &--inst {
+                background-image: url("../img/svg/inst-mob.svg");
+              }
+              svg {
+                display: none;
+              }
+              span {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .slon__page__back-link {
+    display: inline-flex;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #898989;
+    margin-top: 3px;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -1339,8 +1613,29 @@
   .modal-footer--relevant {
     display: none !important;
   }
+  .fpad60 {
+    padding-bottom: 20px;
+  }
+  .tpad60 {
+    padding-top: 20px;
+  }
+  .breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .tpad15 {
+    padding-top: 5px;
+  }
+  .slon__page__header {
+    padding-bottom: 20px;
+  }
+  .slon__subscription__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .slon__subscription {
 
-
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -1546,5 +1841,9 @@
       border-bottom: 12px solid #2a2a2f;
       border-left: 12px solid transparent;
     }
+  }
+  .slon__brands__item__logo-box {
+    height: 120px;
+    padding: 20px;
   }
 }
