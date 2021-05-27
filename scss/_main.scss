@@ -117,7 +117,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
-    color: #a9a9a9;
+    color: #fff;
     line-height: 30px;
 
     &:hover {
@@ -4268,9 +4268,10 @@ a:hover {
 
 .slon__page__tabs-nav {
   justify-content: center;
+  flex-wrap: nowrap;
 
   a {
-    display: block;
+    display: flex;
     min-width: 160px;
     background-color: #000;
     color: #00ffff;
@@ -4282,10 +4283,12 @@ a:hover {
     border-top: 1px solid #00ffff;
     border-bottom: 1px solid #00ffff;
     text-align: center;
-    line-height: 43px;
+    line-height: 18px;
     padding: 0 30px;
     transition: all ease-in-out 0.2s;
     position: relative;
+    align-items: center;
+    justify-content: center;
 
     &.is_active {
       background-color: #00ffff;
@@ -4509,9 +4512,12 @@ a:hover {
   max-width: 285px;
   margin-left: 70px;
 }
+.slon__ico-left .slon__ico-left__img .ico-phone {
+  margin-left: 3px;
+}
 
 .slon__guarantee {
-  border: 1px solid #5f5f63;
+  border: 2px solid #5f5f63;
   position: relative;
   margin-bottom: 60px;
 
