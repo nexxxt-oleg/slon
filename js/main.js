@@ -1,9 +1,20 @@
 if (document.getElementById('sliderHome')) {
     let swiperHome = new Swiper('#sliderHome', {
         loop: true,
+        autoplay: {
+            delay: 5000,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-home',
+            prevEl: '.swiper-button-prev-home',
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
         },
     });
 }
@@ -487,3 +498,18 @@ if (document.getElementById("js-mob-search")) {
         document.getElementById('mobSearch').classList.remove('show');
     }
 }
+
+if (document.getElementById("cityModal")) {
+    let cityModal = document.getElementById('cityModal');
+    let jsScrollbar = new MiniBar(document.getElementById("jsScrollbar"), {
+
+    });
+    cityModal.addEventListener('shown.bs.modal', function (event) {
+        jsScrollbar.update();
+    });
+
+    /*cityModal.addEventListener('show.bs.modal', function (event) {
+        document.getElementById("cityModalRes").innerHTML = "";
+    })*/
+}
+
