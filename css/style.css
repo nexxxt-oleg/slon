@@ -17738,10 +17738,10 @@ input:active {
     -ms-flex-preferred-size: 20px;
         flex-basis: 20px;
     min-width: 20px; }
-    .slon__page__cart__item__col-del .slon__page__cart__item__remove {
+    .slon__page__cart__item__col-del .slon__page__cart__item__remove svg {
       color: #898989; }
-      .slon__page__cart__item__col-del .slon__page__cart__item__remove:hover {
-        color: #fff; }
+    .slon__page__cart__item__col-del .slon__page__cart__item__remove:hover svg {
+      color: #fff; }
 
 .slon__border-box.slon__border-box--neon {
   min-height: 100px; }
@@ -20020,4 +20020,5 @@ input:active {
     font-size: 10px;
     line-height: 14px;
     min-width: 80px; } }
+
 /*# sourceMappingURL=style.css.map */
