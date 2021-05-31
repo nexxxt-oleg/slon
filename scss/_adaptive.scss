@@ -17,6 +17,7 @@
 .slon__lk-item--mob,
 .slon__page__back-link,
 .slon__col-price-mob,
+.slon__list-catalog__mob-pages,
 .slon__col-tab-q__caption {
   display: none;
 }
@@ -1769,6 +1770,15 @@
       height: auto;
       padding-top: 50px;
     }
+  }
+  .slon__banner-slider .slon__banner-slider__item {
+    padding: 30px 35px;
+  }
+  .slon__banner-slider .slon__banner-slider__item__wrap__desc .slon__banner-slider__item__subtitle {
+    font-size: 16px;
+  }
+  .slon__banner-slider .slon__banner-slider__item__wrap__desc .slon__banner-slider__item__title {
+    font-size: 20px;
   }
 }
 

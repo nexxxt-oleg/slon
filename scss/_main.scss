@@ -98,7 +98,7 @@ body {
     color: #fff;
 
     .icon path {
-      fill: #00e2da;
+      fill: #00ffff;
     }
 
     .icon-silver path {
@@ -127,7 +127,7 @@ body {
 
   .slon__work-time {
     position: relative;
-    color: #00e2da;
+    color: #00ffff;
     font-size: 10px;
     border: 1px solid #bf55ec;
     line-height: 1;
@@ -205,6 +205,9 @@ body {
         background: url('../img/svg/close.svg') 50% 50% no-repeat;
         background-size: contain;
         cursor: pointer;
+        &:hover {
+          background-image: url("../img/svg/close-hover.svg");
+        }
       }
     }
 
@@ -352,20 +355,20 @@ body {
 
   &:hover {
     &::after {
-      border-bottom-color: #00e2da;
+      border-bottom-color: #00ffff;
     }
 
     &::before {
-      border-top-color: #00e2da;
+      border-top-color: #00ffff;
     }
 
     .slon__main__header__search__inp {
-      border-color: #00e2da;
+      border-color: #00ffff;
       outline: none;
     }
 
     svg path {
-      fill: #00e2da;
+      fill: #00ffff;
     }
   }
 }
@@ -454,18 +457,18 @@ body {
       font-size: 10px;
       font-weight: 600;
       color: #fff;
-      box-shadow: 0px 0px 9px 1px #00e2da;
+      box-shadow: 0px 0px 9px 1px #00ffff;
       left: 50%;
       top: 2px;
       margin-left: 5px;
     }
 
     &:hover {
-      color: #00e2da;
+      color: #00ffff;
 
       .slon__main__header__links__icon {
         svg path {
-          fill: #00e2da;
+          fill: #00ffff;
         }
       }
 
@@ -474,7 +477,7 @@ body {
       }
 
       svg {
-        color: #00e2da !important;
+        color: #00ffff !important;
       }
     }
   }
@@ -571,7 +574,7 @@ body {
 a:hover {
   .icon {
     .cls-1, .cls-2, .cls-3, .cls-4 {
-      stroke: #00e2da !important;
+      stroke: #00ffff !important;
       fill: none !important;
     }
   }
@@ -620,47 +623,56 @@ a:hover {
       }
     }
   }
-  .swiper-button-prev-home,
-  & .swiper-button-next-home {
-    display: flex;
-    position: absolute;
-    z-index: 20;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    align-content: center;
-    justify-content: center;
-    top: 50%;
-    margin-top: -30px;
-    background: url('../img/svg/bg-nav-slider.svg') 50% 50% no-repeat;
-    background-size: contain;
-  }
   .swiper-button-prev-home {
     left: 20px;
   }
   .swiper-button-next-home {
     right: 20px;
   }
-  .swiper-button-prev-home svg,
-  .swiper-button-next-home svg {
-    width: 11px;
-    height: auto;
-  }
-  .swiper-button-prev-home svg path,
-  .swiper-button-next-home svg path {
-    fill: #8a8a8a;
-    transition: all 0.3s ease-in-out
-  }
-  .swiper-button-prev-home:hover svg path,
-  .swiper-button-next-home:hover svg path {
-    fill: #fff;
-  }
+
+}
+.swiper-button-prev-home,
+.swiper-button-next-home {
+  display: flex;
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  align-content: center;
+  justify-content: center;
+  top: 50%;
+  margin-top: -30px;
+  background: url('../img/svg/bg-nav-slider.svg') 50% 50% no-repeat;
+  background-size: contain;
+}
+.swiper-button-prev-home svg,
+.swiper-button-next-home svg {
+  width: 11px;
+  height: auto;
+}
+.swiper-button-prev-home svg path,
+.swiper-button-next-home svg path {
+  fill: #8a8a8a;
+  transition: all 0.3s ease-in-out
+}
+.swiper-button-prev-home:hover svg path,
+.swiper-button-next-home:hover svg path {
+  fill: #fff;
 }
 
 .slon__main__home-slider__item {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: 50% 50%;
+}
+.slon__banner-slider {
+  .swiper-button-next-home {
+    right: -30px;
+  }
+  .swiper-button-prev-home {
+    left: -30px;
+  }
 }
 
 .slon__main__home-slider__item__desc {
@@ -1048,7 +1060,7 @@ a:hover {
 
       &:hover {
         svg path {
-          fill: #00e2da;
+          fill: #00ffff;
         }
       }
     }
@@ -1135,7 +1147,7 @@ a:hover {
 
   &:hover {
     color: #fff;
-    background-color: #00e2da;
+    background-color: #00ffff;
   }
 }
 
@@ -1263,17 +1275,32 @@ a:hover {
 
   span {
     display: inline;
-    border-bottom: 1px solid #00e2da;
+    border-bottom: 1px solid #00ffff;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
   }
 
   &:hover {
+    color: #fff;
     span {
+      color: #fff;
       border-bottom-color: transparent;
+    }
+  }
+}
+.slon__link2 {
+  span {
+    display: inline;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+  }
+  &:hover {
+    span {
+      color: #fff;
+      border-bottom-color: #00ffff;
     }
   }
 }
@@ -1352,7 +1379,7 @@ a:hover {
 
     .slon__news-item__desc .slon__news-item__title {
       span {
-        border-bottom-color: #00e2da;
+        border-bottom-color: #00ffff;
       }
     }
   }
@@ -1708,7 +1735,6 @@ a:hover {
 
 .slon__main__footer {
   background-color: #2a2a2f;
-  border-top: 1px solid #5b5b5d;
   padding-top: 60px;
 }
 
@@ -1730,7 +1756,7 @@ a:hover {
 
         .ico-action {
           text-transform: none;
-          color: #bc1ddd;
+          color: #eee417;
           margin-top: -2px;
           display: inline-block;
           vertical-align: top;
@@ -1739,16 +1765,16 @@ a:hover {
 
       &:hover {
         span {
-          border-bottom-color: #00e2da;
+          border-bottom-color: #00ffff;
         }
       }
     }
   }
 
   .nav--sub-catalog {
-    padding-top: 10px;
 
     li {
+      padding-top: 10px;
       padding-right: 20px;
 
       &:last-child {
@@ -1763,6 +1789,13 @@ a:hover {
 
         &:hover {
           color: #fff;
+        }
+        &.is_active {
+          border-bottom: 1px solid #00ffff;
+          color: #fff;
+          &:hover {
+            border-color: transparent;
+          }
         }
       }
     }
@@ -1807,16 +1840,16 @@ a:hover {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    border-bottom: 1px solid #00e2da;
+    border-bottom: 1px solid transparent;
 
     &:hover {
-      border-bottom-color: transparent;
+      border-bottom-color: #00ffff;
     }
   }
 
   .address {
     display: block;
-    padding-top: 30px;
+    padding-top: 15px;
     color: #fff;
     font-size: 14px;
     line-height: 18px;
@@ -2030,7 +2063,7 @@ a:hover {
     position: absolute;
     width: 18px;
     height: 100%;
-    background-color: #00e2da;
+    background-color: #00ffff;
     transition: all 0.2s ease-in-out;
     opacity: 0;
   }
@@ -2266,7 +2299,7 @@ a:hover {
 }
 
 .slon__banner-slider {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
   position: relative;
 
   .slon__banner-slider__item {
@@ -2752,7 +2785,7 @@ a:hover {
     height: 12px;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    background-color: #00e2da;
+    background-color: #00ffff;
   }
 
   &::before {
@@ -2766,7 +2799,7 @@ a:hover {
     height: 12px;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    background-color: #00e2da;
+    background-color: #00ffff;
   }
 
   &:hover {
@@ -3148,10 +3181,12 @@ a:hover {
   line-height: 18px;
   font-weight: 500;
   color: #fff;
-  display: block;
+  display: inline-block;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   &:hover {
-    color: #00ffff;
+    color: #fff;
+    border-bottom-color: #00ffff;
   }
 }
 
@@ -3945,6 +3980,23 @@ a:hover {
   &--action {
     color: #bf55ec;
     border-color: #bf55ec;
+  }
+}
+
+.slon__page__actions__desc {
+  h2 {
+    span {
+      display: inline-block;
+      vertical-align: top;
+      border-bottom: 1px solid transparent;
+    }
+  }
+  &:hover {
+    h2 {
+      span {
+        border-bottom-color: #00ffff;
+      }
+    }
   }
 }
 

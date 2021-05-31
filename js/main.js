@@ -108,6 +108,13 @@ if (document.getElementById("bannerSlider")) {
             el: '.swiper-pagination',
             clickable: true,
         },
+        autoplay: {
+            delay: 5000,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next-home',
+            prevEl: '.swiper-button-prev-home',
+        },
     });
 }
 

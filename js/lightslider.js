@@ -23,7 +23,23 @@ $(document).ready(function() {
 
             onSliderLoad: function (el) {
                 el.lightGallery({
-                    selector: '#imageGallery .lslide'
+                    selector: '#imageGallery .lslide',
+                    download: false,
+                    share: false,
+                    rotate: false,
+                    autoplay: false,
+                    pager: false,
+                    fullScreen: false,
+                    actualSize: false,
+                    zoom: false,
+                    autoplayFirstVideo: false,
+                    counter: false,
+                    nextHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">\n' +
+                        '<path d="M281.2,226.8,62.25,7.86a27,27,0,0,0-38.06,0L8.06,24A27,27,0,0,0,8.06,62L191.92,245.9,7.86,430a27,27,0,0,0,0,38.07L24,484.14a27,27,0,0,0,38.07,0L281.2,265a27.16,27.16,0,0,0,0-38.2Z"></path>\n' +
+                        '</svg>',
+                    prevHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">\n' +
+                        '<path class="cls-1" d="M7.85,265.2l219,218.94a27,27,0,0,0,38.06,0L281,468A26.93,26.93,0,0,0,281,430L97.13,246.1,281.19,62a27,27,0,0,0,0-38.06L265.06,7.86a27,27,0,0,0-38.06,0L7.85,227a27.16,27.16,0,0,0,0,38.2Z"></path>\n' +
+                        '</svg>',
                 });
             }
         });
@@ -36,7 +52,23 @@ $(document).ready(function() {
             pager: false,
             onSliderLoad: function (el) {
                 el.lightGallery({
-                    selector: '#imageGallery .lslide'
+                    selector: '#imageGallery .lslide',
+                    download: false,
+                    share: false,
+                    rotate: false,
+                    autoplay: false,
+                    pager: false,
+                    fullScreen: false,
+                    actualSize: false,
+                    zoom: false,
+                    autoplayFirstVideo: false,
+                    counter: false,
+                    nextHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">\n' +
+                        '<path d="M281.2,226.8,62.25,7.86a27,27,0,0,0-38.06,0L8.06,24A27,27,0,0,0,8.06,62L191.92,245.9,7.86,430a27,27,0,0,0,0,38.07L24,484.14a27,27,0,0,0,38.07,0L281.2,265a27.16,27.16,0,0,0,0-38.2Z"></path>\n' +
+                        '</svg>',
+                    prevHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">\n' +
+                        '<path class="cls-1" d="M7.85,265.2l219,218.94a27,27,0,0,0,38.06,0L281,468A26.93,26.93,0,0,0,281,430L97.13,246.1,281.19,62a27,27,0,0,0,0-38.06L265.06,7.86a27,27,0,0,0-38.06,0L7.85,227a27.16,27.16,0,0,0,0,38.2Z"></path>\n' +
+                        '</svg>',
                 });
             }
         });
@@ -49,5 +81,20 @@ $(document).ready(function() {
         youtubeThumbSize: 'default',
         loadVimeoThumbnail: true,
         vimeoThumbSize: 'thumbnail_medium',
+        download: false,
+        share: false,
+        rotate: false,
+        autoplay: false,
+        pager: false,
+        fullScreen: false,
+        actualSize: false,
+        zoom: false,
+        counter: false,
+        nextHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">\n' +
+            '<path d="M281.2,226.8,62.25,7.86a27,27,0,0,0-38.06,0L8.06,24A27,27,0,0,0,8.06,62L191.92,245.9,7.86,430a27,27,0,0,0,0,38.07L24,484.14a27,27,0,0,0,38.07,0L281.2,265a27.16,27.16,0,0,0,0-38.2Z"></path>\n' +
+            '</svg>',
+        prevHtml: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">\n' +
+            '<path class="cls-1" d="M7.85,265.2l219,218.94a27,27,0,0,0,38.06,0L281,468A26.93,26.93,0,0,0,281,430L97.13,246.1,281.19,62a27,27,0,0,0,0-38.06L265.06,7.86a27,27,0,0,0-38.06,0L7.85,227a27.16,27.16,0,0,0,0,38.2Z"></path>\n' +
+            '</svg>',
     });
 });
