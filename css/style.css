@@ -14827,6 +14827,32 @@ img {
 .modal-dialog.modal-sm {
   max-width: 530px; }
 
+.slon__main__single-product__body__nav .slon__main__single-product__fix-price {
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 5px; }
+.slon__main__single-product__body__nav.fixed .slon__main__single-product__fix-price {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.slon__main__single-product__fix-price__col-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: auto;
+  margin-left: auto; }
+
+.slon__main__single-product__fix-price__col-btn .slon__btn .slon__btn__center {
+  padding-left: 5px;
+  padding-right: 5px; }
+
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2016 Sachin N; Licensed MIT */
@@ -18235,7 +18261,10 @@ input:active {
     .slon__order-detail__header__col4 {
       position: absolute;
       top: 0;
-      right: 20px; } }
+      right: 20px; }
+
+  .slon__main__single-product__body .slon__main__single-product__body__nav .nav-item {
+    padding-right: 10px; } }
 @media screen and (max-width: 991px) {
   .slon__nav-top {
     display: none; }

@@ -5294,3 +5294,28 @@ img {
 .modal-dialog.modal-sm {
   max-width: 530px;
 }
+.slon__main__single-product__body__nav {
+  .slon__main__single-product__fix-price {
+    display: none;
+    flex-grow: 1;
+    padding-top: 5px;
+  }
+  &.fixed {
+    .slon__main__single-product__fix-price {
+      display: flex !important;
+    }
+  }
+}
+
+.slon__main__single-product__fix-price__col-price {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+.slon__main__single-product__fix-price__col-btn {
+  .slon__btn .slon__btn__center {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
