@@ -17661,6 +17661,10 @@ input:active {
     background-color: #5f5f63;
     z-index: 1; }
 
+.zoomWindow {
+  background-color: #2a2a2f;
+  border: 1px solid #5f5f63; }
+
 .slon__page__cart__item__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18646,7 +18650,12 @@ input:active {
     margin-bottom: 30px; }
 
   .slon__page--contacts .slon__ico-left {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  .section__anchor-top {
+    padding-top: 0; }
+    .section__anchor-top::after {
+      display: none; } }
 @media screen and (max-width: 768.1px) {
   .slon__main__home-slider__item__desc {
     -webkit-box-pack: start;

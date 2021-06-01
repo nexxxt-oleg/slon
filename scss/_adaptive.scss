@@ -561,6 +561,12 @@
       margin-bottom: 10px;
     }
   }
+  .section__anchor-top {
+    padding-top: 0;
+    &::after {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 768.1px) {

@@ -370,14 +370,15 @@ if(window.screen.width < 768) {
     });
 
 
-
-    const myCollapsible = document.getElementById('accordionExample');
-    myCollapsible.addEventListener('hidden.bs.collapse', (e) => {
-       e.target.parentNode.classList.remove('is_active');
-    });
-    myCollapsible.addEventListener('show.bs.collapse', (e) => {
-        e.target.parentNode.classList.add('is_active');
-    });
+    if (document.getElementById("accordionExample")) {
+        const myCollapsible = document.getElementById('accordionExample');
+        myCollapsible.addEventListener('hidden.bs.collapse', (e) => {
+            e.target.parentNode.classList.remove('is_active');
+        });
+        myCollapsible.addEventListener('show.bs.collapse', (e) => {
+            e.target.parentNode.classList.add('is_active');
+        });
+    }
 }
 
 /**
