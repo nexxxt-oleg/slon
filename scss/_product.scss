@@ -3446,3 +3446,32 @@ input:active {
   background-color: #2a2a2f;
   border: 1px solid #5f5f63;
 }
+.slon__product__min-product__link:hover {
+  .slon__product__min-product__title {
+    color: #fff;
+  }
+}
+.smart-filter__checkbox span a:hover,
+.smart-filter__checkbox:hover a,
+.slon__complect__wrap__item__title:hover,
+.slon-form__politika__inp:hover span,
+.slon-form__politika__inp:hover span a,
+.slon-form__politika__inp span a:hover {
+  color: #fff !important;
+}
+.slon-form__input {
+  .slon-form__input__inner:hover {
+    input {
+      border-color: #fff;
+    }
+    &::after {
+      border-bottom: 8px solid #fff;
+    }
+  }
+  &::after {
+    border-top: 8px solid #fff;
+  }
+}
+.slon__main__single-product__rev-top .slon__main__single-product__col-all-rev a:hover {
+  border-bottom-color: transparent;
+}
