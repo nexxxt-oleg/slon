@@ -10955,7 +10955,8 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
 .slon__main__home-slider__item {
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  background-color: #000; }
 
 .slon__banner-slider .swiper-button-next-home {
   right: -30px; }
