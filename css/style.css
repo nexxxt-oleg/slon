@@ -14107,22 +14107,22 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
 
 .slon__page--refund {
   background: url("../img/bg-refund.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px; }
 
 .slon__page--guarantee {
   background: url("../img/bg-garant.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px; }
 
 .slon__page--order-guarantee {
   background: url("../img/bg-order-garant.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px; }
 
 .slon__page--delivery {
   background: url("../img/bg-delivery.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px; }
 
 .slon__page--header {
@@ -14890,6 +14890,32 @@ img {
 .slon__reg-soc__btn--inst:not(:hover) .icon-silver path {
   fill: #a9a9a9 !important; }
 
+.slon__animate-down {
+  height: 160px;
+  padding-right: 10px; }
+  .slon__animate-down svg {
+    margin: 0 auto;
+    display: block;
+    -webkit-animation: slide1 1.5s linear infinite;
+            animation: slide1 1.5s linear infinite; }
+
+@-webkit-keyframes slide1 {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px); } }
+
+@keyframes slide1 {
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px); } }
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2016 Sachin N; Licensed MIT */

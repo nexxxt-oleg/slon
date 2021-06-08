@@ -4448,25 +4448,25 @@ a:hover {
 
 .slon__page--refund {
   background: url("../img/bg-refund.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px;
 }
 
 .slon__page--guarantee {
   background: url("../img/bg-garant.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px;
 }
 
 .slon__page--order-guarantee {
   background: url("../img/bg-order-garant.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px;
 }
 
 .slon__page--delivery {
   background: url("../img/bg-delivery.jpg") 50% 0 no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 520px;
 }
 
@@ -5395,5 +5395,24 @@ img {
       }
 
     }
+  }
+}
+.slon__animate-down {
+  height: 160px;
+  padding-right: 10px;
+  svg {
+    margin: 0 auto;
+    display: block;
+    animation: slide1 1.5s linear infinite;
+  }
+}
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 20px);
   }
 }
