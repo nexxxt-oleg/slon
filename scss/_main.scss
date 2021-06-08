@@ -2,6 +2,38 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+.slon__link-ico-left {
+  transition: all 0.3s ease-in-out;
+  color: #a9a9a9;
+  font-size: 13px;
+  text-decoration: none;
+  line-height: 30px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+
+  .icon {
+    margin-right: 20px;
+  }
+
+  .icon-silver {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: #fff;
+
+    .icon path {
+      fill: #00ffff;
+    }
+
+    .icon-silver path {
+      fill: #fff;
+    }
+  }
+}
+
 .slon__main {
   position: relative;
   overflow: hidden;
@@ -76,36 +108,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.slon__link-ico-left {
-  transition: all 0.3s ease-in-out;
-  color: #a9a9a9;
-  font-size: 13px;
-  text-decoration: none;
-  line-height: 30px;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-
-  .icon {
-    margin-right: 20px;
-  }
-
-  .icon-silver {
-    margin-right: 10px;
-  }
-
-  &:hover {
-    color: #fff;
-
-    .icon path {
-      fill: #00ffff;
-    }
-
-    .icon-silver path {
-      fill: #fff;
-    }
-  }
-}
 
 .slon__nav-top__phone {
   display: flex;
@@ -487,6 +489,9 @@ body {
   width: 100%;
   justify-content: space-between;
 }
+.hover-ico {
+  margin-right: 20px;
+}
 
 .slon__main__header__main-nav {
   background-color: #000000;
@@ -504,6 +509,26 @@ body {
     display: flex;
     padding-left: 0 !important;
     font-weight: 600;
+    position: relative;
+    .icon {
+      position: relative;
+      z-index: 1;
+      transition:  none !important;
+    }
+    .icon-hover {
+      position: absolute;
+      z-index: 2;
+      top: 16px;
+      left: 0;
+      opacity: 0;
+    }
+    &:hover {
+      .hover-ico {
+        path{
+          fill: #00ffff !important;
+        }
+      }
+    }
   }
 
   .dropdown-toggle {
@@ -4349,6 +4374,24 @@ a:hover {
   background-color: #1a1a1d !important;
 }
 
+.slon__page__navbar {
+  .slon__link-ico-left:hover {
+    .ico-hover {
+      path:not(.not-fill) {
+        fill: #00ffff !important;
+      }
+      rect {
+        fill: #00ffff !important;
+      }
+    }
+  }
+}
+.slon__product__fav-compare a:hover {
+  svg {
+    color: #00ffff;
+  }
+}
+
 .slon__main__input-text p {
   color: #a9a9a9;
   font-size: 12px;
@@ -4368,6 +4411,16 @@ a:hover {
     .slon__lk-item__title {
       color: #fff;
     }
+
+    .ico-hover {
+      path:not(.not-fill) {
+        fill: #00ffff !important;
+      }
+      rect {
+        fill: #00ffff !important;
+      }
+    }
+
   }
 
   .slon__lk-item__img {
@@ -5318,5 +5371,29 @@ img {
   .slon__btn .slon__btn__center {
     padding-left: 5px;
     padding-right: 5px;
+  }
+}
+.slon__reg-soc__btn {
+  &--google {
+    &:not(:hover) {
+      path {
+        fill: #a9a9a9 !important;
+      }
+    }
+  }
+  &--inst {
+    &:not(:hover) {
+      .btn-bg {
+        path {
+          fill: #a9a9a9 !important;
+        }
+      }
+      .icon-silver {
+        path {
+          fill: #a9a9a9 !important;
+        }
+      }
+
+    }
   }
 }

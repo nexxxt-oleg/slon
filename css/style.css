@@ -10388,6 +10388,31 @@ button.toast-close-button {
 body {
   font-family: 'Montserrat', sans-serif; }
 
+.slon__link-ico-left {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #a9a9a9;
+  font-size: 13px;
+  text-decoration: none;
+  line-height: 30px;
+  font-weight: 500;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .slon__link-ico-left .icon {
+    margin-right: 20px; }
+  .slon__link-ico-left .icon-silver {
+    margin-right: 10px; }
+  .slon__link-ico-left:hover {
+    color: #fff; }
+    .slon__link-ico-left:hover .icon path {
+      fill: #00ffff; }
+    .slon__link-ico-left:hover .icon-silver path {
+      fill: #fff; }
+
 .slon__main {
   position: relative;
   overflow: hidden;
@@ -10454,31 +10479,6 @@ body {
   color: #0a898f;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-
-.slon__link-ico-left {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  color: #a9a9a9;
-  font-size: 13px;
-  text-decoration: none;
-  line-height: 30px;
-  font-weight: 500;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .slon__link-ico-left .icon {
-    margin-right: 20px; }
-  .slon__link-ico-left .icon-silver {
-    margin-right: 10px; }
-  .slon__link-ico-left:hover {
-    color: #fff; }
-    .slon__link-ico-left:hover .icon path {
-      fill: #00ffff; }
-    .slon__link-ico-left:hover .icon-silver path {
-      fill: #fff; }
 
 .slon__nav-top__phone {
   display: -webkit-box;
@@ -10799,6 +10799,9 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.hover-ico {
+  margin-right: 20px; }
+
 .slon__main__header__main-nav {
   background-color: #000000;
   padding-top: 0;
@@ -10817,7 +10820,21 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding-left: 0 !important;
-    font-weight: 600; }
+    font-weight: 600;
+    position: relative; }
+    .slon__main__header__main-nav .slon__link-ico-left .icon {
+      position: relative;
+      z-index: 1;
+      -webkit-transition: none !important;
+      transition: none !important; }
+    .slon__main__header__main-nav .slon__link-ico-left .icon-hover {
+      position: absolute;
+      z-index: 2;
+      top: 16px;
+      left: 0;
+      opacity: 0; }
+    .slon__main__header__main-nav .slon__link-ico-left:hover .hover-ico path {
+      fill: #00ffff !important; }
   .slon__main__header__main-nav .dropdown-toggle {
     position: relative; }
     .slon__main__header__main-nav .dropdown-toggle::before {
@@ -14034,6 +14051,14 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
 .slon__btn-border.slon__btn-border--v2::after {
   background-color: #1a1a1d !important; }
 
+.slon__page__navbar .slon__link-ico-left:hover .ico-hover path:not(.not-fill) {
+  fill: #00ffff !important; }
+.slon__page__navbar .slon__link-ico-left:hover .ico-hover rect {
+  fill: #00ffff !important; }
+
+.slon__product__fav-compare a:hover svg {
+  color: #00ffff; }
+
 .slon__main__input-text p {
   color: #a9a9a9;
   font-size: 12px;
@@ -14050,6 +14075,10 @@ a:hover .icon .cls-1, a:hover .icon .cls-2, a:hover .icon .cls-3, a:hover .icon 
     transition: drop-shadow 0.3s ease-in-out; }
     .slon__lk-item__link:hover .slon__lk-item__title {
       color: #fff; }
+    .slon__lk-item__link:hover .ico-hover path:not(.not-fill) {
+      fill: #00ffff !important; }
+    .slon__lk-item__link:hover .ico-hover rect {
+      fill: #00ffff !important; }
   .slon__lk-item__link .slon__lk-item__img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14853,6 +14882,13 @@ img {
 .slon__main__single-product__fix-price__col-btn .slon__btn .slon__btn__center {
   padding-left: 5px;
   padding-right: 5px; }
+
+.slon__reg-soc__btn--google:not(:hover) path {
+  fill: #a9a9a9 !important; }
+.slon__reg-soc__btn--inst:not(:hover) .btn-bg path {
+  fill: #a9a9a9 !important; }
+.slon__reg-soc__btn--inst:not(:hover) .icon-silver path {
+  fill: #a9a9a9 !important; }
 
 /*! lightslider - v1.1.6 - 2016-10-25
 * https://github.com/sachinchoolur/lightslider
@@ -17712,6 +17748,9 @@ input:active {
 
 .slon__main__single-product__rev-top .slon__main__single-product__col-all-rev a:hover {
   border-bottom-color: transparent; }
+
+.slon__product.slon__product--hover {
+  margin-bottom: 0 !important; }
 
 .slon__page__cart__item__wrap {
   display: -webkit-box;
